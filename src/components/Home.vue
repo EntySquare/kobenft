@@ -1,5 +1,6 @@
 <template>
-<div>主页</div>
+  <div>主页</div>
+  <!-- 分割线 -->
 </template>
 
 <script>
