@@ -1,8 +1,11 @@
 <template>
   <el-main>
     <div style="width: 100%;height: 40.76vw;">
-      <img src="@/assets/home_background.png" style="height: auto;width: 100%;z-index: -1;position:absolute;">
+<!--      <img src="@/assets/home_background.png" style="height: auto;width: 100%;z-index: -1;position:absolute;">-->
+      <el-image :src="require('../assets/home_background.png')"
+                style="z-index: -1;position:absolute;"></el-image>
       <div style="color: violet">2222222222222</div>
+      <div style="color: violet;padding: 10px">3333333333333</div>
     </div>
     31231232432
     <div style="color: green">---------------------------分割线-------------------------</div>
@@ -24,14 +27,5 @@ export default {
 </script>
 
 <style scoped>
-/* 背景图片*/
-.login {
-  background: url("../assets/home_background.png");
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  margin-top: -65px; /*上边距*/
-  background-size: 100% 100%;
-  z-index: -1;
-}
+
 </style>
