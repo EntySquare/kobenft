@@ -163,7 +163,7 @@
         <div>
           <el-row>
             <el-col :xs="{span: 10, push: 8}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
-                    :lg="{span: 4, push: 4}" :xl="{span: 4, push: 4}">
+                    :lg="{span: 3, push: 2}" :xl="{span: 4, push: 4}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
               </div>
@@ -171,7 +171,7 @@
               <div class="iconText2">KobeNFT使用其自己独特的分片技术解决了可扩展性普遍问题，建立完全分布式的支付系统</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
-                    :lg="{span: 4, push: 6}" :xl="{span: 4, push: 6}">
+                    :lg="{span: 3, push: 6}" :xl="{span: 4, push: 6}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon6.png')"></el-image>
               </div>
@@ -179,7 +179,7 @@
               <div class="iconText2">基于智能合约的业务逻辑可持续且透明地在网络上分配所有价值。所有交易信息一成不变地存储在公共区块链上</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
-                    :lg="{span: 4, push: 8}" :xl="{span: 4, push: 8}">
+                    :lg="{span: 3, push: 10}" :xl="{span: 4, push: 8}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon7.png')"></el-image>
               </div>
@@ -195,13 +195,13 @@
       <el-row style="height: 90px"></el-row>
       <el-row>
         <el-col :xs="{span: 8, push: 2}" :sm="{span: 8, push: 4}" :md="{span: 8, push: 4}"
-                :lg="{span: 6, push: 5}" :xl="{span: 6, push: 5}">
+                :lg="{span: 8, push: 4}" :xl="{span: 6, push: 5}">
           <div style="height: 56px;font-size: 40px;font-weight: 600;color: #FFFFFF;line-height: 56px;">
             我们的重点是什么？
           </div>
         </el-col>
         <el-col :xs="{span: 10, push: 6}" :sm="{span: 10, push: 6}" :md="{span: 10, push: 6}"
-                :lg="{span: 6, push: 9}" :xl="{span: 6, push: 9}">
+                :lg="{span: 8, push: 6}" :xl="{span: 6, push: 9}">
           <div style="padding-bottom: 35px">
             <div
               style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
@@ -226,7 +226,8 @@
       </el-row>
     </div>
     <div style="width: 100%;height: 27.29vw;min-height: 320px">
-      <img src="@/assets/home_dunk.png" style="height: auto;width: 100%;z-index: -1;position:absolute;min-height: 320px">
+      <img src="@/assets/home_dunk.png"
+           style="height: auto;width: 100%;z-index: -1;position:absolute;min-height: 320px">
       <el-row :gutter="10">
         <div style="height: 3.29vw;">
         </div>
@@ -269,7 +270,9 @@
     <!--    <div style="width: 100%;height: 41.97vw;background: black">-->
     <div style="width: 100%;height: 800px;background: black">
       <el-row :gutter="10">
-        <el-col :xs="5" :sm="5" :md="13" :lg="13" :xl="13">  <div class="grid-content bg-purple-light"></div></el-col>
+        <el-col :xs="5" :sm="5" :md="13" :lg="13" :xl="13">
+          <div class="grid-content bg-purple-light"></div>
+        </el-col>
         <el-col :xs="17" :sm="17" :md="8" :lg="8" :xl="8">
           <img src="@/assets/home_decorative.png" style="height: auto;width: 100%;max-width: 800px">
         </el-col>
@@ -306,9 +309,11 @@
     </div>
     <!-- 彩色扇形图 -->
     <div style="width: 100%;height: 45.94vw;max-height: 785px;min-height: 850px;">
-      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: -1;min-height: 850px;position:absolute;background: black">
+      <img src="@/assets/home_colour.png"
+           style="height: auto;width: 100%;z-index: -1;min-height: 850px;position:absolute;background: black">
       <el-row>
-        <el-col :xs="{span: 23, push: 1 }" :sm="{span: 22, push: 2 }" :md="{span: 21, push: 1 }" :lg="{span: 21, push: 3 }" :xl="{span: 20, push: 4 }">
+        <el-col :xs="{span: 23, push: 1 }" :sm="{span: 22, push: 2 }" :md="{span: 21, push: 1 }"
+                :lg="{span: 21, push: 3 }" :xl="{span: 20, push: 4 }">
           <div style="height: 2.94vw;"></div>
           <div style="font-size: 32px;font-weight: 500;color: #FFFFFF;">
             KBN代币
@@ -321,7 +326,8 @@
         </el-col>
         <div style="height: 10px"></div>
         <!--            :xs="{span: 24, offset: 0}" :xl="{span: 8, push: 4}"-->
-        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}" :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:2, push: 2}"
+        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}"
+                :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:2, push: 2}"
                 style="max-width:700px;max-height: 385px;min-width: 445px">
           <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
             <div style="height: 40px"></div>
@@ -345,7 +351,8 @@
           </div>
           <div style="height: 1.94vw;"></div>
         </el-col>
-        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, offset:1, push: 1}" :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
+        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, offset:1, push: 1}"
+                :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
                 style="max-width:700px;max-height: 385px;min-width: 445px">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
             <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
