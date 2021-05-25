@@ -369,35 +369,35 @@
                     <td >
                       <div style="width: 8px;height: 8px;background: #6040FC;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;私募</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;私募</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #00FFE1;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;治理</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;治理</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #FF9B26;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;生态</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;生态</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #FF4060;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;团队</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;团队</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #36CFA2;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;市场</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;市场</div>
                     <td>
                       &nbsp;
                     </td>
@@ -435,7 +435,7 @@
                 KBN Token用途是什么?
               </div>
               <div style="height: 20px"></div>
-              <div style="font-size: 14px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">
+              <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
                 我们的代币用于社区治理，用户可以参与社区提案和投票决议，并获得红利。
               </div>
             </div>
@@ -447,7 +447,7 @@
                 如何购买KBN Token？
               </div>
               <div style="height: 20px"></div>
-              <div style="font-size: 14px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">
+              <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
                 Uniswap链接在这里：<span style="color: #00FFE1">Uniswap</span>
               </div>
             </div>
@@ -459,7 +459,7 @@
                 KBN Token合约地址是什么？
               </div>
               <div style="height: 20px"></div>
-              <div style="font-size: 14px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">
+              <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
                 以太坊主网上的代币合约地址：
               </div>
               <div style="height: 2px"></div>
@@ -569,7 +569,7 @@
       <div class="hidden-sm-and-down">
         <el-row :gutter="40">
           <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }" :lg="{span: 17,offset:2 }" :xl="{span: 13,offset:4 }">
-            <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -125px 0px 0px 10px">
+            <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -118px 0px 0px 10px">
             </div>
           </el-col>
         </el-row>
@@ -582,7 +582,7 @@
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:1,}" :lg="{span: 10,offset:2,}" :xl="{span: 10,offset:2,}"><div class="grid-content bg-purple"></div></el-col>
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}" :lg="{span: 10,offset:0,}" :xl="{span: 10,offset:0,}">
           <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
-          <div style="font-size: 14px;font-family: Skycoin-Regular, Skycoin;font-weight: 400;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
             KobeNFT是一个来自分布式计算、金融交易、区块链共识设计和跨链等
             <p></p>
             各领域经验丰富的团队。我们使用企业级硬件为PoS协议运行高度安全
