@@ -235,20 +235,20 @@
         </el-col>
         <el-col :xs="23" :sm="22" :md="20" :lg="19" :xl="18">
           <div id="id_text_72px_1"
-               style="font-size: 48px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+               style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
             由致敬Kobe Bryant的区块链
           </div>
           <div id="id_text_72px_2"
-               style="font-size: 48px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+               style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
             开发者创立
           </div>
           <div
-            style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
             现在，我们邀请每个人加入社区。走进全球Kobe Bryant球迷的内心世界，感受曼巴精神的无尽力量。
           </div>
           <div style="height: 2.29vw;"></div>
           <div
-            style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;float: left;"
+            style="font-size: 14px;font-weight: 600;color: #FFFFFF;float: left;"
             align="right">
             加入社区&nbsp;
           </div>
@@ -280,7 +280,7 @@
           <div class="grid-content bg-purple"></div>
         </el-col>
         <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="11" :lg="11" :xl="{span: 20,offset:4,}">
-          <div style="font-size: 72px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #E92F75;margin-top: -30px">
+          <div style="font-size: 72px;font-weight: 600;color: #E92F75;margin-top: -30px">
             什么是 KBN Token
           </div>
         </el-col>
@@ -291,7 +291,7 @@
           <div class="grid-content bg-purple"></div>
         </el-col>
         <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="11" :lg="11" :xl="{span: 20,offset:4,}">
-          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             KBN Token是一种去中心化的NFT资产，旨在成为娱乐交互和文化的通用支付方式。独特的加密经济设计使其成为价值存储的理想方式。
             <div style="height: 5px"></div>
             KBN Token不仅具有存储价值，还可以执行智能合约及艺术、影视、音乐、文化、游戏都NFT化。并在所有社会创造活动中都具有可衡量和可转让的价值。
@@ -310,11 +310,11 @@
       <el-row>
         <el-col :xs="{span: 23, push: 1 }" :sm="{span: 22, push: 2 }" :md="{span: 21, push: 1 }" :lg="{span: 21, push: 3 }" :xl="{span: 20, push: 4 }">
           <div style="height: 2.94vw;"></div>
-          <div style="font-size: 32px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 32px;font-weight: 500;color: #FFFFFF;">
             KBN代币
           </div>
           <div style="height: 1.94vw;"></div>
-          <div style="font-size: 16px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;">
             KBN Token是基于以太坊 ERC721协议生态系统中用作娱乐交互和文化的治理代币
           </div>
           <div style="height: 1.94vw;"></div>
@@ -326,14 +326,14 @@
           <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
             <div style="height: 40px"></div>
             <el-row :gutter="20">
-              <el-col :span="11" :offset="1" style="font-size: 16px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
                 <p style="padding-bottom: 15px;">上线日期：2021年第二季度</p>
                 <p style="padding-bottom: 15px;">代币价格：$ 1</p>
                 <p style="padding-bottom: 15px;">发行数：100,000,000</p>
                 <p style="padding-bottom: 15px;">初始交易所发行量：50,000,000</p>
                 <p style="padding-bottom: 15px;">最低交易金额：0.01</p>
               </el-col>
-              <el-col :span="11" :offset="1" style="font-size: 16px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
                 <p style="padding-bottom:   15px;">首轮私募的4％</p>
                 <p style="padding-bottom: 15px;">第二轮私募6％</p>
                 <p style="padding-bottom: 15px;">治理委员会10%</p>
@@ -348,7 +348,7 @@
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, offset:1, push: 1}" :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
                 style="max-width:700px;max-height: 385px;min-width: 445px">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
-            <div style="font-size: 20px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
+            <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
               KBN 分配计划
             </div>
             <el-row>
@@ -408,7 +408,7 @@
       <el-row :gutter="10">
         <div style="height: 30px"></div>
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 11,offset:1,}" :lg="{span: 8,offset:3}" :xl="{span: 8,offset:3}">
-          <div style="font-size: 72px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #E92F75;">
+          <div style="font-size: 72px;font-weight: 600;color: #E92F75;">
             第一次完全
             <div></div>
             真正的
@@ -424,7 +424,7 @@
           <div style="height: 20px"></div>
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
-              <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+              <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
                 KBN Token用途是什么?
               </div>
               <div style="height: 20px"></div>
@@ -436,7 +436,7 @@
           <div style="height: 20px"></div>
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
-              <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+              <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
                 如何购买KBN Token？
               </div>
               <div style="height: 20px"></div>
@@ -448,7 +448,7 @@
           <div style="height: 20px"></div>
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
-              <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+              <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
                 KBN Token合约地址是什么？
               </div>
               <div style="height: 20px"></div>
@@ -456,7 +456,7 @@
                 以太坊主网上的代币合约地址：
               </div>
               <div style="height: 2px"></div>
-              <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #00FFE1;">
+              <div style="font-size: 14px;font-weight: 500;color: #00FFE1;">
                 0xf30547ff2Df1F1CBE5C8DD758B3dd098C856e38f
               </div>
             </div>
@@ -473,7 +473,7 @@
       <el-row :gutter="40">
 
         <el-col :xs="{span: 10,offset:2} " :sm="{span: 10,offset:2} " :md="{span: 5,offset:2,}" :lg="{span: 5,offset:2,}" :xl="{span: 4,offset:4,}">
-          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2020
           </div>
           <div class="hidden-sm-and-down">
@@ -481,10 +481,10 @@
               <div style="color: #FFFFFF">●</div>
             </div>
           </div>
-          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q1～Q2
           </div>
-          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
             - 项目启动，组建团队
             <p></p>
             - 发布KobeNFT线路图
@@ -493,7 +493,7 @@
           </div>
         </el-col>
         <el-col :xs="{span: 10,offset:0,}" :sm="{span: 10,offset:0,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
-          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2020
           </div>
           <div class="hidden-sm-and-down">
@@ -501,10 +501,10 @@
               <div style="color: #FFFFFF">●</div>
             </div>
           </div>
-          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q3～Q4
           </div>
-          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
             - 设计架构和共识
             <p></p>
             - 发布代币经济系统
@@ -515,7 +515,7 @@
           </div>
         </el-col>
         <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:2,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
-          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
           <div class="hidden-sm-and-down">
@@ -523,10 +523,10 @@
               <div style="color: #FFFFFF">●</div>
             </div>
           </div>
-          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q1～Q2
           </div>
-          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
             - 发布内部产品测试
             <p></p>
             - 开放项目社群
@@ -537,7 +537,7 @@
           </div>
         </el-col>
         <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 5,offset:0 }" :lg="{span: 5,offset:0 }" :xl="{span: 4,offset:0 }">
-          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
           <div class="hidden-sm-and-down">
@@ -545,10 +545,10 @@
               <div style="color: #FFFFFF">●</div>
             </div>
           </div>
-          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q3～Q4
           </div>
-          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
             - 发布社区治理
             <p></p>
             - 推出NFT市场
@@ -582,37 +582,37 @@
             <p></p>
             可靠的节点，以确保最大的效率和安全性。
             <div style="height: 70px"></div>
-            <div style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            <div style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
               联系我们
             </div>
-            <div style="height: 20px;font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            <div style="height: 20px;font-size: 14px;font-weight: 600;color: #FFFFFF;">
               bd@kobeNFT.io
             </div>
           </div>
         </el-col>
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}" :lg="{span: 3,offset:2,}" :xl="{span: 2,offset:4,}">
           <div id="introduction_to_the_bottom_red" style="margin: -227px 0px 0px 0px">
-            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
               简介
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
-            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
               特性
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
-            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
               代币
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
-            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
               线路图
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
-            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
               社区
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
@@ -631,7 +631,7 @@
       <el-row :gutter="10">
 
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}" :lg="{span: 8,offset:2,}" :xl="{span: 8,offset:4,}">
-          <div id="bottom_contact" style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;line-height: 20px;">
+          <div id="bottom_contact" style="font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
             © 2021 KobeNFT All rights reserved
           </div>
         </el-col>
