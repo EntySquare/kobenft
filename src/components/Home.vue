@@ -163,7 +163,7 @@
         <div>
           <el-row>
             <el-col :xs="{span: 10, push: 8}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
-                    :lg="{span: 4, push: 4}" :xl="{span: 4, push: 4}">
+                    :lg="{span: 3, push: 2}" :xl="{span: 4, push: 4}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
               </div>
@@ -171,7 +171,7 @@
               <div class="iconText2">KobeNFT使用其自己独特的分片技术解决了可扩展性普遍问题，建立完全分布式的支付系统</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
-                    :lg="{span: 4, push: 6}" :xl="{span: 4, push: 6}">
+                    :lg="{span: 3, push: 6}" :xl="{span: 4, push: 6}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon6.png')"></el-image>
               </div>
@@ -179,7 +179,7 @@
               <div class="iconText2">基于智能合约的业务逻辑可持续且透明地在网络上分配所有价值。所有交易信息一成不变地存储在公共区块链上</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
-                    :lg="{span: 4, push: 8}" :xl="{span: 4, push: 8}">
+                    :lg="{span: 3, push: 10}" :xl="{span: 4, push: 8}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon7.png')"></el-image>
               </div>
@@ -195,13 +195,13 @@
       <el-row style="height: 90px"></el-row>
       <el-row>
         <el-col :xs="{span: 8, push: 2}" :sm="{span: 8, push: 4}" :md="{span: 8, push: 4}"
-                :lg="{span: 6, push: 5}" :xl="{span: 6, push: 5}">
+                :lg="{span: 8, push: 4}" :xl="{span: 6, push: 5}">
           <div style="height: 56px;font-size: 40px;font-weight: 600;color: #FFFFFF;line-height: 56px;">
             我们的重点是什么？
           </div>
         </el-col>
         <el-col :xs="{span: 10, push: 6}" :sm="{span: 10, push: 6}" :md="{span: 10, push: 6}"
-                :lg="{span: 6, push: 9}" :xl="{span: 6, push: 9}">
+                :lg="{span: 8, push: 6}" :xl="{span: 6, push: 9}">
           <div style="padding-bottom: 35px">
             <div
               style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
