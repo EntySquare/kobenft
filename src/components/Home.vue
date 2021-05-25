@@ -225,16 +225,457 @@
         </el-col>
       </el-row>
     </div>
-    <div style="color: green">---------------------------分割线-------------------------</div>
+    <div style="width: 100%;height: 27.29vw;min-height: 320px">
+      <img src="@/assets/home_dunk.png" style="height: auto;width: 100%;z-index: -1;position:absolute;min-height: 320px">
+      <el-row :gutter="10">
+        <div style="height: 3.29vw;">
+        </div>
+        <el-col :xs="1" :sm="1" :md="2" :lg="3" :xl="4">
+          <div class="grid-content bg-purple"></div>
+        </el-col>
+        <el-col :xs="23" :sm="22" :md="20" :lg="19" :xl="18">
+          <div id="id_text_72px_1"
+               style="font-size: 48px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            由致敬Kobe Bryant的区块链
+          </div>
+          <div id="id_text_72px_2"
+               style="font-size: 48px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            开发者创立
+          </div>
+          <div
+            style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+            现在，我们邀请每个人加入社区。走进全球Kobe Bryant球迷的内心世界，感受曼巴精神的无尽力量。
+          </div>
+          <div style="height: 2.29vw;"></div>
+          <div
+            style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;float: left;"
+            align="right">
+            加入社区&nbsp;
+          </div>
+          <div style="">
+            <img src="@/assets/home_pinkArrow.png" style="height: 50px;width: 50px;margin: -13px 0px 0px 11px">
+          </div>
+        </el-col>
+        <el-col :xs="0" :sm="0" :md="2" :lg="2" :xl="2">
+          <div class="grid-content bg-purple"></div>
+        </el-col>
+        <el-col :xs="0" :sm="1" :md="2" :lg="2" :xl="2">
+          <div class="grid-content bg-purple-light"></div>
+        </el-col>
+      </el-row>
+    </div>
+
+    <!-- 什么是kbn token -->
+    <!--    <div style="width: 100%;height: 41.97vw;background: black">-->
+    <div style="width: 100%;height: 800px;background: black">
+      <el-row :gutter="10">
+        <el-col :xs="5" :sm="5" :md="13" :lg="13" :xl="13">  <div class="grid-content bg-purple-light"></div></el-col>
+        <el-col :xs="17" :sm="17" :md="8" :lg="8" :xl="8">
+          <img src="@/assets/home_decorative.png" style="height: auto;width: 100%;max-width: 800px">
+        </el-col>
+      </el-row>
+      <div style="height: 10px"></div>
+      <el-row :gutter="10">
+        <el-col :xs="1" :sm="1" :md="1" :lg="1" :xl="3">
+          <div class="grid-content bg-purple"></div>
+        </el-col>
+        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="11" :lg="11" :xl="{span: 20,offset:4,}">
+          <div style="font-size: 72px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #E92F75;margin-top: -30px">
+            什么是 KBN Token
+          </div>
+        </el-col>
+        <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
+          <div class="grid-content bg-purple"></div>
+        </el-col>
+        <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
+          <div class="grid-content bg-purple"></div>
+        </el-col>
+        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="11" :lg="11" :xl="{span: 20,offset:4,}">
+          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            KBN Token是一种去中心化的NFT资产，旨在成为娱乐交互和文化的通用支付方式。独特的加密经济设计使其成为价值存储的理想方式。
+            <div style="height: 5px"></div>
+            KBN Token不仅具有存储价值，还可以执行智能合约及艺术、影视、音乐、文化、游戏都NFT化。并在所有社会创造活动中都具有可衡量和可转让的价值。
+            <div style="height: 5px"></div>
+            随着网络的增长和价值创造而扩展，激励生态中各种角色，保证协议正常运转
+          </div>
+        </el-col>
+        <el-col :xs="0" :sm="0" :md="1" :lg="1" :xl="3">
+          <div class="grid-content bg-purple"></div>
+        </el-col>
+      </el-row>
+    </div>
+    <!-- 彩色扇形图 -->
+    <div style="width: 100%;height: 45.94vw;max-height: 785px;min-height: 850px;">
+      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: -1;min-height: 850px;position:absolute;background: black">
+      <el-row>
+        <el-col :xs="{span: 23, push: 1 }" :sm="{span: 22, push: 2 }" :md="{span: 21, push: 1 }" :lg="{span: 21, push: 3 }" :xl="{span: 20, push: 4 }">
+          <div style="height: 2.94vw;"></div>
+          <div style="font-size: 32px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            KBN代币
+          </div>
+          <div style="height: 1.94vw;"></div>
+          <div style="font-size: 16px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            KBN Token是基于以太坊 ERC721协议生态系统中用作娱乐交互和文化的治理代币
+          </div>
+          <div style="height: 1.94vw;"></div>
+        </el-col>
+        <div style="height: 10px"></div>
+        <!--            :xs="{span: 24, offset: 0}" :xl="{span: 8, push: 4}"-->
+        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}" :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:2, push: 2}"
+                style="max-width:700px;max-height: 385px;min-width: 445px">
+          <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
+            <div style="height: 40px"></div>
+            <el-row :gutter="20">
+              <el-col :span="11" :offset="1" style="font-size: 16px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+                <p style="padding-bottom: 15px;">上线日期：2021年第二季度</p>
+                <p style="padding-bottom: 15px;">代币价格：$ 1</p>
+                <p style="padding-bottom: 15px;">发行数：100,000,000</p>
+                <p style="padding-bottom: 15px;">初始交易所发行量：50,000,000</p>
+                <p style="padding-bottom: 15px;">最低交易金额：0.01</p>
+              </el-col>
+              <el-col :span="11" :offset="1" style="font-size: 16px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+                <p style="padding-bottom:   15px;">首轮私募的4％</p>
+                <p style="padding-bottom: 15px;">第二轮私募6％</p>
+                <p style="padding-bottom: 15px;">治理委员会10%</p>
+                <p style="padding-bottom: 15px;">生态系统3%</p>
+                <p style="padding-bottom: 15px;">团队2%</p>
+                <p style="padding-bottom: 15px;">市场：75％</p>
+              </el-col>
+            </el-row>
+          </div>
+          <div style="height: 1.94vw;"></div>
+        </el-col>
+        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, offset:1, push: 1}" :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
+                style="max-width:700px;max-height: 385px;min-width: 445px">
+          <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
+            <div style="font-size: 20px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
+              KBN 分配计划
+            </div>
+            <el-row>
+              <el-col :span="16" :offset="4">
+                <div style="padding: 10px 50px 0px 50px">
+                  <img src="@/assets/home_Fanchart.png" style="height: 100%;width: 100%;max-width:250px;
+                      padding: 12px 13px 14px 25px">
+                </div>
+                <div style="padding: 00px 0px 0px 85px">
+                  <tr style="width: 100%">
+                    <td >
+                      <div style="width: 8px;height: 8px;background: #6040FC;border-radius: 18px;"></div>
+                    </td>
+                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;私募</div>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td>
+                      <div style="width: 8px;height: 8px;background: #00FFE1;border-radius: 18px;"></div>
+                    </td>
+                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;治理</div>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td>
+                      <div style="width: 8px;height: 8px;background: #FF9B26;border-radius: 18px;"></div>
+                    </td>
+                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;生态</div>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td>
+                      <div style="width: 8px;height: 8px;background: #FF4060;border-radius: 18px;"></div>
+                    </td>
+                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;团队</div>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td>
+                      <div style="width: 8px;height: 8px;background: #36CFA2;border-radius: 18px;"></div>
+                    </td>
+                    <div style="font-size: 12px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">&nbsp;市场</div>
+                    <td>
+                      &nbsp;
+                    </td>
+                  </tr>
+                </div>
+              </el-col>
+            </el-row>
+          </div>
+          <div style="height: 1.94vw;"></div>
+        </el-col>
+      </el-row>
+    </div>
+
+    <div style="width: 100%;height: 810px;background: black;">
+      <el-row :gutter="10">
+        <div style="height: 30px"></div>
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 11,offset:1,}" :lg="{span: 8,offset:3}" :xl="{span: 8,offset:3}">
+          <div style="font-size: 72px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #E92F75;">
+            第一次完全
+            <div></div>
+            真正的
+            <div></div>
+            NFT资产
+          </div>
+        </el-col>
+
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 11,offset:0}" :lg="{span: 8,offset:3}" :xl="{span: 8,offset:3}">
+          <div class="hidden-sm-and-down">
+            <div style="height: 180px"></div>
+          </div>
+          <div style="height: 20px"></div>
+          <div style="background: #1E1E1E;width: 100%;height: 136px">
+            <div style="padding: 32px">
+              <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+                KBN Token用途是什么?
+              </div>
+              <div style="height: 20px"></div>
+              <div style="font-size: 14px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">
+                我们的代币用于社区治理，用户可以参与社区提案和投票决议，并获得红利。
+              </div>
+            </div>
+          </div>
+          <div style="height: 20px"></div>
+          <div style="background: #1E1E1E;width: 100%;height: 136px">
+            <div style="padding: 32px">
+              <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+                如何购买KBN Token？
+              </div>
+              <div style="height: 20px"></div>
+              <div style="font-size: 14px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">
+                Uniswap链接在这里：<span style="color: #00FFE1">Uniswap</span>
+              </div>
+            </div>
+          </div>
+          <div style="height: 20px"></div>
+          <div style="background: #1E1E1E;width: 100%;height: 136px">
+            <div style="padding: 32px">
+              <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+                KBN Token合约地址是什么？
+              </div>
+              <div style="height: 20px"></div>
+              <div style="font-size: 14px;font-family: PingFang-SC-Regular, PingFang-SC;font-weight: 400;color: #FFFFFF;">
+                以太坊主网上的代币合约地址：
+              </div>
+              <div style="height: 2px"></div>
+              <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #00FFE1;">
+                0xf30547ff2Df1F1CBE5C8DD758B3dd098C856e38f
+              </div>
+            </div>
+          </div>
+        </el-col>
+      </el-row>
+
+    </div>
+    <div style="width: 100%;height: 450px;background: linear-gradient(298deg, #FF5045 0%, #E3287F 43%, #E32780 100%)">
+      <div class="hidden-sm-and-down">
+        <div style="height: 100px"></div>
+      </div>
+      <div style="height: 70px"></div>
+      <el-row :gutter="40">
+
+        <el-col :xs="{span: 10,offset:2} " :sm="{span: 10,offset:2} " :md="{span: 5,offset:2,}" :lg="{span: 5,offset:2,}" :xl="{span: 4,offset:4,}">
+          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            2020
+          </div>
+          <div class="hidden-sm-and-down">
+            <div style="height: 30px">
+              <div style="color: #FFFFFF">●</div>
+            </div>
+          </div>
+          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            Q1～Q2
+          </div>
+          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            - 项目启动，组建团队
+            <p></p>
+            - 发布KobeNFT线路图
+            <p></p>
+            &nbsp;
+          </div>
+        </el-col>
+        <el-col :xs="{span: 10,offset:0,}" :sm="{span: 10,offset:0,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
+          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            2020
+          </div>
+          <div class="hidden-sm-and-down">
+            <div style="height: 30px">
+              <div style="color: #FFFFFF">●</div>
+            </div>
+          </div>
+          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            Q3～Q4
+          </div>
+          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            - 设计架构和共识
+            <p></p>
+            - 发布代币经济系统
+            <p></p>
+            - 获得天使轮投资
+            <p></p>
+            &nbsp;
+          </div>
+        </el-col>
+        <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:2,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
+          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            2021
+          </div>
+          <div class="hidden-sm-and-down">
+            <div style="height: 30px">
+              <div style="color: #FFFFFF">●</div>
+            </div>
+          </div>
+          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            Q1～Q2
+          </div>
+          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            - 发布内部产品测试
+            <p></p>
+            - 开放项目社群
+            <p></p>
+            - 上线交易所交易
+            <p></p>
+            &nbsp;
+          </div>
+        </el-col>
+        <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 5,offset:0 }" :lg="{span: 5,offset:0 }" :xl="{span: 4,offset:0 }">
+          <div style="font-size: 24px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            2021
+          </div>
+          <div class="hidden-sm-and-down">
+            <div style="height: 30px">
+              <div style="color: #FFFFFF">●</div>
+            </div>
+          </div>
+          <div style="font-size: 18px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            Q3～Q4
+          </div>
+          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+            - 发布社区治理
+            <p></p>
+            - 推出NFT市场
+            <p></p>
+            - 质押挖矿
+            <p></p>
+            &nbsp;
+          </div>
+        </el-col>
+      </el-row>
+      <div class="hidden-sm-and-down">
+        <el-row :gutter="40">
+          <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }" :lg="{span: 17,offset:2 }" :xl="{span: 13,offset:4 }">
+            <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -125px 0px 0px 10px">
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+    </div>
+
+    <div  style="width: 100%;height: 690px;background: black">
+      <div style="height: 50px"></div>
+      <el-row :gutter="10">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:1,}" :lg="{span: 10,offset:2,}" :xl="{span: 10,offset:2,}"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}" :lg="{span: 10,offset:0,}" :xl="{span: 10,offset:0,}">
+          <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
+          <div style="font-size: 14px;font-family: Skycoin-Regular, Skycoin;font-weight: 400;color: #FFFFFF;">
+            KobeNFT是一个来自分布式计算、金融交易、区块链共识设计和跨链等
+            <p></p>
+            各领域经验丰富的团队。我们使用企业级硬件为PoS协议运行高度安全
+            <p></p>
+            可靠的节点，以确保最大的效率和安全性。
+            <div style="height: 70px"></div>
+            <div style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              联系我们
+            </div>
+            <div style="height: 20px;font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              bd@kobeNFT.io
+            </div>
+          </div>
+        </el-col>
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}" :lg="{span: 3,offset:2,}" :xl="{span: 2,offset:4,}">
+          <div id="introduction_to_the_bottom_red" style="margin: -227px 0px 0px 0px">
+            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              简介
+              <span style="float:right ">+</span>
+              <div style="height: 20px"></div>
+            </div>
+            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              特性
+              <span style="float:right ">+</span>
+              <div style="height: 20px"></div>
+            </div>
+            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              代币
+              <span style="float:right ">+</span>
+              <div style="height: 20px"></div>
+            </div>
+            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              线路图
+              <span style="float:right ">+</span>
+              <div style="height: 20px"></div>
+            </div>
+            <div style="font-size: 28px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;">
+              社区
+              <span style="float:right ">+</span>
+              <div style="height: 20px"></div>
+            </div>
+          </div>
+        </el-col>
+      </el-row>
+
+      <div class="hidden-sm-and-down">
+        <div style="height: 260px"></div>
+      </div>
+
+      <div style="width: 100%;height: 1px;background: #222222;">
+      </div>
+      <div style="height:  20px"></div>
+      <el-row :gutter="10">
+
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}" :lg="{span: 8,offset:2,}" :xl="{span: 8,offset:4,}">
+          <div id="bottom_contact" style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;line-height: 20px;">
+            © 2021 KobeNFT All rights reserved
+          </div>
+        </el-col>
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 5,offset:8,}" :lg="{span: 4,offset:6,}" :xl="{span: 4,offset:3}">
+          <img src="@/assets/home_feixin_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+          &nbsp;&nbsp;&nbsp;
+          <img src="@/assets/home_twitter_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+          &nbsp;&nbsp;&nbsp;
+          <img src="@/assets/home_facebook_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+
+        </el-col>
+      </el-row>
+    </div>
   </div>
 
 </template>
 
 <script>
+window.onload = function () {
+  Adaptation()
+}
+window.onresize = function () {
+  Adaptation()
+}
+
+function Adaptation () {
+  var docWidth = document.body.clientWidth.valueOf()
+  console.log('111')
+  if (docWidth >= 992) {
+    document.getElementById('introduction_to_the_bottom_red').style.margin = '-227px 0px 0px 0px'
+    document.getElementById('bottom_contact').style.margin = '0px'
+    document.getElementById('bottom_contact').style.position = ''
+    document.getElementById('bottom_contact').style.top = ''
+  } else {
+    document.getElementById('introduction_to_the_bottom_red').style.margin = '0px'
+    document.getElementById('bottom_contact').style.position = 'absolute'
+    document.getElementById('bottom_contact').style.top = '45px'
+  }
+}
 
 export default {
   name: 'Home'
 }
+
 </script>
 
 <style scoped>
@@ -409,5 +850,23 @@ export default {
   line-height: 20px;
   margin-left: -60px;
   padding-bottom: 160px;
+}
+
+/*备注g*/
+.el-col {
+  /*border-radius: 4px;*/
+}
+
+.bg-purple {
+  background: transparent;
+}
+
+.bg-purple-light {
+  background: transparent;
+}
+
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
 }
 </style>
