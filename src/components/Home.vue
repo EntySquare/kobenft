@@ -194,8 +194,8 @@
       style="width: 100%; height: 332px; background: linear-gradient(270deg, #FF5045 0%, #E3287F 54%, #E32780 100%);">
       <el-row style="height: 90px"></el-row>
       <el-row>
-        <el-col :xs="{span: 8, push: 2}" :sm="{span: 8, push: 4}" :md="{span: 8, push: 4}"
-                :lg="{span: 8, push: 4}" :xl="{span: 6, push: 5}">
+        <el-col :xs="{span: 8, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
+                :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}">
           <div style="height: 56px;font-size: 40px;font-weight: 600;color: #FFFFFF;line-height: 56px;">
             我们的重点是什么？
           </div>
@@ -231,10 +231,10 @@
       <el-row :gutter="10">
         <div style="height: 3.29vw;">
         </div>
-        <el-col :xs="1" :sm="1" :md="2" :lg="3" :xl="4">
+        <el-col :xs="1" :sm="3" :md="1" :lg="4" :xl="4">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="23" :sm="22" :md="20" :lg="19" :xl="18">
+        <el-col :xs="23" :sm="21" :md="20" :lg="18" :xl="18">
           <div id="id_text_72px_1"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
             由致敬Kobe Bryant的区块链
@@ -279,10 +279,10 @@
       </el-row>
       <div style="height: 10px"></div>
       <el-row :gutter="10">
-        <el-col :xs="1" :sm="1" :md="1" :lg="1" :xl="3">
+        <el-col :xs="1" :sm="1" :md="1" :lg="2" :xl="3">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="11" :lg="11" :xl="{span: 20,offset:4,}">
+        <el-col :xs="{span: 20,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:0,}" :lg="11" :xl="{span: 20,offset:4,}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;margin-top: -30px">
             什么是 KBN Token
           </div>
@@ -293,12 +293,12 @@
         <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="11" :lg="11" :xl="{span: 20,offset:4,}">
+        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:1,}" :lg="{span: 11,offset:4,}" :xl="{span: 20,offset:4,}">
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             KBN Token是一种去中心化的NFT资产，旨在成为娱乐交互和文化的通用支付方式。独特的加密经济设计使其成为价值存储的理想方式。
-            <div style="height: 5px"></div>
+            <div style="height: 15px"></div>
             KBN Token不仅具有存储价值，还可以执行智能合约及艺术、影视、音乐、文化、游戏都NFT化。并在所有社会创造活动中都具有可衡量和可转让的价值。
-            <div style="height: 5px"></div>
+            <div style="height: 15px"></div>
             随着网络的增长和价值创造而扩展，激励生态中各种角色，保证协议正常运转
           </div>
         </el-col>
@@ -312,8 +312,8 @@
       <img src="@/assets/home_colour.png"
            style="height: auto;width: 100%;z-index: -1;min-height: 850px;position:absolute;background: black">
       <el-row>
-        <el-col :xs="{span: 23, push: 1 }" :sm="{span: 22, push: 2 }" :md="{span: 21, push: 1 }"
-                :lg="{span: 21, push: 3 }" :xl="{span: 20, push: 4 }">
+        <el-col :xs="{span: 23, push: 1 }" :sm="{span: 20, push: 4 }" :md="{span: 21, push: 1 }"
+                :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
           <div style="height: 2.94vw;"></div>
           <div style="font-size: 32px;font-weight: 500;color: #FFFFFF;">
             KBN代币
@@ -327,7 +327,7 @@
         <div style="height: 10px"></div>
         <!--            :xs="{span: 24, offset: 0}" :xl="{span: 8, push: 4}"-->
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}"
-                :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:2, push: 2}"
+                :lg="{span: 9, offset:2, push: 2}" :xl="{span: 8, offset:2, push: 2}"
                 style="max-width:700px;max-height: 385px;min-width: 445px">
           <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
             <div style="height: 40px"></div>
@@ -351,7 +351,7 @@
           </div>
           <div style="height: 1.94vw;"></div>
         </el-col>
-        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, offset:1, push: 1}"
+        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 10, offset:1, push: 1}"
                 :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
                 style="max-width:700px;max-height: 385px;min-width: 445px">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
@@ -414,7 +414,7 @@
     <div style="width: 100%;height: 810px;background: black;">
       <el-row :gutter="10">
         <div style="height: 30px"></div>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 11,offset:1,}" :lg="{span: 8,offset:3}" :xl="{span: 8,offset:3}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:4,}" :md="{span: 11,offset:1,}" :lg="{span: 7,offset:4}" :xl="{span: 7,offset:4}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;">
             第一次完全
             <div></div>
@@ -424,7 +424,7 @@
           </div>
         </el-col>
 
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 11,offset:0}" :lg="{span: 8,offset:3}" :xl="{span: 8,offset:3}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 16,offset:4,}" :md="{span: 11,offset:0}" :lg="{span: 8,offset:3}" :xl="{span: 8,offset:3}">
           <div class="hidden-sm-and-down">
             <div style="height: 180px"></div>
           </div>
@@ -479,7 +479,7 @@
       <div style="height: 70px"></div>
       <el-row :gutter="40">
 
-        <el-col :xs="{span: 10,offset:2} " :sm="{span: 10,offset:2} " :md="{span: 5,offset:2,}" :lg="{span: 5,offset:2,}" :xl="{span: 4,offset:4,}">
+        <el-col :xs="{span: 10,offset:2} " :sm="{span: 10,offset:4} " :md="{span: 5,offset:2,}" :lg="{span: 5,offset:4,}" :xl="{span: 4,offset:4,}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2020
           </div>
@@ -521,7 +521,7 @@
             &nbsp;
           </div>
         </el-col>
-        <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:2,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
+        <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:4,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
@@ -568,7 +568,7 @@
       </el-row>
       <div class="hidden-sm-and-down">
         <el-row :gutter="40">
-          <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }" :lg="{span: 17,offset:2 }" :xl="{span: 13,offset:4 }">
+          <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }" :lg="{span: 17,offset:4 }" :xl="{span: 13,offset:4 }">
             <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -118px 0px 0px 10px">
             </div>
           </el-col>
@@ -580,7 +580,7 @@
       <div style="height: 50px"></div>
       <el-row :gutter="10">
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:1,}" :lg="{span: 10,offset:2,}" :xl="{span: 10,offset:2,}"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}" :lg="{span: 10,offset:0,}" :xl="{span: 10,offset:0,}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}" :lg="{span: 9,offset:3,}" :xl="{span: 10,offset:0,}">
           <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
           <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
             KobeNFT是一个来自分布式计算、金融交易、区块链共识设计和跨链等
@@ -597,7 +597,7 @@
             </div>
           </div>
         </el-col>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}" :lg="{span: 3,offset:2,}" :xl="{span: 2,offset:4,}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}" :lg="{span: 3,offset:4,}" :xl="{span: 2,offset:4,}">
           <div id="introduction_to_the_bottom_red" style="margin: -227px 0px 0px 0px">
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
               简介
@@ -634,15 +634,15 @@
 
       <div style="width: 100%;height: 1px;background: #222222;">
       </div>
-      <div style="height:  20px"></div>
+      <div style="height:  35px"></div>
       <el-row :gutter="10">
 
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}" :lg="{span: 8,offset:2,}" :xl="{span: 8,offset:4,}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}" :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}">
           <div id="bottom_contact" style="font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
             © 2021 KobeNFT All rights reserved
           </div>
         </el-col>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 5,offset:8,}" :lg="{span: 4,offset:6,}" :xl="{span: 4,offset:3}">
+        <el-col id="bottom3png" :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 5,offset:8,}" :lg="{span: 4,offset:3,}" :xl="{span: 4,offset:3}">
           <img src="@/assets/home_feixin_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
           &nbsp;&nbsp;&nbsp;
           <img src="@/assets/home_twitter_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
@@ -672,10 +672,12 @@ function Adaptation () {
     document.getElementById('bottom_contact').style.margin = '0px'
     document.getElementById('bottom_contact').style.position = ''
     document.getElementById('bottom_contact').style.top = ''
+    document.getElementById('bottom3png').style.margin = ''
   } else {
     document.getElementById('introduction_to_the_bottom_red').style.margin = '0px'
     document.getElementById('bottom_contact').style.position = 'absolute'
     document.getElementById('bottom_contact').style.top = '45px'
+    document.getElementById('bottom3png').style.margin = '-12px 2vm 0px'
   }
 }
 
