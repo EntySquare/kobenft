@@ -51,10 +51,10 @@
                 :xl="{span: 8, push: 4}">
           <div
             style="width: 336px;height: 78px;font-size: 56px;font-weight: 600;color: #E92F75;line-height: 78px; padding-bottom: 30px">
-            曼巴精神不熄
+            {{$t('m.m1')}}
           </div>
           <div style="width: 425px;height: 45px;font-size: 32px;font-weight: 600;color: #FFFFFF;line-height: 45px;">
-            全球首个去中心化NFT纪念币
+            {{$t('m.m2')}}
           </div>
         </el-col>
         <el-col :xs="{span: 14, push: 5}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
@@ -71,7 +71,8 @@
       <el-row type="flex" justify="center">
         <el-col span="12" pull="2">
           <div style="width: 427px;height: 200px;font-size: 72px;font-weight: 600;color: #E92F75;line-height: 100px;">
-            Kobe Bryant 文化遗产
+            {{$t('m.m3')}}
+            {{$t('m.m4')}}
           </div>
         </el-col>
       </el-row>
@@ -80,18 +81,16 @@
                 :xl="{span: 6, push: 5}">
           <div
             style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 140px">
-            Kobe Bryant是一个传奇人物，是坚韧、热爱、乐观、无谓和纪律的完美体现。
+            {{$t('m.m5')}}
           </div>
           <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 24px">
-            “永远要强过昨天的自己，这是一场无尽的征程。”
-            曼巴精神的内核，就在于不断追求更好的自己而努力，它就是一种生活的态度。愿曼巴精神在我们每一个人中继续前进。以KBN Token纪念Kobe Bryant，更将曼巴精神的烙印传遍每个角落。
+            {{$t('m.m6')}}
           </div>
           <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 24px">
-            在洛杉矶湖人队的20年间，他赢得了五次NBA冠军，18次入选全明星，15次入选了NBA最佳阵容，2008年NBA最有价值球员（MVP）和两次入围NBA总决赛MVP。
+            {{$t('m.m7')}}
           </div>
           <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 50px">
-            Kobe Bryant社区是尊重，欣赏，支持和热爱Kobe Bryant的人们的社区。在某种程度上，我们所有人都受到了科比·布莱恩特（Kobe
-            Bryant）的启发。因此，我们在这里分享他的旅程，故事和心态。现在，让我们继续发扬他的灵感和动力，使全世界都知道，我们总是可以像他一生所证明的那样，为追求最好而努力。
+            {{$t('m.m8')}}
           </div>
         </el-col>
         <el-col :xs="{span: 16, push: 7}" :sm="{span: 16, push: 7}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 7}"
@@ -109,40 +108,40 @@
                   :lg="{span: 6, push: 4}" :xl="{span: 6, push: 4}">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon1.png')"></el-image>
-              <div class="iconFont">坚韧</div>
+              <div class="iconFont">{{$t('m.m9')}}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">塑就强大内心</div>
-              <div>永不屈服，以强大的内心应对每一个挫折与挑战，并从失败中强势归来。在科比20年的职业生涯中，坚韧的内心给予他不懈的动力，在追逐伟大的征程中不断前进。</div>
+              <div style="margin-bottom: 24px">{{$t('m.m10')}}</div>
+              <div>{{$t('m.m11')}}</div>
             </div>
             <div style="height: 64px"></div>
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon3.png')"></el-image>
-              <div class="iconFont">乐观</div>
+              <div class="iconFont">{{$t('m.m12')}}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">把挫折视作机遇</div>
-              <div>不论眼前面临多大的挑战，始终保持自信和积极的态度。乐观是自信的一种体现，只要愿意付出努力，最终一定会收获回报。</div>
+              <div style="margin-bottom: 24px">{{$t('m.m13')}}</div>
+              <div>{{$t('m.m14')}}</div>
             </div>
           </el-col>
           <el-col :xs="{span: 13, push: 4}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
                   :lg="{span: 6, push: 8}" :xl="{span: 6, push: 8}">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon2.png')"></el-image>
-              <div class="iconFont">热爱</div>
+              <div class="iconFont">{{$t('m.m15')}}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">执着造就成功</div>
-              <div>用不懈的坚持和奉献，让自己全身心投入到目标当中。对他来说，热爱就是曼巴精神的基石。激励着他们努力奋进，激发自己的全部潜能。</div>
+              <div style="margin-bottom: 24px">{{$t('m.m16')}}</div>
+              <div>{{$t('m.m17')}}</div>
             </div>
             <div style="height: 64px"></div>
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon4.png')"></el-image>
-              <div class="iconFont">无谓</div>
+              <div class="iconFont">{{$t('m.m18')}}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">无谓失败</div>
-              <div>尝试新鲜事物，即使失败后仍敢于再次发起挑战的勇气。失败不可怕，即使自知身处劣势，仍抱持永不放弃的精神，一次又一次地继续挑战。想要成为最出色的自己，就绝对不能畏惧失败。</div>
+              <div style="margin-bottom: 24px">{{$t('m.m19')}}</div>
+              <div>{{$t('m.m20')}}</div>
             </div>
           </el-col>
         </el-row>
@@ -155,7 +154,7 @@
                     :xl="{span: 1, push: 2}">
               <div
                 style="width: 64px;height: 32px;font-size: 32px;font-weight: 500;color: #FFFFFF;line-height: 32px; margin-bottom: 77px">
-                特性
+                {{$t('m.m21')}}
               </div>
             </el-col>
           </el-row>
@@ -167,24 +166,24 @@
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
               </div>
-              <div class="iconTitle">可扩展</div>
-              <div class="iconText2">KobeNFT使用其自己独特的分片技术解决了可扩展性普遍问题，建立完全分布式的支付系统</div>
+              <div class="iconTitle">{{$t('m.m22')}}</div>
+              <div class="iconText2">{{$t('m.m23')}}</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 6}" :xl="{span: 4, push: 6}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon6.png')"></el-image>
               </div>
-              <div class="iconTitle">安全性</div>
-              <div class="iconText2">基于智能合约的业务逻辑可持续且透明地在网络上分配所有价值。所有交易信息一成不变地存储在公共区块链上</div>
+              <div class="iconTitle">{{$t('m.m24')}}</div>
+              <div class="iconText2">{{$t('m.m25')}}</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 10}" :xl="{span: 4, push: 8}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon7.png')"></el-image>
               </div>
-              <div class="iconTitle">可访问</div>
-              <div class="iconText2">利用细分的网络，KobeNFT能够以分散的方式处理交易，在整个网络中整合全网NFT资产</div>
+              <div class="iconTitle">{{$t('m.m26')}}</div>
+              <div class="iconText2">{{$t('m.m27')}}</div>
             </el-col>
           </el-row>
         </div>
@@ -197,7 +196,7 @@
         <el-col :xs="{span: 8, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
                 :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}">
           <div style="height: 56px;font-size: 40px;font-weight: 600;color: #FFFFFF;line-height: 56px;">
-            我们的重点是什么？
+            {{$t('m.m28')}}
           </div>
         </el-col>
         <el-col :xs="{span: 10, push: 6}" :sm="{span: 10, push: 6}" :md="{span: 10, push: 6}"
@@ -205,21 +204,21 @@
           <div style="padding-bottom: 35px">
             <div
               style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
-              不可替代令牌(NFT)
+              {{$t('m.m29')}}
             </div>
             <div
               style="width: 210px;height: 20px;font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
-              使现实世界和数字资产更易于访问
+              {{$t('m.m30')}}
             </div>
           </div>
           <div>
             <div
               style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
-              去中心化金融
+              {{$t('m.m31')}}
             </div>
             <div
               style="width: 210px;height: 20px;font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
-              使用户能够在开放的全球环境下与传统资产和数字资产进行交互。
+              {{$t('m.m32')}}
             </div>
           </div>
         </el-col>
@@ -237,21 +236,21 @@
         <el-col :xs="23" :sm="21" :md="20" :lg="18" :xl="18">
           <div id="id_text_72px_1"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
-            由致敬Kobe Bryant的区块链
+            {{$t('m.m33')}}
           </div>
           <div id="id_text_72px_2"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
-            开发者创立
+            {{$t('m.m34')}}
           </div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
-            现在，我们邀请每个人加入社区。走进全球Kobe Bryant球迷的内心世界，感受曼巴精神的无尽力量。
+            {{$t('m.m35')}}
           </div>
           <div style="height: 2.29vw;"></div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;float: left;"
             align="right">
-            加入社区&nbsp;
+            {{$t('m.m36')}}&nbsp;
           </div>
           <div style="">
             <img src="@/assets/home_pinkArrow.png" style="height: 50px;width: 50px;margin: -13px 0px 0px 11px">
@@ -284,7 +283,7 @@
         </el-col>
         <el-col :xs="{span: 20,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:0,}" :lg="11" :xl="{span: 20,offset:4,}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;margin-top: -30px">
-            什么是 KBN Token
+            {{$t('m.m37')}}&nbsp;
           </div>
         </el-col>
         <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
@@ -295,11 +294,11 @@
         </el-col>
         <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:1,}" :lg="{span: 11,offset:4,}" :xl="{span: 20,offset:4,}">
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-            KBN Token是一种去中心化的NFT资产，旨在成为娱乐交互和文化的通用支付方式。独特的加密经济设计使其成为价值存储的理想方式。
+            {{$t('m.m38')}}&nbsp;
             <div style="height: 15px"></div>
-            KBN Token不仅具有存储价值，还可以执行智能合约及艺术、影视、音乐、文化、游戏都NFT化。并在所有社会创造活动中都具有可衡量和可转让的价值。
+            {{$t('m.m39')}}&nbsp;
             <div style="height: 15px"></div>
-            随着网络的增长和价值创造而扩展，激励生态中各种角色，保证协议正常运转
+            {{$t('m.m40')}}&nbsp;
           </div>
         </el-col>
         <el-col :xs="0" :sm="0" :md="1" :lg="1" :xl="3">
@@ -316,11 +315,11 @@
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
           <div style="height: 2.94vw;"></div>
           <div style="font-size: 32px;font-weight: 500;color: #FFFFFF;">
-            KBN代币
+            {{$t('m.m41')}}&nbsp;
           </div>
           <div style="height: 1.94vw;"></div>
           <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;">
-            KBN Token是基于以太坊 ERC721协议生态系统中用作娱乐交互和文化的治理代币
+            {{$t('m.m42')}}&nbsp;
           </div>
           <div style="height: 1.94vw;"></div>
         </el-col>
@@ -333,19 +332,19 @@
             <div style="height: 40px"></div>
             <el-row :gutter="20">
               <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
-                <p style="padding-bottom: 15px;">上线日期：2021年第二季度</p>
-                <p style="padding-bottom: 15px;">代币价格：$ 1</p>
-                <p style="padding-bottom: 15px;">发行数：100,000,000</p>
-                <p style="padding-bottom: 15px;">初始交易所发行量：50,000,000</p>
-                <p style="padding-bottom: 15px;">最低交易金额：0.01</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m43')}}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m44')}}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m45')}}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m46')}}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m47')}}&nbsp;</p>
               </el-col>
               <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
-                <p style="padding-bottom:   15px;">首轮私募的4％</p>
-                <p style="padding-bottom: 15px;">第二轮私募6％</p>
-                <p style="padding-bottom: 15px;">治理委员会10%</p>
-                <p style="padding-bottom: 15px;">生态系统3%</p>
-                <p style="padding-bottom: 15px;">团队2%</p>
-                <p style="padding-bottom: 15px;">市场：75％</p>
+                <p style="padding-bottom:   15px;">{{$t('m.m48')}}</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m49')}}</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m50')}}</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m51')}}</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m52')}}</p>
+                <p style="padding-bottom: 15px;">{{$t('m.m53')}}</p>
               </el-col>
             </el-row>
           </div>
@@ -356,7 +355,7 @@
                 style="max-width:700px;max-height: 385px;min-width: 445px">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
             <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
-              KBN 分配计划
+              {{$t('m.m54')}}
             </div>
             <el-row>
               <el-col :span="16" :offset="4">
@@ -369,35 +368,35 @@
                     <td >
                       <div style="width: 8px;height: 8px;background: #6040FC;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;私募</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m55')}}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #00FFE1;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;治理</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m56')}}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #FF9B26;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;生态</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m57')}}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #FF4060;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;团队</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m58')}}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #36CFA2;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;市场</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m59')}}</div>
                     <td>
                       &nbsp;
                     </td>
@@ -416,11 +415,11 @@
         <div style="height: 30px"></div>
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:4,}" :md="{span: 11,offset:1,}" :lg="{span: 7,offset:4}" :xl="{span: 7,offset:4}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;">
-            第一次完全
+            {{$t('m.m60')}}
             <div></div>
-            真正的
+            {{$t('m.m61')}}
             <div></div>
-            NFT资产
+            {{$t('m.m62')}}
           </div>
         </el-col>
 
@@ -432,11 +431,11 @@
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
               <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                KBN Token用途是什么?
+                {{$t('m.m63')}}
               </div>
               <div style="height: 20px"></div>
               <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                我们的代币用于社区治理，用户可以参与社区提案和投票决议，并获得红利。
+                {{$t('m.m64')}}
               </div>
             </div>
           </div>
@@ -444,11 +443,11 @@
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
               <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                如何购买KBN Token？
+                {{$t('m.m65')}}
               </div>
               <div style="height: 20px"></div>
               <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                Uniswap链接在这里：<span style="color: #00FFE1">Uniswap</span>
+                {{$t('m.m66')}}<span style="color: #00FFE1"> {{$t('m.m67')}}</span>
               </div>
             </div>
           </div>
@@ -456,15 +455,15 @@
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
               <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                KBN Token合约地址是什么？
+                {{$t('m.m68')}}
               </div>
               <div style="height: 20px"></div>
               <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                以太坊主网上的代币合约地址：
+                {{$t('m.m69')}}
               </div>
               <div style="height: 2px"></div>
               <div style="font-size: 14px;font-weight: 500;color: #00FFE1;">
-                0xf30547ff2Df1F1CBE5C8DD758B3dd098C856e38f
+                {{$t('m.m70')}}
               </div>
             </div>
           </div>
@@ -492,9 +491,9 @@
             Q1～Q2
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            - 项目启动，组建团队
+            {{$t('m.m71')}}
             <p></p>
-            - 发布KobeNFT线路图
+            {{$t('m.m72')}}
             <p></p>
             &nbsp;
           </div>
@@ -512,11 +511,11 @@
             Q3～Q4
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            - 设计架构和共识
+            {{$t('m.m73')}}
             <p></p>
-            - 发布代币经济系统
+            {{$t('m.m74')}}
             <p></p>
-            - 获得天使轮投资
+            {{$t('m.m75')}}
             <p></p>
             &nbsp;
           </div>
@@ -534,11 +533,11 @@
             Q1～Q2
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            - 发布内部产品测试
+            {{$t('m.m76')}}
             <p></p>
-            - 开放项目社群
+            {{$t('m.m77')}}
             <p></p>
-            - 上线交易所交易
+            {{$t('m.m78')}}
             <p></p>
             &nbsp;
           </div>
@@ -556,11 +555,11 @@
             Q3～Q4
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            - 发布社区治理
+            {{$t('m.m79')}}
             <p></p>
-            - 推出NFT市场
+            {{$t('m.m80')}}
             <p></p>
-            - 质押挖矿
+            {{$t('m.m81')}}
             <p></p>
             &nbsp;
           </div>
@@ -583,44 +582,44 @@
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}" :lg="{span: 9,offset:3,}" :xl="{span: 10,offset:0,}">
           <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
           <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-            KobeNFT是一个来自分布式计算、金融交易、区块链共识设计和跨链等
+            {{$t('m.m82')}}
             <p></p>
-            各领域经验丰富的团队。我们使用企业级硬件为PoS协议运行高度安全
+            {{$t('m.m83')}}
             <p></p>
-            可靠的节点，以确保最大的效率和安全性。
+            {{$t('m.m84')}}
             <div style="height: 70px"></div>
             <div style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
-              联系我们
+              {{$t('m.m85')}}
             </div>
             <div style="height: 20px;font-size: 14px;font-weight: 600;color: #FFFFFF;">
-              bd@kobeNFT.io
+              {{$t('m.m86')}}
             </div>
           </div>
         </el-col>
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}" :lg="{span: 3,offset:4,}" :xl="{span: 2,offset:4,}">
           <div id="introduction_to_the_bottom_red" style="margin: -227px 0px 0px 0px">
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              简介
+              {{$t('m.m87')}}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              特性
+              {{$t('m.m88')}}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              代币
+              {{$t('m.m89')}}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              线路图
+              {{$t('m.m90')}}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              社区
+              {{$t('m.m91')}}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
@@ -655,7 +654,7 @@
   </div>
 
 </template>
-
+<el-radio v-model="theme" label="1">{{$t('common.risk')}}</el-radio>
 <script>
 window.onload = function () {
   Adaptation()
@@ -682,7 +681,36 @@ function Adaptation () {
 }
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  data () {
+    return {
+      starttime: '2020 / 05 / 01',
+      // 倒计时
+      date: '',
+
+      // 完工时间
+      endtime: '2020 / 08 / 31'
+    }
+  },
+  mounted: function () {
+    this.switchLang('zh')
+  },
+  methods: {
+    switchLang (val) {
+      this.$i18n.locale = val // 此处val为 zh 或者 en
+    },
+    countDown () {
+      // 开工时间
+      var startDate = Date.parse(this.getTimeimg)
+      // 完工时间
+      var endDate = Date.parse(this.endtime)
+      var days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000)
+      // alert(days);
+      // return days;
+      this.date = days
+      // console.log(this.date);
+    }
+  }
 }
 
 </script>
