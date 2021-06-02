@@ -655,6 +655,7 @@
 
 </template>
 <el-radio v-model="theme" label="1">{{$t('common.risk')}}</el-radio>
+<!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
 <script>
 window.onload = function () {
   Adaptation()
