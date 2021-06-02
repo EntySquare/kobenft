@@ -409,6 +409,7 @@
         </el-col>
       </el-row>
     </div>
+    <div class="right" style="width: 560px;height: 56px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);border-radius: 7px;"><a href="imtokenv2://navigate/AssetsTab">立即购买</a></div>
 
     <div style="width: 100%;height: 810px;background: black;">
       <el-row :gutter="10">
