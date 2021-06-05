@@ -42,7 +42,22 @@
         <el-col :xs="{span: 2, push: 18}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
                 :xl="{span: 2, push: 2}" style="margin-top: 10px">
           <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>
-          <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>
+<!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
+          <select v-model="languages" @change='getValue'
+            style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none">
+            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                    value="zh">中文
+            </option>
+            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                    value="en">English
+            </option>
+            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                    value="ko" >한국어
+            </option>
+            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                    value="ja">日本語
+            </option>
+          </select>
         </el-col>
       </el-row>
       <el-row style="height: 153px"></el-row>
@@ -51,10 +66,10 @@
                 :xl="{span: 8, push: 4}">
           <div
             style="width: 336px;height: 78px;font-size: 56px;font-weight: 600;color: #E92F75;line-height: 78px; padding-bottom: 30px">
-            {{$t('m.m1')}}
+            {{ $t('m.m1') }}
           </div>
           <div style="width: 425px;height: 45px;font-size: 32px;font-weight: 600;color: #FFFFFF;line-height: 45px;">
-            {{$t('m.m2')}}
+            {{ $t('m.m2') }}
           </div>
         </el-col>
         <el-col :xs="{span: 14, push: 5}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
@@ -71,8 +86,8 @@
       <el-row type="flex" justify="center">
         <el-col span="12" pull="2">
           <div style="width: 427px;height: 200px;font-size: 72px;font-weight: 600;color: #E92F75;line-height: 100px;">
-            {{$t('m.m3')}}
-            {{$t('m.m4')}}
+            {{ $t('m.m3') }}
+            {{ $t('m.m4') }}
           </div>
         </el-col>
       </el-row>
@@ -81,16 +96,16 @@
                 :xl="{span: 6, push: 5}">
           <div
             style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 140px">
-            {{$t('m.m5')}}
+            {{ $t('m.m5') }}
           </div>
           <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 24px">
-            {{$t('m.m6')}}
+            {{ $t('m.m6') }}
           </div>
           <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 24px">
-            {{$t('m.m7')}}
+            {{ $t('m.m7') }}
           </div>
           <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 50px">
-            {{$t('m.m8')}}
+            {{ $t('m.m8') }}
           </div>
         </el-col>
         <el-col :xs="{span: 16, push: 7}" :sm="{span: 16, push: 7}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 7}"
@@ -108,40 +123,40 @@
                   :lg="{span: 6, push: 4}" :xl="{span: 6, push: 4}">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon1.png')"></el-image>
-              <div class="iconFont">{{$t('m.m9')}}</div>
+              <div class="iconFont">{{ $t('m.m9') }}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{$t('m.m10')}}</div>
-              <div>{{$t('m.m11')}}</div>
+              <div style="margin-bottom: 24px">{{ $t('m.m10') }}</div>
+              <div>{{ $t('m.m11') }}</div>
             </div>
             <div style="height: 64px"></div>
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon3.png')"></el-image>
-              <div class="iconFont">{{$t('m.m12')}}</div>
+              <div class="iconFont">{{ $t('m.m12') }}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{$t('m.m13')}}</div>
-              <div>{{$t('m.m14')}}</div>
+              <div style="margin-bottom: 24px">{{ $t('m.m13') }}</div>
+              <div>{{ $t('m.m14') }}</div>
             </div>
           </el-col>
           <el-col :xs="{span: 13, push: 4}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
                   :lg="{span: 6, push: 8}" :xl="{span: 6, push: 8}">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon2.png')"></el-image>
-              <div class="iconFont">{{$t('m.m15')}}</div>
+              <div class="iconFont">{{ $t('m.m15') }}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{$t('m.m16')}}</div>
-              <div>{{$t('m.m17')}}</div>
+              <div style="margin-bottom: 24px">{{ $t('m.m16') }}</div>
+              <div>{{ $t('m.m17') }}</div>
             </div>
             <div style="height: 64px"></div>
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon4.png')"></el-image>
-              <div class="iconFont">{{$t('m.m18')}}</div>
+              <div class="iconFont">{{ $t('m.m18') }}</div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{$t('m.m19')}}</div>
-              <div>{{$t('m.m20')}}</div>
+              <div style="margin-bottom: 24px">{{ $t('m.m19') }}</div>
+              <div>{{ $t('m.m20') }}</div>
             </div>
           </el-col>
         </el-row>
@@ -154,7 +169,7 @@
                     :xl="{span: 1, push: 2}">
               <div
                 style="width: 64px;height: 32px;font-size: 32px;font-weight: 500;color: #FFFFFF;line-height: 32px; margin-bottom: 77px">
-                {{$t('m.m21')}}
+                {{ $t('m.m21') }}
               </div>
             </el-col>
           </el-row>
@@ -166,24 +181,24 @@
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
               </div>
-              <div class="iconTitle">{{$t('m.m22')}}</div>
-              <div class="iconText2">{{$t('m.m23')}}</div>
+              <div class="iconTitle">{{ $t('m.m22') }}</div>
+              <div class="iconText2">{{ $t('m.m23') }}</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 6}" :xl="{span: 4, push: 6}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon6.png')"></el-image>
               </div>
-              <div class="iconTitle">{{$t('m.m24')}}</div>
-              <div class="iconText2">{{$t('m.m25')}}</div>
+              <div class="iconTitle">{{ $t('m.m24') }}</div>
+              <div class="iconText2">{{ $t('m.m25') }}</div>
             </el-col>
             <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 10}" :xl="{span: 4, push: 8}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon7.png')"></el-image>
               </div>
-              <div class="iconTitle">{{$t('m.m26')}}</div>
-              <div class="iconText2">{{$t('m.m27')}}</div>
+              <div class="iconTitle">{{ $t('m.m26') }}</div>
+              <div class="iconText2">{{ $t('m.m27') }}</div>
             </el-col>
           </el-row>
         </div>
@@ -196,7 +211,7 @@
         <el-col :xs="{span: 8, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
                 :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}">
           <div style="height: 56px;font-size: 40px;font-weight: 600;color: #FFFFFF;line-height: 56px;">
-            {{$t('m.m28')}}
+            {{ $t('m.m28') }}
           </div>
         </el-col>
         <el-col :xs="{span: 10, push: 6}" :sm="{span: 10, push: 6}" :md="{span: 10, push: 6}"
@@ -204,21 +219,21 @@
           <div style="padding-bottom: 35px">
             <div
               style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
-              {{$t('m.m29')}}
+              {{ $t('m.m29') }}
             </div>
             <div
               style="width: 210px;height: 20px;font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
-              {{$t('m.m30')}}
+              {{ $t('m.m30') }}
             </div>
           </div>
           <div>
             <div
               style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
-              {{$t('m.m31')}}
+              {{ $t('m.m31') }}
             </div>
             <div
               style="width: 210px;height: 20px;font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
-              {{$t('m.m32')}}
+              {{ $t('m.m32') }}
             </div>
           </div>
         </el-col>
@@ -236,21 +251,21 @@
         <el-col :xs="23" :sm="21" :md="20" :lg="18" :xl="18">
           <div id="id_text_72px_1"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m33')}}
+            {{ $t('m.m33') }}
           </div>
           <div id="id_text_72px_2"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m34')}}
+            {{ $t('m.m34') }}
           </div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
-            {{$t('m.m35')}}
+            {{ $t('m.m35') }}
           </div>
           <div style="height: 2.29vw;"></div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;float: left;"
             align="right">
-            {{$t('m.m36')}}&nbsp;
+            {{ $t('m.m36') }}&nbsp;
           </div>
           <div style="">
             <img src="@/assets/home_pinkArrow.png" style="height: 50px;width: 50px;margin: -13px 0px 0px 11px">
@@ -281,9 +296,10 @@
         <el-col :xs="1" :sm="1" :md="1" :lg="2" :xl="3">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="{span: 20,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:0,}" :lg="11" :xl="{span: 20,offset:4,}">
+        <el-col :xs="{span: 20,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:0,}" :lg="11"
+                :xl="{span: 20,offset:4,}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;margin-top: -30px">
-            {{$t('m.m37')}}&nbsp;
+            {{ $t('m.m37') }}&nbsp;
           </div>
         </el-col>
         <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
@@ -292,13 +308,14 @@
         <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:1,}" :lg="{span: 11,offset:4,}" :xl="{span: 20,offset:4,}">
+        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:1,}"
+                :lg="{span: 11,offset:4,}" :xl="{span: 20,offset:4,}">
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m38')}}&nbsp;
+            {{ $t('m.m38') }}&nbsp;
             <div style="height: 15px"></div>
-            {{$t('m.m39')}}&nbsp;
+            {{ $t('m.m39') }}&nbsp;
             <div style="height: 15px"></div>
-            {{$t('m.m40')}}&nbsp;
+            {{ $t('m.m40') }}&nbsp;
           </div>
         </el-col>
         <el-col :xs="0" :sm="0" :md="1" :lg="1" :xl="3">
@@ -315,11 +332,11 @@
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
           <div style="height: 2.94vw;"></div>
           <div style="font-size: 32px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m41')}}&nbsp;
+            {{ $t('m.m41') }}&nbsp;
           </div>
           <div style="height: 1.94vw;"></div>
           <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m42')}}&nbsp;
+            {{ $t('m.m42') }}&nbsp;
           </div>
           <div style="height: 1.94vw;"></div>
         </el-col>
@@ -332,19 +349,19 @@
             <div style="height: 40px"></div>
             <el-row :gutter="20">
               <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
-                <p style="padding-bottom: 15px;">{{$t('m.m43')}}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m44')}}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m45')}}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m46')}}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m47')}}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m43') }}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m44') }}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m45') }}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m46') }}&nbsp;</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m47') }}&nbsp;</p>
               </el-col>
               <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
-                <p style="padding-bottom:   15px;">{{$t('m.m48')}}</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m49')}}</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m50')}}</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m51')}}</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m52')}}</p>
-                <p style="padding-bottom: 15px;">{{$t('m.m53')}}</p>
+                <p style="padding-bottom:   15px;">{{ $t('m.m48') }}</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m49') }}</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m50') }}</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m51') }}</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m52') }}</p>
+                <p style="padding-bottom: 15px;">{{ $t('m.m53') }}</p>
               </el-col>
             </el-row>
           </div>
@@ -355,7 +372,7 @@
                 style="max-width:700px;max-height: 385px;min-width: 445px">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
             <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
-              {{$t('m.m54')}}
+              {{ $t('m.m54') }}
             </div>
             <el-row>
               <el-col :span="16" :offset="4">
@@ -365,38 +382,38 @@
                 </div>
                 <div style="padding: 00px 0px 0px 85px">
                   <tr style="width: 100%">
-                    <td >
+                    <td>
                       <div style="width: 8px;height: 8px;background: #6040FC;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m55')}}</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m55') }}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #00FFE1;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m56')}}</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m56') }}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #FF9B26;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m57')}}</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m57') }}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #FF4060;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m58')}}</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m58') }}</div>
                     <td>
                       &nbsp;
                     </td>
                     <td>
                       <div style="width: 8px;height: 8px;background: #36CFA2;border-radius: 18px;"></div>
                     </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{$t('m.m59')}}</div>
+                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m59') }}</div>
                     <td>
                       &nbsp;
                     </td>
@@ -409,22 +426,26 @@
         </el-col>
       </el-row>
     </div>
-    <div class="right" style="width: 560px;height: 56px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);border-radius: 7px;"><a href="imtokenv2://navigate/AssetsTab">立即购买</a></div>
+<!--    <div class="right"-->
+<!--         style="width: 560px;height: 56px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);border-radius: 7px;">-->
+<!--      <a href="imtokenv2://navigate/AssetsTab">立即购买</a></div>-->
 
     <div style="width: 100%;height: 810px;background: black;">
       <el-row :gutter="10">
         <div style="height: 30px"></div>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:4,}" :md="{span: 11,offset:1,}" :lg="{span: 7,offset:4}" :xl="{span: 7,offset:4}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:4,}" :md="{span: 11,offset:1,}"
+                :lg="{span: 7,offset:4}" :xl="{span: 7,offset:4}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;">
-            {{$t('m.m60')}}
+            {{ $t('m.m60') }}
             <div></div>
-            {{$t('m.m61')}}
+            {{ $t('m.m61') }}
             <div></div>
-            {{$t('m.m62')}}
+            {{ $t('m.m62') }}
           </div>
         </el-col>
 
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 16,offset:4,}" :md="{span: 11,offset:0}" :lg="{span: 8,offset:3}" :xl="{span: 8,offset:3}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 16,offset:4,}" :md="{span: 11,offset:0}" :lg="{span: 8,offset:3}"
+                :xl="{span: 8,offset:3}">
           <div class="hidden-sm-and-down">
             <div style="height: 180px"></div>
           </div>
@@ -432,11 +453,11 @@
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
               <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                {{$t('m.m63')}}
+                {{ $t('m.m63') }}
               </div>
               <div style="height: 20px"></div>
               <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                {{$t('m.m64')}}
+                {{ $t('m.m64') }}
               </div>
             </div>
           </div>
@@ -444,11 +465,11 @@
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
               <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                {{$t('m.m65')}}
+                {{ $t('m.m65') }}
               </div>
               <div style="height: 20px"></div>
               <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                {{$t('m.m66')}}<span style="color: #00FFE1"> {{$t('m.m67')}}</span>
+                {{ $t('m.m66') }}<span style="color: #00FFE1"> {{ $t('m.m67') }}</span>
               </div>
             </div>
           </div>
@@ -456,15 +477,15 @@
           <div style="background: #1E1E1E;width: 100%;height: 136px">
             <div style="padding: 32px">
               <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                {{$t('m.m68')}}
+                {{ $t('m.m68') }}
               </div>
               <div style="height: 20px"></div>
               <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                {{$t('m.m69')}}
+                {{ $t('m.m69') }}
               </div>
               <div style="height: 2px"></div>
               <div style="font-size: 14px;font-weight: 500;color: #00FFE1;">
-                {{$t('m.m70')}}
+                {{ $t('m.m70') }}
               </div>
             </div>
           </div>
@@ -479,7 +500,8 @@
       <div style="height: 70px"></div>
       <el-row :gutter="40">
 
-        <el-col :xs="{span: 10,offset:2} " :sm="{span: 10,offset:4} " :md="{span: 5,offset:2,}" :lg="{span: 5,offset:4,}" :xl="{span: 4,offset:4,}">
+        <el-col :xs="{span: 10,offset:2} " :sm="{span: 10,offset:4} " :md="{span: 5,offset:2,}"
+                :lg="{span: 5,offset:4,}" :xl="{span: 4,offset:4,}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2020
           </div>
@@ -492,14 +514,15 @@
             Q1～Q2
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m71')}}
+            {{ $t('m.m71') }}
             <p></p>
-            {{$t('m.m72')}}
+            {{ $t('m.m72') }}
             <p></p>
             &nbsp;
           </div>
         </el-col>
-        <el-col :xs="{span: 10,offset:0,}" :sm="{span: 10,offset:0,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
+        <el-col :xs="{span: 10,offset:0,}" :sm="{span: 10,offset:0,}" :md="{span: 5,offset:0,}"
+                :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2020
           </div>
@@ -512,16 +535,17 @@
             Q3～Q4
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m73')}}
+            {{ $t('m.m73') }}
             <p></p>
-            {{$t('m.m74')}}
+            {{ $t('m.m74') }}
             <p></p>
-            {{$t('m.m75')}}
+            {{ $t('m.m75') }}
             <p></p>
             &nbsp;
           </div>
         </el-col>
-        <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:4,}" :md="{span: 5,offset:0,}" :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
+        <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:4,}" :md="{span: 5,offset:0,}"
+                :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
@@ -534,16 +558,17 @@
             Q1～Q2
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m76')}}
+            {{ $t('m.m76') }}
             <p></p>
-            {{$t('m.m77')}}
+            {{ $t('m.m77') }}
             <p></p>
-            {{$t('m.m78')}}
+            {{ $t('m.m78') }}
             <p></p>
             &nbsp;
           </div>
         </el-col>
-        <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 5,offset:0 }" :lg="{span: 5,offset:0 }" :xl="{span: 4,offset:0 }">
+        <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 5,offset:0 }"
+                :lg="{span: 5,offset:0 }" :xl="{span: 4,offset:0 }">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
@@ -556,11 +581,11 @@
             Q3～Q4
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
-            {{$t('m.m79')}}
+            {{ $t('m.m79') }}
             <p></p>
-            {{$t('m.m80')}}
+            {{ $t('m.m80') }}
             <p></p>
-            {{$t('m.m81')}}
+            {{ $t('m.m81') }}
             <p></p>
             &nbsp;
           </div>
@@ -568,7 +593,8 @@
       </el-row>
       <div class="hidden-sm-and-down">
         <el-row :gutter="40">
-          <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }" :lg="{span: 17,offset:4 }" :xl="{span: 13,offset:4 }">
+          <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }"
+                  :lg="{span: 17,offset:4 }" :xl="{span: 13,offset:4 }">
             <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -118px 0px 0px 10px">
             </div>
           </el-col>
@@ -576,51 +602,56 @@
       </div>
     </div>
 
-    <div  style="width: 100%;height: 690px;background: black">
+    <div style="width: 100%;height: 690px;background: black">
       <div style="height: 50px"></div>
       <el-row :gutter="10">
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:1,}" :lg="{span: 10,offset:2,}" :xl="{span: 10,offset:2,}"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}" :lg="{span: 9,offset:3,}" :xl="{span: 10,offset:0,}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:1,}"
+                :lg="{span: 10,offset:2,}" :xl="{span: 10,offset:2,}">
+          <div class="grid-content bg-purple"></div>
+        </el-col>
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}"
+                :lg="{span: 9,offset:3,}" :xl="{span: 10,offset:0,}">
           <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
           <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-            {{$t('m.m82')}}
+            {{ $t('m.m82') }}
             <p></p>
-            {{$t('m.m83')}}
+            {{ $t('m.m83') }}
             <p></p>
-            {{$t('m.m84')}}
+            {{ $t('m.m84') }}
             <div style="height: 70px"></div>
             <div style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
-              {{$t('m.m85')}}
+              {{ $t('m.m85') }}
             </div>
             <div style="height: 20px;font-size: 14px;font-weight: 600;color: #FFFFFF;">
-              {{$t('m.m86')}}
+              {{ $t('m.m86') }}
             </div>
           </div>
         </el-col>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}" :lg="{span: 3,offset:4,}" :xl="{span: 2,offset:4,}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}"
+                :lg="{span: 3,offset:4,}" :xl="{span: 2,offset:4,}">
           <div id="introduction_to_the_bottom_red" style="margin: -227px 0px 0px 0px">
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{$t('m.m87')}}
+              {{ $t('m.m87') }}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{$t('m.m88')}}
+              {{ $t('m.m88') }}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{$t('m.m89')}}
+              {{ $t('m.m89') }}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{$t('m.m90')}}
+              {{ $t('m.m90') }}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
             <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{$t('m.m91')}}
+              {{ $t('m.m91') }}
               <span style="float:right ">+</span>
               <div style="height: 20px"></div>
             </div>
@@ -637,12 +668,14 @@
       <div style="height:  35px"></div>
       <el-row :gutter="10">
 
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}" :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}">
+        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}"
+                :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}">
           <div id="bottom_contact" style="font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
             © 2021 KobeNFT All rights reserved
           </div>
         </el-col>
-        <el-col id="bottom3png" :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 5,offset:8,}" :lg="{span: 4,offset:3,}" :xl="{span: 4,offset:3}">
+        <el-col id="bottom3png" :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 5,offset:8,}"
+                :lg="{span: 4,offset:3,}" :xl="{span: 4,offset:3}">
           <img src="@/assets/home_feixin_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
           &nbsp;&nbsp;&nbsp;
           <img src="@/assets/home_twitter_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
@@ -655,7 +688,7 @@
   </div>
 
 </template>
-<el-radio v-model="theme" label="1">{{$t('common.risk')}}</el-radio>
+<el-radio v-model="theme" label="1">{{ $t('common.risk') }}</el-radio>
 <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
 <script>
 window.onload = function () {
@@ -691,15 +724,28 @@ export default {
       date: '',
 
       // 完工时间
-      endtime: '2020 / 08 / 31'
+      endtime: '2020 / 08 / 31',
+      languages: 'en',
+      languagesText: 'English',
+      items: [
+        {id: 'zh', name: '中文'},
+        {id: 'en', name: 'English'},
+        {id: 'ko', name: '한국어'},
+        {id: 'ja', name: '日本語'}
+      ]
     }
   },
   mounted: function () {
-    this.switchLang('zh')
+    this.switchLang('en')
   },
   methods: {
     switchLang (val) {
       this.$i18n.locale = val // 此处val为 zh 或者 en
+      console.log(val)
+    },
+    getValue: function () {
+      console.log('您选择了', this.languages)
+      this.switchLang(this.languages)
     },
     countDown () {
       // 开工时间
@@ -711,6 +757,9 @@ export default {
       // return days;
       this.date = days
       // console.log(this.date);
+    },
+    chekcToken () {
+
     }
   }
 }
