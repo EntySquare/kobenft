@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 100%;width: 100%; overflow-x: hidden;">
+  <div style="height: 100%;width: 100%; overflow-x: hidden;position:fixed">
     <div class="mainPage">
       <!--      <img src="@/assets/home_background.png" style="height: auto;width: 100%;z-index: -1;position:absolute;">-->
       <!--      <el-image :src="require('../assets/home_background.png')"-->
@@ -267,7 +267,7 @@
           <div class="grid-content bg-purple"></div>
         </el-col>
         <el-col :xs="23" :sm="21" :md="20" :lg="18" :xl="18">
-          <div style="height: 20px"></div>
+          <div style="height: 10px"></div>
           <div id="id_text_72px_1"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
             {{ $t('m.m33') }}
@@ -281,7 +281,7 @@
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
             {{ $t('m.m35') }}
           </div>
-          <div style="height: 40px;"></div>
+          <div style="height: 20px;"></div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;float: left;"
             align="right">
@@ -321,7 +321,6 @@
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;margin-top: -30px">
             {{ $t('m.m37') }}&nbsp;
           </div>
-          <div style="height: 60px"></div>
         </el-col>
 
         <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
@@ -346,9 +345,8 @@
       </el-row>
     </div>
     <!-- 彩色扇形图 -->
-    <div style="width: 100%;height: 45.94vw;max-height: 785px;min-height: 850px;">
-      <img src="@/assets/home_colour.png"
-           style="height: auto;width: 100%;z-index: -1;min-height: 850px;position:absolute;background: black">
+    <div style='width: 100%;height: 45.94vw;max-height: 785px;min-height: 850px;'>
+      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">
       <el-row>
         <el-col :xs="{span: 23, push: 1 }" :sm="{span: 20, push: 4 }" :md="{span: 21, push: 1 }"
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
@@ -366,7 +364,7 @@
         <!--            :xs="{span: 24, offset: 0}" :xl="{span: 8, push: 4}"-->
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}"
                 :lg="{span: 9, offset:2, push: 2}" :xl="{span: 8, offset:2, push: 2}"
-                style="max-width:700px;max-height: 385px;min-width: 380px">
+                style="max-width:700px;max-height: 385px;min-width: 280px">
           <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
             <div style="height: 40px"></div>
             <el-row :gutter="20" id="gai002">
@@ -391,7 +389,7 @@
         </el-col>
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 10, offset:1, push: 1}"
                 :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
-                style="max-width:500px;max-height: 385px;min-width: 380px">
+                style="max-width:500px;max-height: 385px;min-width: 280px">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
             <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
               {{ $t('m.m54') }}
@@ -506,7 +504,7 @@
                 {{ $t('m.m69') }}
               </div>
               <div style="height: 2px"></div>
-              <div style="font-size: 14px;font-weight: 500;color: #00FFE1;">
+              <div style="font-size: 14px;font-weight: 500;color: #00FFE1;width: 100%;overflow: hidden;">
                 {{ $t('m.m70') }}
               </div>
             </div>
@@ -712,10 +710,13 @@
   </div>
 
 </template>
-<el-radio v-model="theme" label="1">{{ $t('common.risk') }}</el-radio>
+<!--<el-radio v-model="theme" label="1">{{ $t('common.risk') }}</el-radio>-->
 <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+
 <script>
 window.onload = function () {
+  Adaptation()
+  Adaptation()
   Adaptation()
 }
 window.onresize = function () {
@@ -754,7 +755,6 @@ function Adaptation () {
     document.getElementById('m60').style.fontSize = '42px'
   }
 }
-
 export default {
   name: 'Home',
   data () {
@@ -773,6 +773,7 @@ export default {
         {id: 'ko', name: '한국어'},
         {id: 'ja', name: '日本語'}
       ]
+
     }
   },
   mounted: function () {
@@ -1215,5 +1216,11 @@ export default {
 .grid-content {
   border-radius: 4px;
   min-height: 36px;
+}
+.select-img{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 </style>

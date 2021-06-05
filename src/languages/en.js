@@ -41,7 +41,7 @@ const en = {
     // 框6 扣篮
     'm33': 'Tribute to Kobe Bryant',
     'm34': 'Founded by developers',
-    'm35': 'Now, we invite everyone to join the community. Step into the inner world of Kobe Bryant fans around the world and feel the endless power of the Mamba spirit.',
+    'm35': 'Now, we invite everyone to join the community. ',
     'm36': 'Join the community',
     // 框7
     'm37': 'What is KB Token',
