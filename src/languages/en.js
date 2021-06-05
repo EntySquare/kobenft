@@ -50,7 +50,7 @@ const en = {
     'm40': 'As the network grows and expands with value creation, it encourages various roles in the ecosystem to ensure the normal operation of the protocol',
     // 框8
     'm41': 'KB Token',
-    'm42': 'KB Token is a governance token for entertainment interaction and culture based on the Ethereum protocol ecosystem',
+    'm42': 'KB Token is a token based on the Ethereum ERC721 protocol',
     'm43': 'Launch date: the second quarter of 2021',
     'm44': 'Token price：$ 1',
     'm45': 'Number of issue：100,000,000',
@@ -63,7 +63,7 @@ const en = {
     'm52': 'Team2%',
     'm53': 'Market：75％',
     'm54': 'KB allocation',
-    'm55': 'Private placement',
+    'm55': 'PrivatePlacement',
     'm56': 'Governance',
     'm57': 'Ecology',
     'm58': 'Team',
