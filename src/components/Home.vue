@@ -22,19 +22,19 @@
           <div>
             <el-row :gutter="40" type="flex" style="margin-top: 10px">
               <el-col>
-                <div class="headFont">简介</div>
+                <div class="headFont">{{ $t('m.t1') }}</div>
               </el-col>
               <el-col>
-                <div class="headFont">特性</div>
+                <div class="headFont">{{ $t('m.t2') }}</div>
               </el-col>
               <el-col>
-                <div class="headFont">代币</div>
+                <div class="headFont">{{ $t('m.t3') }}</div>
               </el-col>
               <el-col>
-                <div class="headFont">线路图</div>
+                <div class="headFont">{{ $t('m.t4') }}</div>
               </el-col>
               <el-col>
-                <div class="headFont">社区</div>
+                <div class="headFont">{{ $t('m.t5') }}</div>
               </el-col>
             </el-row>
           </div>
@@ -44,7 +44,7 @@
             <el-col>
               <div class="headFont"><a
                 href="imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F"
-                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">空投</a>
+                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px;">{{ $t('m.t6') }}</a>
                 <div style="margin-top: 2px; display: inline-flex">
                   <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>
                 </div>
@@ -53,7 +53,7 @@
             <el-col>
               <div class="headFont"><a
                 href="imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F"
-                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">兑换</a></div>
+                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">{{ $t('m.t7') }}</a></div>
             </el-col>
           </el-row>
         </el-col>
@@ -624,7 +624,7 @@
       </div>
     </div>
 
-    <div style="width: 100%;height: 690px;background: black">
+    <div style="width: 100%;height: 690px;background: black" id="bottom_frame">
       <div style="height: 50px"></div>
       <el-row :gutter="10">
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:1,}"
@@ -689,9 +689,8 @@
       </div>
       <div style="height:  35px"></div>
       <el-row :gutter="10">
-
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}"
-                :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}">
+                :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}" >
           <div id="bottom_contact" style="font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
             © 2021 KB24 All rights reserved
           </div>
@@ -726,6 +725,11 @@ window.onresize = function () {
 function Adaptation () {
   var docWidth = document.body.clientWidth.valueOf()
   console.log('111')
+  if (docWidth <= 376) {
+    document.getElementById('bottom_frame').style.height = '740px'
+  } else {
+    document.getElementById('bottom_frame').style.height = '690px'
+  }
   if (docWidth >= 992) {
     document.getElementById('introduction_to_the_bottom_red').style.margin = '-227px 0px 0px 0px'
     document.getElementById('bottom_contact').style.margin = '0px'

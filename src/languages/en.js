@@ -1,6 +1,13 @@
 import enLocale from 'element-ui/lib/locale/lang/en'
 const en = {
   m: {
+    't1': 'Introduction',
+    't2': 'Features',
+    't3': 'Token',
+    't4': 'Roadmap',
+    't5': 'community',
+    't6': 'Drop',
+    't7': 'Exchange',
     // 框1
     'm1': 'Mamba’s spirit alive',
     'm2': 'The world’s first decentralized NFT token',
@@ -73,7 +80,7 @@ const en = {
     'm61': 'Truly free',
     'm62': 'NFT assets',
     'm63': 'What is the purpose of KB Token?',
-    'm64': 'Our tokens are used for community governance, and users can participate in community proposals and voting resolutions, and receive dividends.',
+    'm64': 'Tokens are used for community governance, NFT  and voting resolutions, and receive dividends.',
     'm65': 'How to buy KB Token?',
     'm66': 'Enter the imToken App wallet, visit kbtoken.io ',
     'm67': 'in the browser and purchase KB',
