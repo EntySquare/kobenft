@@ -39,12 +39,12 @@
             </el-row>
           </div>
         </el-col>
-        <el-col :xs="{span: 2, push: 18}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
+        <el-col :xs="{span: 2, push: 16}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
                 :xl="{span: 2, push: 2}" style="margin-top: 10px">
           <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>
-<!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
+          <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
           <select v-model="languages" @change='getValue'
-            style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none">
+                  style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none">
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
                     value="zh">中文
             </option>
@@ -52,7 +52,7 @@
                     value="en">English
             </option>
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
-                    value="ko" >한국어
+                    value="ko">한국어
             </option>
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
                     value="ja">日本語
@@ -64,15 +64,14 @@
       <el-row type="flex">
         <el-col :xs="{span: 2, offset: 2}" :sm="{span: 2, offset: 2}" :md="{span: 2, push: 2}" :lg="{span: 2, push: 2}"
                 :xl="{span: 8, push: 4}">
-          <div
-            style="width: 336px;height: 78px;font-size: 56px;font-weight: 600;color: #E92F75;line-height: 78px; padding-bottom: 30px">
+          <div class="headTitle">
             {{ $t('m.m1') }}
           </div>
-          <div style="width: 425px;height: 45px;font-size: 32px;font-weight: 600;color: #FFFFFF;line-height: 45px;">
+          <div class="headSubTitle">
             {{ $t('m.m2') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 14, push: 5}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
+        <el-col :xs="{span: 14, push: 4}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
                 :xl="{span: 8, push: 6}">
           <img
             class="headPerson"
@@ -85,8 +84,10 @@
       <el-row style="height: 160px"></el-row>
       <el-row type="flex" justify="center">
         <el-col span="12" pull="2">
-          <div style="width: 427px;height: 200px;font-size: 72px;font-weight: 600;color: #E92F75;line-height: 100px;">
+          <div class="bodyTitle1">
             {{ $t('m.m3') }}
+          </div>
+          <div class="bodyTitle2">
             {{ $t('m.m4') }}
           </div>
         </el-col>
@@ -95,16 +96,19 @@
         <el-col :xs="{span: 14, push: 5}" :sm="{span: 14, push: 5}" :md="{span: 10, push: 4}" :lg="{span: 8, push: 5}"
                 :xl="{span: 6, push: 5}">
           <div
-            style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 140px">
+            class="bodyText1">
             {{ $t('m.m5') }}
           </div>
-          <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 24px">
+          <div class="bodyText2"
+               style="width: 100%;font-weight: 500;color: #FFFFFF;line-height: 24px;">
             {{ $t('m.m6') }}
           </div>
-          <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 24px">
+          <div class="bodyText2"
+               style="width: 100%;font-weight: 500;color: #FFFFFF;line-height: 24px;">
             {{ $t('m.m7') }}
           </div>
-          <div style="width: 100%;font-size: 18px;font-weight: 500;color: #FFFFFF;line-height: 24px; margin-top: 50px">
+          <div class="bodyText2"
+               style="width: 100%;font-weight: 500;color: #FFFFFF;line-height: 24px;">
             {{ $t('m.m8') }}
           </div>
         </el-col>
@@ -112,14 +116,14 @@
                 :xl="{span: 6, push: 8}" style="padding-top: 50px">
           <el-image :src="require('../assets/body_kobe.png')"
                     style="height: 346px; width: 348px; z-index: 1"></el-image>
-          <div style="margin-top: -150px; margin-left: 150px">
+          <div style="margin-top: -150px; margin-left: 50px">
             <el-image :src="require('../assets/body_purple.png')" style="height: 436px; width: 436px;"></el-image>
           </div>
         </el-col>
       </el-row>
       <div>
         <el-row>
-          <el-col :xs="{span: 13, push: 4}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
+          <el-col :xs="{span: 18, push: 1}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
                   :lg="{span: 6, push: 4}" :xl="{span: 6, push: 4}">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon1.png')"></el-image>
@@ -139,8 +143,8 @@
               <div>{{ $t('m.m14') }}</div>
             </div>
           </el-col>
-          <el-col :xs="{span: 13, push: 4}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
-                  :lg="{span: 6, push: 8}" :xl="{span: 6, push: 8}">
+          <el-col :xs="{span: 18, push: 1}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
+                  :lg="{span: 6, push: 8}" :xl="{span: 6, push: 8}" class="iconPadding">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon2.png')"></el-image>
               <div class="iconFont">{{ $t('m.m15') }}</div>
@@ -176,7 +180,7 @@
         </div>
         <div>
           <el-row>
-            <el-col :xs="{span: 10, push: 8}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
+            <el-col :xs="{span: 10, push: 6}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
                     :lg="{span: 3, push: 2}" :xl="{span: 4, push: 4}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
@@ -184,7 +188,7 @@
               <div class="iconTitle">{{ $t('m.m22') }}</div>
               <div class="iconText2">{{ $t('m.m23') }}</div>
             </el-col>
-            <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
+            <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 6}" :xl="{span: 4, push: 6}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon6.png')"></el-image>
@@ -192,7 +196,7 @@
               <div class="iconTitle">{{ $t('m.m24') }}</div>
               <div class="iconText2">{{ $t('m.m25') }}</div>
             </el-col>
-            <el-col :xs="{span: 14, push: 9}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
+            <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 10}" :xl="{span: 4, push: 8}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon7.png')"></el-image>
@@ -208,31 +212,27 @@
       style="width: 100%; height: 332px; background: linear-gradient(270deg, #FF5045 0%, #E3287F 54%, #E32780 100%);">
       <el-row style="height: 90px"></el-row>
       <el-row>
-        <el-col :xs="{span: 8, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
+        <el-col :xs="{span: 6, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
                 :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}">
-          <div style="height: 56px;font-size: 40px;font-weight: 600;color: #FFFFFF;line-height: 56px;">
+          <div class="focusFont1">
             {{ $t('m.m28') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 10, push: 6}" :sm="{span: 10, push: 6}" :md="{span: 10, push: 6}"
+        <el-col :xs="{span: 12, push: 4}" :sm="{span: 10, push: 6}" :md="{span: 10, push: 6}"
                 :lg="{span: 8, push: 6}" :xl="{span: 6, push: 9}">
           <div style="padding-bottom: 35px">
-            <div
-              style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
+            <div class="focusFont2">
               {{ $t('m.m29') }}
             </div>
-            <div
-              style="width: 210px;height: 20px;font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
+            <div class="focusFont3">
               {{ $t('m.m30') }}
             </div>
           </div>
           <div>
-            <div
-              style="width: 172px;height: 28px;font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px; white-space: nowrap; padding-bottom: 11px">
+            <div class="focusFont2">
               {{ $t('m.m31') }}
             </div>
-            <div
-              style="width: 210px;height: 20px;font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
+            <div class="focusFont3">
               {{ $t('m.m32') }}
             </div>
           </div>
@@ -426,9 +426,9 @@
         </el-col>
       </el-row>
     </div>
-<!--    <div class="right"-->
-<!--         style="width: 560px;height: 56px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);border-radius: 7px;">-->
-<!--      <a href="imtokenv2://navigate/AssetsTab">立即购买</a></div>-->
+    <!--    <div class="right"-->
+    <!--         style="width: 560px;height: 56px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);border-radius: 7px;">-->
+    <!--      <a href="imtokenv2://navigate/AssetsTab">立即购买</a></div>-->
 
     <div style="width: 100%;height: 810px;background: black;">
       <el-row :gutter="10">
@@ -772,6 +772,7 @@ export default {
   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+/*移动端样式*/
 @media screen and (max-width: 749px) {
   .mainPage {
     width: 100%;
@@ -789,6 +790,135 @@ export default {
     height: 200px;
     margin-bottom: -350px;
     margin-left: -25px;
+  }
+
+  .headTitle {
+    width: 536px;
+    height: 78px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #E92F75;
+    line-height: 78px;
+  }
+
+  .headSubTitle {
+    width: 325px;
+    height: 45px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 45px;
+  }
+
+  .bodyTitle1 {
+    width: 427px;
+    height: 50px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #E92F75;
+    line-height: 50px;
+  }
+
+  .bodyTitle2 {
+    width: 427px;
+    height: 50px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #E92F75;
+    line-height: 50px;
+  }
+
+  .bodyText1 {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-top: 80px
+  }
+
+  .bodyText2 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px
+  }
+
+  .iconFont {
+    font-size: 24px;
+    width: 64px;
+    height: 45px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 45px;
+    z-index: 2;
+    margin-top: -70px;
+    margin-left: 50px;
+    position: absolute
+  }
+
+  .iconText {
+    font-size: 14px;
+    width: 427px;
+    height: 144px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 24px;
+  }
+
+  .iconPadding {
+    padding-top: 60px;
+  }
+
+  .iconTitle {
+    width: 96px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 32px;
+    margin-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 28px;
+    text-align: center;
+  }
+
+  .iconText2 {
+    width: 300px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #DDDDDD;
+    line-height: 20px;
+    margin-left: -60px;
+    padding-bottom: 160px;
+  }
+
+  .focusFont1 {
+    height: 56px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 56px;
+  }
+
+  .focusFont2 {
+    width: 172px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 28px;
+    white-space: nowrap;
+    padding-bottom: 11px
+  }
+
+  .focusFont3 {
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 20px;
   }
 }
 
@@ -890,54 +1020,143 @@ export default {
   }
 }
 
+/*适配除移动端之外*/
+@media screen and (min-width: 750px) {
+  .headTitle {
+    width: 536px;
+    height: 78px;
+    font-size: 56px;
+    font-weight: 600;
+    color: #E92F75;
+    line-height: 78px;
+    padding-bottom: 30px
+  }
+
+  .headSubTitle {
+    width: 425px;
+    height: 45px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 45px;
+    white-space: nowrap
+  }
+
+  .bodyTitle1 {
+    width: 427px;
+    height: 100px;
+    font-size: 72px;
+    font-weight: 600;
+    color: #E92F75;
+    line-height: 100px;
+  }
+
+  .bodyTitle2 {
+    width: 427px;
+    height: 100px;
+    font-size: 72px;
+    font-weight: 600;
+    color: #E92F75;
+    line-height: 100px;
+    white-space: nowrap;
+  }
+
+  .bodyText1 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-top: 140px
+  }
+
+  .bodyText2 {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 50px
+  }
+
+  .iconFont {
+    font-size: 32px;
+    width: 64px;
+    height: 45px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 45px;
+    z-index: 2;
+    margin-top: -70px;
+    margin-left: 50px;
+    position: absolute
+  }
+
+  .iconText {
+    font-size: 18px;
+    width: 427px;
+    height: 144px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 24px;
+  }
+
+  .iconPadding {
+    padding-top: 0;
+  }
+
+  .iconTitle {
+    width: 96px;
+    height: 32px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 32px;
+    margin-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 28px;
+  }
+
+  .iconText2 {
+    width: 320px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #DDDDDD;
+    line-height: 20px;
+    margin-left: -60px;
+    padding-bottom: 160px;
+  }
+
+  .focusFont1 {
+    height: 56px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 56px;
+  }
+
+  .focusFont2 {
+    width: 172px;
+    height: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 28px;
+    white-space: nowrap;
+    padding-bottom: 11px
+  }
+
+  .focusFont3 {
+    width: 210px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 20px;
+  }
+}
+
 .headFont {
   color: white;
   white-space: nowrap;
-}
-
-.iconFont {
-  width: 64px;
-  height: 45px;
-  font-size: 32px;
-  font-weight: 500;
-  color: #FFFFFF;
-  line-height: 45px;
-  z-index: 2;
-  margin-top: -70px;
-  margin-left: 50px;
-  position: absolute
-}
-
-.iconText {
-  width: 427px;
-  height: 144px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #FFFFFF;
-  line-height: 24px;
-}
-
-.iconTitle {
-  width: 96px;
-  height: 32px;
-  font-size: 32px;
-  font-weight: 500;
-  color: #FFFFFF;
-  line-height: 32px;
-  margin-left: 30px;
-  padding-top: 50px;
-  padding-bottom: 28px;
-}
-
-.iconText2 {
-  width: 320px;
-  height: 40px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #DDDDDD;
-  line-height: 20px;
-  margin-left: -60px;
-  padding-bottom: 160px;
 }
 
 /*备注g*/

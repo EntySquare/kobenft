@@ -2,8 +2,8 @@ import enLocale from 'element-ui/lib/locale/lang/en'
 const en = {
   m: {
     // 框1
-    'm1': 'Mamba’s spirit never dies',
-    'm2': 'The world’s first decentralized NFT commemorative token',
+    'm1': 'Mamba’s spirit alive',
+    'm2': 'The world’s first decentralized NFT token',
     // 框2
     'm3': 'Kobe Bryant',
     'm4': 'Cultural heritage',
