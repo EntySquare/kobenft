@@ -39,7 +39,25 @@
             </el-row>
           </div>
         </el-col>
-        <el-col :xs="{span: 2, push: 16}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
+        <el-col class="hidden-sm-and-up" :xs="{span: 2, push: 11}" :xl="{span: 2, push: 2}">
+          <el-row :gutter="20" type="flex" style="margin-top: 10px">
+            <el-col>
+              <div class="headFont"><a
+                href="imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F"
+                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">空投</a>
+                <div style="margin-top: 2px; display: inline-flex">
+                  <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>
+                </div>
+              </div>
+            </el-col>
+            <el-col>
+              <div class="headFont"><a
+                href="imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F"
+                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">兑换</a></div>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :xs="{span: 2, push: 15}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
                 :xl="{span: 2, push: 2}" style="margin-top: 10px">
           <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>
           <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
