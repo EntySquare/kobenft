@@ -249,6 +249,7 @@
           <div class="grid-content bg-purple"></div>
         </el-col>
         <el-col :xs="23" :sm="21" :md="20" :lg="18" :xl="18">
+          <div style="height: 20px"></div>
           <div id="id_text_72px_1"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
             {{ $t('m.m33') }}
@@ -257,11 +258,12 @@
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
             {{ $t('m.m34') }}
           </div>
+          <div style="height: 40px;"></div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
             {{ $t('m.m35') }}
           </div>
-          <div style="height: 2.29vw;"></div>
+          <div style="height: 40px;"></div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;float: left;"
             align="right">
@@ -296,12 +298,14 @@
         <el-col :xs="1" :sm="1" :md="1" :lg="2" :xl="3">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="{span: 20,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:0,}" :lg="11"
+        <el-col :xs="{span: 20,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:2,}" :lg="11"
                 :xl="{span: 20,offset:4,}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;margin-top: -30px">
             {{ $t('m.m37') }}&nbsp;
           </div>
+          <div style="height: 60px"></div>
         </el-col>
+
         <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
           <div class="grid-content bg-purple"></div>
         </el-col>
@@ -338,7 +342,7 @@
           <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;">
             {{ $t('m.m42') }}&nbsp;
           </div>
-          <div style="height: 1.94vw;"></div>
+          <div style="height: 30px;"></div>
         </el-col>
         <div style="height: 10px"></div>
         <!--            :xs="{span: 24, offset: 0}" :xl="{span: 8, push: 4}"-->
@@ -513,13 +517,14 @@
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q1～Q2
           </div>
-          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
             {{ $t('m.m71') }}
             <p></p>
             {{ $t('m.m72') }}
             <p></p>
             &nbsp;
           </div>
+          <div style="height: 1px"></div>
         </el-col>
         <el-col :xs="{span: 10,offset:0,}" :sm="{span: 10,offset:0,}" :md="{span: 5,offset:0,}"
                 :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
@@ -534,7 +539,7 @@
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q3～Q4
           </div>
-          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
             {{ $t('m.m73') }}
             <p></p>
             {{ $t('m.m74') }}
@@ -543,6 +548,7 @@
             <p></p>
             &nbsp;
           </div>
+          <div style="height: 20px"></div>
         </el-col>
         <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:4,}" :md="{span: 5,offset:0,}"
                 :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
@@ -557,7 +563,7 @@
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q1～Q2
           </div>
-          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
             {{ $t('m.m76') }}
             <p></p>
             {{ $t('m.m77') }}
@@ -580,7 +586,7 @@
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
             Q3～Q4
           </div>
-          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
             {{ $t('m.m79') }}
             <p></p>
             {{ $t('m.m80') }}
@@ -595,7 +601,7 @@
         <el-row :gutter="40">
           <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }"
                   :lg="{span: 17,offset:4 }" :xl="{span: 13,offset:4 }">
-            <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -118px 0px 0px 10px">
+            <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -143px 0px 0px 10px">
             </div>
           </el-col>
         </el-row>
@@ -671,7 +677,7 @@
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}"
                 :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}">
           <div id="bottom_contact" style="font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
-            © 2021 KobeNFT All rights reserved
+            © 2021 KB24 All rights reserved
           </div>
         </el-col>
         <el-col id="bottom3png" :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 5,offset:8,}"
@@ -721,9 +727,9 @@ function Adaptation () {
     document.getElementById('bottom_contact').style.top = '45px'
     document.getElementById('bottom3png').style.margin = '-12px 2vm 0px'
 
-    document.getElementById('id_text_72px_1').style.fontSize = '40px'
-    document.getElementById('id_text_72px_2').style.fontSize = '40px'
-    document.getElementById('gai002').style.fontSize = '15px'
+    document.getElementById('id_text_72px_1').style.fontSize = '36px'
+    document.getElementById('id_text_72px_2').style.fontSize = '36px'
+    document.getElementById('gai002').style.fontSize = '14px'
     document.getElementById('gai002').style.fontWeight = '400'
 
     document.getElementById('m60').style.fontWeight = '600'
