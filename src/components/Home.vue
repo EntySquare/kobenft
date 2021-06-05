@@ -16,7 +16,7 @@
       <el-row>
         <el-col :xs="{span: 2, push: 2}" :sm="{span: 2, push: 2}" :md="{span: 2, push: 2}" :lg="{span: 2, push: 2}"
                 :xl="{span: 2, push: 2}">
-          <el-image :src="require('../assets/headLogo.png')" style="height: 40px; width: 116px;"></el-image>
+          <el-image :src="require('../assets/headLogo.png')" style="height: 40px; width: 92px;"></el-image>
         </el-col>
         <el-col class="hidden-md-and-down" :span="8" offset="8">
           <div>

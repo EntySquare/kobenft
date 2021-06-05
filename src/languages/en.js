@@ -28,7 +28,7 @@ const en = {
     'm21': 'Features',
     'm22': 'Scalable',
     'm23': 'KB Token uses its own unique sharding technology to solve the general problem of scalability and establish a fully distributed payment system',
-    'm24': 'safety',
+    'm24': 'Safety',
     'm25': 'The business logic based on smart contracts continuously and transparently distributes all value on the network. All transaction information is stored immutably on the public blockchain',
     'm26': 'Accessible',
     'm27': 'Using a subdivided network, KB Token can process transactions in a decentralized manner, integrating NFT assets across the entire network',
