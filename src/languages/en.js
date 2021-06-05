@@ -63,7 +63,7 @@ const en = {
     'm52': 'Team2%',
     'm53': 'Market：75％',
     'm54': 'KB allocation',
-    'm55': 'Private placement',
+    'm55': 'PrivatePlacement',
     'm56': 'Governance',
     'm57': 'Ecology',
     'm58': 'Team',

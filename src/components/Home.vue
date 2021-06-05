@@ -344,18 +344,18 @@
         <!--            :xs="{span: 24, offset: 0}" :xl="{span: 8, push: 4}"-->
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}"
                 :lg="{span: 9, offset:2, push: 2}" :xl="{span: 8, offset:2, push: 2}"
-                style="max-width:700px;max-height: 385px;min-width: 445px">
+                style="max-width:700px;max-height: 385px;min-width: 380px">
           <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
             <div style="height: 40px"></div>
-            <el-row :gutter="20">
-              <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
+            <el-row :gutter="20" id="gai002">
+              <el-col :span="11" :offset="1" style="color: #FFFFFF;">
                 <p style="padding-bottom: 15px;">{{ $t('m.m43') }}&nbsp;</p>
                 <p style="padding-bottom: 15px;">{{ $t('m.m44') }}&nbsp;</p>
                 <p style="padding-bottom: 15px;">{{ $t('m.m45') }}&nbsp;</p>
                 <p style="padding-bottom: 15px;">{{ $t('m.m46') }}&nbsp;</p>
                 <p style="padding-bottom: 15px;">{{ $t('m.m47') }}&nbsp;</p>
               </el-col>
-              <el-col :span="11" :offset="1" style="font-size: 16px;font-weight: 600;color: #FFFFFF;">
+              <el-col :span="11" :offset="1" style="color: #FFFFFF;">
                 <p style="padding-bottom:   15px;">{{ $t('m.m48') }}</p>
                 <p style="padding-bottom: 15px;">{{ $t('m.m49') }}</p>
                 <p style="padding-bottom: 15px;">{{ $t('m.m50') }}</p>
@@ -369,19 +369,19 @@
         </el-col>
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 10, offset:1, push: 1}"
                 :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
-                style="max-width:700px;max-height: 385px;min-width: 445px">
+                style="max-width:500px;max-height: 385px;min-width: 380px">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
             <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
               {{ $t('m.m54') }}
             </div>
             <el-row>
-              <el-col :span="16" :offset="4">
-                <div style="padding: 10px 50px 0px 50px">
+              <el-col :span="16" :offset="4" >
+                <div style="padding: 10px 70px 0px 0px">
                   <img src="@/assets/home_Fanchart.png" style="height: 100%;width: 100%;max-width:250px;
                       padding: 12px 13px 14px 25px">
                 </div>
-                <div style="padding: 00px 0px 0px 85px">
-                  <tr style="width: 100%">
+                <div style="padding: 0px 0px 0px 0px;margin: 0px 0px 0px -37px">
+                  <tr style=";width: 100%">
                     <td>
                       <div style="width: 8px;height: 8px;background: #6040FC;border-radius: 18px;"></div>
                     </td>
@@ -435,7 +435,7 @@
         <div style="height: 30px"></div>
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:4,}" :md="{span: 11,offset:1,}"
                 :lg="{span: 7,offset:4}" :xl="{span: 7,offset:4}">
-          <div style="font-size: 72px;font-weight: 600;color: #E92F75;">
+          <div id="m60" style="font-size: 72px;font-weight: 600;color: #E92F75;">
             {{ $t('m.m60') }}
             <div></div>
             {{ $t('m.m61') }}
@@ -707,11 +707,27 @@ function Adaptation () {
     document.getElementById('bottom_contact').style.position = ''
     document.getElementById('bottom_contact').style.top = ''
     document.getElementById('bottom3png').style.margin = ''
+
+    document.getElementById('id_text_72px_1').style.fontSize = '48px'
+    document.getElementById('id_text_72px_2').style.fontSize = '48px'
+    document.getElementById('gai002').style.fontSize = '16px'
+    document.getElementById('gai002').style.fontWeight = '600'
+
+    document.getElementById('m60').style.fontWeight = '600'
+    document.getElementById('m60').style.fontSize = '72px'
   } else {
     document.getElementById('introduction_to_the_bottom_red').style.margin = '0px'
     document.getElementById('bottom_contact').style.position = 'absolute'
     document.getElementById('bottom_contact').style.top = '45px'
     document.getElementById('bottom3png').style.margin = '-12px 2vm 0px'
+
+    document.getElementById('id_text_72px_1').style.fontSize = '40px'
+    document.getElementById('id_text_72px_2').style.fontSize = '40px'
+    document.getElementById('gai002').style.fontSize = '15px'
+    document.getElementById('gai002').style.fontWeight = '400'
+
+    document.getElementById('m60').style.fontWeight = '600'
+    document.getElementById('m60').style.fontSize = '42px'
   }
 }
 
