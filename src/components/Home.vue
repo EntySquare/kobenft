@@ -198,7 +198,7 @@
         </div>
         <div>
           <el-row>
-            <el-col :xs="{span: 10, push: 6}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
+            <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
                     :lg="{span: 3, push: 2}" :xl="{span: 4, push: 4}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
@@ -923,7 +923,7 @@ export default {
   }
 
   .iconText2 {
-    width: 300px;
+    width: 290px;
     height: 40px;
     font-size: 12px;
     font-weight: 500;
