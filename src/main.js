@@ -10,7 +10,12 @@ import 'element-ui/lib/theme-chalk/display.css'
 import locale from 'element-ui/lib/locale/lang/en'
 import i18n from './i18n/index'
 
+import VideoPlayer from 'vue-video-player/src'
+import 'vue-video-player/src/custom-theme.css'
+import 'video.js/dist/video-js.css'
+
 Vue.use(ElementUI, { locale })
+Vue.use(VideoPlayer, { locale })
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
