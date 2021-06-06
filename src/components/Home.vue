@@ -91,10 +91,17 @@
         </el-col>
         <el-col :xs="{span: 14, push: 4}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
                 :xl="{span: 8, push: 6}">
-          <img
-            class="headPerson"
-            src="../assets/head_person.png"
-          />
+          <!--          <img-->
+          <!--            class="headPerson"-->
+          <!--            src="../assets/head_person.png"-->
+          <!--          />-->
+          <div class='demo'>
+            <video-player class="video-player vjs-custom-skin"
+                          ref="videoPlayer"
+                          :playsinline="true"
+                          :options="playerOptions">
+            </video-player>
+          </div>
         </el-col>
       </el-row>
     </div>
@@ -198,7 +205,7 @@
         </div>
         <div>
           <el-row>
-            <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
+            <el-col :xs="{span: 14, push: 6}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
                     :lg="{span: 3, push: 2}" :xl="{span: 4, push: 4}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
@@ -346,7 +353,8 @@
     </div>
     <!-- 彩色扇形图 -->
     <div style='width: 100%;height: 45.94vw;max-height: 785px;min-height: 850px;'>
-      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">
+      <img src="@/assets/home_colour.png"
+           style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">
       <el-row>
         <el-col :xs="{span: 23, push: 1 }" :sm="{span: 20, push: 4 }" :md="{span: 21, push: 1 }"
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
@@ -395,7 +403,7 @@
               {{ $t('m.m54') }}
             </div>
             <el-row>
-              <el-col :span="16" :offset="4" >
+              <el-col :span="16" :offset="4">
                 <div style="padding: 10px 70px 0px 0px">
                   <img src="@/assets/home_Fanchart.png" style="height: 100%;width: 100%;max-width:250px;
                       padding: 12px 13px 14px 25px">
@@ -759,6 +767,7 @@ function Adaptation () {
     document.getElementById('m60').style.fontSize = '42px'
   }
 }
+
 export default {
   name: 'Home',
   data () {
@@ -776,8 +785,28 @@ export default {
         {id: 'en', name: 'English'},
         {id: 'ko', name: '한국어'},
         {id: 'ja', name: '日本語'}
-      ]
-
+      ],
+      playerOptions: {
+        playbackRates: [0.5, 1.0, 1.5, 2.0], // 可选的播放速度
+        autoplay: true, // 如果为true,浏览器准备好时开始回放。
+        muted: true, // 默认情况下将会消除任何音频。
+        loop: true, // 是否视频一结束就重新开始。
+        preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
+        aspectRatio: '16:9', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
+        fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
+        sources: [{
+          type: 'video/mp4', // 类型
+          src: 'https://kbtoken.oss-cn-beijing.aliyuncs.com/kobe.mp4?Expires=1622970147&OSSAccessKeyId=TMP.3KhFqjbokfFxZsF9T85K9gQguQ1aKw9w5HbNzjhuhNEUfLPagcN5qHMUevbJ21dao5gC2me35WLpBTXm8nnVDN77sEmoTU&Signature=UPFDGtU7Z5DWKzw0g%2BpZxn981AU%3D' // url地址
+        }],
+        poster: '../assets/head_person.png', // 封面地址
+        notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
+        controlBar: {
+          timeDivider: true, // 当前时间和持续时间的分隔符
+          durationDisplay: true, // 显示持续时间
+          remainingTimeDisplay: false, // 是否显示剩余时间功能
+          fullscreenToggle: true // 是否显示全屏按钮
+        }
+      }
     }
   },
   mounted: function () {
@@ -831,9 +860,19 @@ export default {
   }
 
   .headPerson {
-    width: 200px;
+    width: 90%;
     height: 200px;
     margin-bottom: -350px;
+    margin-left: -25px;
+  }
+
+  .demo {
+    width: 90%;
+    height: 200px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    margin-top: 200px;
     margin-left: -25px;
   }
 
@@ -1197,6 +1236,15 @@ export default {
     color: #FFFFFF;
     line-height: 20px;
   }
+
+  .demo {
+    width: 90%;
+    height: 200px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    margin-left: -25px;
+  }
 }
 
 .headFont {
@@ -1221,10 +1269,11 @@ export default {
   border-radius: 4px;
   min-height: 36px;
 }
-.select-img{
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
+
+.select-img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 </style>
