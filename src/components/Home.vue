@@ -39,7 +39,7 @@
             </el-row>
           </div>
         </el-col>
-        <el-col class="hidden-sm-and-up" :xs="{span: 2, push: 11}" :xl="{span: 2, push: 2}">
+        <el-col class="hidden-sm-and-up" :xs="{span: 2, push: 10}" :xl="{span: 2, push: 2}">
           <el-row :gutter="20" type="flex" style="margin-top: 10px">
             <el-col>
               <div class="headFont"><a
@@ -118,7 +118,7 @@
         </el-col>
       </el-row>
       <el-row style="height: 829px">
-        <el-col :xs="{span: 14, push: 5}" :sm="{span: 14, push: 5}" :md="{span: 10, push: 4}" :lg="{span: 8, push: 5}"
+        <el-col :xs="{span: 15, push: 4}" :sm="{span: 14, push: 5}" :md="{span: 10, push: 4}" :lg="{span: 8, push: 5}"
                 :xl="{span: 6, push: 5}">
           <div
             class="bodyText1">
@@ -796,7 +796,8 @@ export default {
         fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
         sources: [{
           type: 'video/mp4', // 类型
-          src: 'https://kbtoken.oss-cn-beijing.aliyuncs.com/kobe.mp4?Expires=1622970147&OSSAccessKeyId=TMP.3KhFqjbokfFxZsF9T85K9gQguQ1aKw9w5HbNzjhuhNEUfLPagcN5qHMUevbJ21dao5gC2me35WLpBTXm8nnVDN77sEmoTU&Signature=UPFDGtU7Z5DWKzw0g%2BpZxn981AU%3D' // url地址
+          src: '\n' +
+            'https://kbtoken.oss-cn-beijing.aliyuncs.com/kobe.mp4?Expires=1623195423&OSSAccessKeyId=TMP.3KdNeoj6szxSbZCoVoE5MmBq4wGE19BB6gydA6SDKQysczPAmJtJNGtszmzztRCMvHiXMzw1qEbEYN71wNbcyXpzyai1up&Signature=yO4USp8BBoDt7cUN4hdGESNxkzQ%3D' // url地址
         }],
         poster: '../assets/head_person.png', // 封面地址
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
