@@ -45,7 +45,7 @@
               <div class="headFont"><a
                 href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"
                 style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px;">{{ $t('m.t6') }}</a>
-                <div style="margin-top: 2px; display: inline-flex">
+                <div style="display: inline-flex">
                   <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>
                 </div>
               </div>
