@@ -137,10 +137,10 @@
             {{ $t('m.m8') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 16, push: 7}" :sm="{span: 16, push: 7}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 7}"
+        <el-col :xs="{span: 16, push: 2}" :sm="{span: 16, push: 7}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 7}"
                 :xl="{span: 6, push: 8}" style="padding-top: 50px">
           <el-image :src="require('../assets/body_kobe.png')"
-                    style="height: 346px; width: 348px; z-index: 1"></el-image>
+                    style="height: 250px; width: 250px; z-index: 1"></el-image>
           <div style="margin-top: -150px; margin-left: 50px">
             <el-image :src="require('../assets/body_purple.png')" style="height: 436px; width: 436px;"></el-image>
           </div>
@@ -787,13 +787,13 @@ export default {
         {id: 'ja', name: '日本語'}
       ],
       playerOptions: {
-        playbackRates: [0.5, 1.0, 1.5, 2.0], // 可选的播放速度
+        playbackRates: [0.5, 1.0, 2.0], // 可选的播放速度
         autoplay: true, // 如果为true,浏览器准备好时开始回放。
         muted: true, // 默认情况下将会消除任何音频。
         loop: true, // 是否视频一结束就重新开始。
         preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
         aspectRatio: '16:9', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
-        fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
+        fluid: false, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
         sources: [{
           type: 'video/mp4', // 类型
           src: '\n' +

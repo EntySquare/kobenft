@@ -9,13 +9,13 @@ const en = {
     't6': 'Drop',
     't7': 'Convert',
     // 框1
-    'm1': 'Mamba’s spirit alive',
+    'm1': 'Mamba forever',
     'm2': 'The world’s first decentralized NFT token',
     // 框2
     'm3': 'Kobe Bryant',
     'm4': 'Cultural heritage',
     'm5': 'Kobe Bryant is a legend, the perfect embodiment of tenacity, love, optimism, meaninglessness and discipline.',
-    'm6': '"Always stronger than yesterday’s self, this is an endless journey. "The core of the Mamba spirit lies in the constant pursuit of a better self. It is an attitude to life. May the Mamba spirit continue to advance in each of us. Commemorate Kobe Bryant with KB Token and bring Mamba more The brand of spirit spreads everywhere.',
+    'm6': 'The end of life is not death, but oblivion. To continue the "black mamba" legend in this way is the most sincere memory of Kobe Bryant! May the Mamba spirit continue to advance in each of us. Commemorate Kobe Bryant with KB Token and bring Mamba more The brand of spirit spreads everywhere.',
     'm7': 'In 20 years with the Los Angeles Lakers, he won five NBA championships, was selected to the All-Star 18 times, was selected to the NBA All-NBA team 15 times, the NBA Most Valuable Player (MVP) in 2008, and was named to the NBA Finals MVP twice。',
     'm8': 'The Kobe Bryant community is a community of people who respect, appreciate, support and love Kobe Bryant. In a way, all of us were inspired by Kobe Bryant. Therefore, we are here to share his journey, story and mentality. Now, let us continue to carry forward his inspiration and motivation, so that the whole world knows that we can always strive for the best as he has proved in his life.',
     // 框3
