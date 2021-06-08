@@ -52,7 +52,7 @@
             </el-col>
             <el-col>
               <div class="headFont"><a
-                href="imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F"
+                href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"
                 style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">{{ $t('m.t7') }}</a></div>
             </el-col>
           </el-row>
