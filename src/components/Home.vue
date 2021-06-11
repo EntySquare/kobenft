@@ -90,7 +90,7 @@
             {{ $t('m.m2') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 24, push: 4}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
+        <el-col :xs="{span: 24, pull: 4}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
                 :xl="{span: 8, push: 6}">
           <!--          <img-->
           <!--            class="headPerson"-->
@@ -603,8 +603,8 @@
           </div>
           <div style="height: 20px"></div>
         </el-col>
-        <el-col :xs="{span: 10,offset:2,}" :sm="{span: 10,offset:4,}" :md="{span: 5,offset:0,}"
-                :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
+        <el-col :xs="{span: 10,offset:2}" :sm="{span: 10,offset:4}" :md="{span: 5,offset:0}"
+                :lg="{span: 5,offset:0}" :xl="{span: 4,offset:0}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
@@ -626,8 +626,8 @@
             &nbsp;
           </div>
         </el-col>
-        <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 5,offset:0 }"
-                :lg="{span: 5,offset:0 }" :xl="{span: 4,offset:0 }">
+        <el-col :xs="{span: 10,offset:0}" :sm="{span: 10,offset:0}" :md="{span: 5,offset:0}"
+                :lg="{span: 5,offset:0}" :xl="{span: 4,offset:0}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
