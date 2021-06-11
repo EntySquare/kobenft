@@ -7,7 +7,7 @@ const en = {
     't4': 'Roadmap',
     't5': 'community',
     't6': 'Drop',
-    't7': 'Convert',
+    't7': 'Exchange',
     // 框1
     'm1': 'Mamba forever',
     'm2': 'The world’s first decentralized NFT token',

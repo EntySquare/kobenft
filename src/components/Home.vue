@@ -57,17 +57,17 @@
             </el-col>
           </el-row>
         </el-col>
-        <el-col :xs="{span: 2, push: 15}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
+        <el-col :xs="{span: 2, push: 16}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
                 :xl="{span: 2, push: 2}" style="margin-top: 10px">
           <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>
           <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
           <select v-model="languages" @change='getValue'
-                  style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none">
+                  style="color: white; position: absolute; bottom: 5px; margin-left: 5px; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none">
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
                     value="zh">中文
             </option>
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
-                    value="en">English
+                    value="en">EN
             </option>
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
                     value="ko">한국어
@@ -803,7 +803,7 @@ export default {
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
         controlBar: {
           timeDivider: true, // 当前时间和持续时间的分隔符
-          durationDisplay: true, // 显示持续时间
+          durationDisplay: false, // 显示持续时间
           remainingTimeDisplay: false, // 是否显示剩余时间功能
           fullscreenToggle: true // 是否显示全屏按钮
         }
@@ -868,13 +868,15 @@ export default {
   }
 
   .demo {
-    width: 172%;
+    width: 100%;
     height: 200px;
     border: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    margin-top: 170px;
     margin-left: -126px;
+    margin-top: 50%;
+    position: fixed;
+    z-index: 99;
   }
 
   .headTitle {
