@@ -67,7 +67,7 @@
                     value="zh">中文
             </option>
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
-                    value="en">English
+                    value="en">EN
             </option>
             <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
                     value="ko">한국어
@@ -352,10 +352,9 @@
       </el-row>
     </div>
     <!-- 彩色扇形图 -->
-    <div style='width: 100%;height: 45.94vw;max-height: 785px;min-height: 850px;'>
-      <img src="@/assets/home_colour.png"
-           style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">
-      <el-row>
+    <div style="" >
+<!--      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">-->
+      <el-row style="background: black" :style="homeColourPng">
         <el-col :xs="{span: 23, push: 1 }" :sm="{span: 20, push: 4 }" :md="{span: 21, push: 1 }"
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
           <div style="height: 2.94vw;"></div>
@@ -451,6 +450,33 @@
             </el-row>
           </div>
           <div style="height: 1.94vw;"></div>
+        </el-col>
+
+        <el-col :xs="{span: 22, push: 1 }" :sm="{span: 16, push: 4 }" :md="{span: 22, push: 1 }" :lg="{span: 17, push: 4 }" :xl="{span: 15, push: 4 }" style="background: #1E1E1E;border-radius: 18px;margin-bottom: 100px">
+              <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+                <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
+                  空投剩余时间：
+                </div>
+                <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
+                  {{day}}:Day {{hour}}:{{min}}:{{second}}
+                </div>
+              </el-col>
+              <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+                <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
+                  IDO剩余时间：
+                </div>
+                <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
+                  {{day2}}:Day {{hour2}}:{{min2}}:{{second2}}
+                </div>
+              </el-col>
+              <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8" >
+                <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
+                  交易所上线时间：
+                </div>
+                <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
+                  2021 Q3
+                </div>
+              </el-col>
         </el-col>
       </el-row>
     </div>
@@ -775,14 +801,23 @@ export default {
       starttime: '2020 / 05 / 01',
       // 倒计时
       date: '',
-
+      curStartTime: '',
+      curStartTime2: '',
+      day: '',
+      hour: '',
+      min: '',
+      second: '',
+      day2: '',
+      hour2: '',
+      min2: '',
+      second2: '',
       // 完工时间
       endtime: '2020 / 08 / 31',
       languages: 'en',
-      languagesText: 'English',
+      languagesText: 'EN',
       items: [
         {id: 'zh', name: '中文'},
-        {id: 'en', name: 'English'},
+        {id: 'en', name: 'EN'},
         {id: 'ko', name: '한국어'},
         {id: 'ja', name: '日本語'}
       ],
@@ -807,11 +842,21 @@ export default {
           remainingTimeDisplay: false, // 是否显示剩余时间功能
           fullscreenToggle: true // 是否显示全屏按钮
         }
+      },
+      homeColourPng: {
+        backgroundImage: 'url(' + require('@/assets/home_colour.png') + ')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '100% 100%'
       }
     }
   },
   mounted: function () {
     this.switchLang('en')
+    this.curStartTime = '2021-08-09'
+    this.countTime()
+
+    this.curStartTime2 = '2021-11-09'
+    this.countTime2()
   },
   methods: {
     switchLang (val) {
@@ -822,19 +867,75 @@ export default {
       console.log('您选择了', this.languages)
       this.switchLang(this.languages)
     },
-    countDown () {
-      // 开工时间
-      var startDate = Date.parse(this.getTimeimg)
-      // 完工时间
-      var endDate = Date.parse(this.endtime)
-      var days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000)
-      // alert(days);
-      // return days;
-      this.date = days
-      // console.log(this.date);
+    countTime: function () {
+      // 获取当前时间
+      let date = new Date()
+      let now = date.getTime()
+      // 设置截止时间
+      let endDate = new Date(this.curStartTime) // this.curStartTime需要倒计时的日期
+      let end = endDate.getTime()
+      // 时间差
+      let leftTime = end - now
+      // 定义变量 d,h,m,s保存倒计时的时间
+      if (leftTime >= 0) {
+        // 天
+        this.day = Math.floor(leftTime / 1000 / 60 / 60 / 24)
+        // 时
+        let h = Math.floor(leftTime / 1000 / 60 / 60 % 24)
+        this.hour = h < 10 ? '0' + h : h
+        // 分
+        let m = Math.floor(leftTime / 1000 / 60 % 60)
+        this.min = m < 10 ? '0' + m : m
+        // 秒
+        let s = Math.floor(leftTime / 1000 % 60)
+        this.second = s < 10 ? '0' + s : s
+      } else {
+        this.day = 0
+        this.hour = '00'
+        this.min = '00'
+        this.second = '00'
+      }
+      // 等于0的时候不调用
+      if (Number(this.hour) === 0 && Number(this.day) === 0 && Number(this.min) === 0 && Number(this.second) === 0) {
+      } else {
+        // 递归每秒调用countTime方法，显示动态时间效果,
+        setTimeout(this.countTime, 1000)
+      }
     },
-    chekcToken () {
-
+    countTime2: function () {
+      // 获取当前时间
+      let date = new Date()
+      let now = date.getTime()
+      // 设置截止时间
+      let endDate = new Date(this.curStartTime2) // this.curStartTime需要倒计时的日期
+      let end = endDate.getTime()
+      // 时间差
+      let leftTime = end - now
+      // 定义变量 d,h,m,s保存倒计时的时间
+      if (leftTime >= 0) {
+        // 天
+        this.day2 = Math.floor(leftTime / 1000 / 60 / 60 / 24)
+        // 时
+        let h = Math.floor(leftTime / 1000 / 60 / 60 % 24)
+        this.hour2 = h < 10 ? '0' + h : h
+        // 分
+        let m = Math.floor(leftTime / 1000 / 60 % 60)
+        this.min2 = m < 10 ? '0' + m : m
+        // 秒
+        let s = Math.floor(leftTime / 1000 % 60)
+        this.second2 = s < 10 ? '0' + s : s
+      } else {
+        this.day2 = 0
+        this.hour2 = '00'
+        this.min2 = '00'
+        this.second2 = '00'
+      }
+      // 等于0的时候不调用
+      if (Number(this.hour2) === 0 && Number(this.day2) === 0 && Number(this.min2) === 0 && Number(this.second2) === 0) {
+      } else {
+        // 递归每秒调用countTime方法，显示动态时间效果,
+        setTimeout(this.countTime2, 1000)
+      }
     }
   }
 }
