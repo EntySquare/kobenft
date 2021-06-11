@@ -797,7 +797,7 @@ export default {
         sources: [{
           type: 'video/mp4', // 类型
           src: '\n' +
-            'https://kbtoken.oss-cn-beijing.aliyuncs.com/kobe.mp4?Expires=1623195423&OSSAccessKeyId=TMP.3KdNeoj6szxSbZCoVoE5MmBq4wGE19BB6gydA6SDKQysczPAmJtJNGtszmzztRCMvHiXMzw1qEbEYN71wNbcyXpzyai1up&Signature=yO4USp8BBoDt7cUN4hdGESNxkzQ%3D' // url地址
+            'https://kbtoken.oss-cn-beijing.aliyuncs.com/kobe.mp4' // url地址
         }],
         poster: '../assets/head_person.png', // 封面地址
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
@@ -868,13 +868,13 @@ export default {
   }
 
   .demo {
-    width: 90%;
+    width: 172%;
     height: 200px;
     border: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    margin-top: 200px;
-    margin-left: -25px;
+    margin-top: 170px;
+    margin-left: -126px;
   }
 
   .headTitle {
