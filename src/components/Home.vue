@@ -53,7 +53,8 @@
             <el-col>
               <div class="headFont"><a
                 href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"
-                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">{{ $t('m.t7') }}</a></div>
+                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">{{ $t('m.t7') }}</a>
+              </div>
             </el-col>
           </el-row>
         </el-col>
@@ -89,7 +90,7 @@
             {{ $t('m.m2') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 14, push: 4}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
+        <el-col :xs="{span: 24, push: 4}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
                 :xl="{span: 8, push: 6}">
           <!--          <img-->
           <!--            class="headPerson"-->
@@ -352,8 +353,8 @@
       </el-row>
     </div>
     <!-- 彩色扇形图 -->
-    <div style="" >
-<!--      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">-->
+    <div style="">
+      <!--      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">-->
       <el-row style="background: black" :style="homeColourPng">
         <el-col :xs="{span: 23, push: 1 }" :sm="{span: 20, push: 4 }" :md="{span: 21, push: 1 }"
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
@@ -452,31 +453,33 @@
           <div style="height: 1.94vw;"></div>
         </el-col>
 
-        <el-col :xs="{span: 22, push: 1 }" :sm="{span: 16, push: 4 }" :md="{span: 22, push: 1 }" :lg="{span: 17, push: 4 }" :xl="{span: 15, push: 4 }" style="background: #1E1E1E;border-radius: 18px;margin-bottom: 100px">
-              <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
-                <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
-                  空投剩余时间：
-                </div>
-                <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
-                  {{day}}:Day {{hour}}:{{min}}:{{second}}
-                </div>
-              </el-col>
-              <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
-                <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
-                  IDO剩余时间：
-                </div>
-                <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
-                  {{day2}}:Day {{hour2}}:{{min2}}:{{second2}}
-                </div>
-              </el-col>
-              <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8" >
-                <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
-                  交易所上线时间：
-                </div>
-                <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
-                  2021 Q3
-                </div>
-              </el-col>
+        <el-col :xs="{span: 22, push: 1 }" :sm="{span: 16, push: 4 }" :md="{span: 22, push: 1 }"
+                :lg="{span: 17, push: 4 }" :xl="{span: 15, push: 4 }"
+                style="background: #1E1E1E;border-radius: 18px;margin-bottom: 100px">
+          <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+            <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
+              空投剩余时间：
+            </div>
+            <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
+              {{ day }}:Day {{ hour }}:{{ min }}:{{ second }}
+            </div>
+          </el-col>
+          <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+            <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
+              IDO剩余时间：
+            </div>
+            <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
+              {{ day2 }}:Day {{ hour2 }}:{{ min2 }}:{{ second2 }}
+            </div>
+          </el-col>
+          <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+            <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
+              交易所上线时间：
+            </div>
+            <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
+              2021 Q3
+            </div>
+          </el-col>
         </el-col>
       </el-row>
     </div>
@@ -724,7 +727,7 @@
       <div style="height:  35px"></div>
       <el-row :gutter="10">
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}"
-                :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}" >
+                :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}">
           <div id="bottom_contact" style="font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
             © 2021 KB24 All rights reserved
           </div>
@@ -824,7 +827,7 @@ export default {
       playerOptions: {
         playbackRates: [0.5, 1.0, 2.0], // 可选的播放速度
         autoplay: true, // 如果为true,浏览器准备好时开始回放。
-        muted: true, // 默认情况下将会消除任何音频。
+        muted: false, // 默认情况下将会消除任何音频。
         loop: true, // 是否视频一结束就重新开始。
         preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
         aspectRatio: '16:9', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
@@ -969,15 +972,14 @@ export default {
   }
 
   .demo {
-    width: 100%;
+    width: 100vw;
     height: 200px;
     border: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    margin-left: -126px;
-    margin-top: 50%;
-    position: fixed;
-    z-index: 99;
+    margin-top: 245px;
+    position: absolute;
+    z-index: 2;
   }
 
   .headTitle {
@@ -1005,6 +1007,7 @@ export default {
     font-weight: 600;
     color: #E92F75;
     line-height: 50px;
+    padding-top: 100px;
   }
 
   .bodyTitle2 {
