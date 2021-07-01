@@ -13,135 +13,129 @@
         />
       </picture>
       <el-row :span="24" style="height: 65px"></el-row>
-      <el-row>
-        <el-col :xs="{span: 2, push: 2}" :sm="{span: 2, push: 2}" :md="{span: 2, push: 2}" :lg="{span: 2, push: 2}"
-                :xl="{span: 2, push: 2}">
-          <el-image :src="require('../assets/headLogo.png')" style="height: 40px; width: 92px;"></el-image>
-        </el-col>
-        <el-col class="hidden-md-and-down" :span="8" offset="8">
-          <div>
-            <el-row :gutter="40" type="flex" style="margin-top: 10px">
-              <el-col>
-                <div class="headFont">{{ $t('m.t1') }}</div>
+      <div>
+        <el-row>
+          <el-col :xs="{span: 3, push: 2} " :sm="{span: 3, push: 2} " :md="{span: 3, push: 2} " :lg="{span: 3, push: 2}" :xl="{span: 3, push: 2}" style="">
+            <router-link to="/">
+              <el-image :src="require('../assets/headLogo.png')" style="height: 40px; width: 92px;margin-top: -13px"></el-image>
+            </router-link>
+          </el-col>
+          <el-col :xs="{span: 12, push: 3}" :sm="{span: 12, push: 3}" :md="{span: 12, push: 3}" :lg="{span: 8, push: 5}" :xl="{span: 8, push: 5}" style="">
+            <el-row>
+              <el-col span="8">
+                <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;float: right">
+<!--                  <a href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"  @click="goToTokenUrl()" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">-->
+                  <a @click="goToTokenUrl()" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
+                    IDO
+                  </a>
+                </div>
               </el-col>
-              <el-col>
-                <div class="headFont">{{ $t('m.t2') }}</div>
+              <el-col span="8">
+                <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;float: right;">
+                  <router-link to="/market" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
+                    NFT
+                  </router-link>
+                </div>
               </el-col>
-              <el-col>
-                <div class="headFont">{{ $t('m.t3') }}</div>
-              </el-col>
-              <el-col>
-                <div class="headFont">{{ $t('m.t4') }}</div>
-              </el-col>
-              <el-col>
-                <div class="headFont">{{ $t('m.t5') }}</div>
+              <el-col span="8">
+                <div class=""><a
+                    @click="goToTokenUrl()"
+                  style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
+                  {{ $t('m.t6') }}
+                  <!--                    <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>-->
+                </a>
+                </div>
               </el-col>
             </el-row>
-          </div>
-        </el-col>
-        <el-col class="hidden-sm-and-up" :xs="{span: 2, push: 10}" :xl="{span: 2, push: 2}">
-          <el-row :gutter="20" type="flex" style="margin-top: 10px">
-            <el-col>
-              <div class="headFont"><a
-                href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"
-                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px;">{{ $t('m.t6') }}</a>
-                <div style="display: inline-flex">
-                  <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>
-                </div>
-              </div>
-            </el-col>
-            <el-col>
-              <div class="headFont"><a
-                href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"
-                style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 14px">{{ $t('m.t7') }}</a>
-              </div>
-            </el-col>
-          </el-row>
-        </el-col>
-        <el-col :xs="{span: 2, push: 16}" :sm="{span: 2, push: 18}" :md="{span: 2, push: 18}" :lg="{span: 2, push: 2}"
-                :xl="{span: 2, push: 2}" style="margin-top: 10px">
-          <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>
-          <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
-          <select v-model="languages" @change='getValue'
-                  style="color: white; position: absolute; bottom: 5px; margin-left: 5px; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none">
-            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
-                    value="zh">中文
-            </option>
-            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
-                    value="en">EN
-            </option>
-            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
-                    value="ko">한국어
-            </option>
-            <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
-                    value="ja">日本語
-            </option>
-          </select>
-        </el-col>
-      </el-row>
+          </el-col>
+          <el-col :xs="{span: 3, push: 4} " :sm="{span: 3, push: 4} " :md="{span: 3, push: 4} " :lg="{span: 3, push: 8}" :xl="{span: 3, push: 8}" style="margin-top: -4px">
+<!--            <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>-->
+            <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
+            <select id="select_languages" v-model="languages" @change='getValue'
+                    style="color: white; position: absolute; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none;font-size: 16px;font-weight: 500;">
+              <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                      value="zh">中文
+              </option>
+              <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                      value="en">EN
+              </option>
+              <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                      value="ko">한국어
+              </option>
+              <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
+                      value="ja">日本語
+              </option>
+            </select>
+          </el-col>
+        </el-row>
+      </div>
+
       <el-row style="height: 153px"></el-row>
-      <el-row type="flex">
+      <el-row >
         <el-col :xs="{span: 2, offset: 2}" :sm="{span: 2, offset: 2}" :md="{span: 2, push: 2}" :lg="{span: 2, push: 2}"
-                :xl="{span: 8, push: 4}">
+                :xl="{span: 8, push: 2}">
           <div class="headTitle">
+            <!--曼巴精神不熄-->
             {{ $t('m.m1') }}
           </div>
           <div class="headSubTitle">
+<!--            全球首个去中心化NFT纪念币-->
             {{ $t('m.m2') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 24, pull: 4}" :sm="{span: 14, push: 5}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 6}"
-                :xl="{span: 8, push: 6}">
+        <el-col :xs="{span: 24,}" :sm="{span: 9, push: 10}" :md="{span: 8, push: 11}" :lg="{span: 8, push: 9}"
+                :xl="{span: 8, push: 2}" style="background: #36CFA2">
           <!--          <img-->
           <!--            class="headPerson"-->
           <!--            src="../assets/head_person.png"-->
           <!--          />-->
-          <div class='demo'>
             <video-player class="video-player vjs-custom-skin"
                           ref="videoPlayer"
                           :playsinline="true"
                           :options="playerOptions">
             </video-player>
-          </div>
         </el-col>
       </el-row>
     </div>
-    <div style="height: auto; width: 100vw; background-color: black">
+    <div style="width: 100%; background-color: black">
       <el-row style="height: 160px"></el-row>
-      <el-row type="flex" justify="center">
-        <el-col span="12" pull="2">
-          <div class="bodyTitle1">
+      <el-row >
+        <el-col :xs="{span: 19, push: 2}" :sm="{span: 19, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 15, push: 4}" :xl="{span: 16, push: 4 }" style="">
+          <div class="bodyTitle1" style="width: 100%">
+<!--            “曼巴”精神的延续…-->
             {{ $t('m.m3') }}
-          </div>
-          <div class="bodyTitle2">
-            {{ $t('m.m4') }}
           </div>
         </el-col>
       </el-row>
-      <el-row style="height: 829px">
-        <el-col :xs="{span: 15, push: 4}" :sm="{span: 14, push: 5}" :md="{span: 10, push: 4}" :lg="{span: 8, push: 5}"
-                :xl="{span: 6, push: 5}">
+      <el-row style="background: black">
+        <el-col :xs="{span: 20, push: 2}" :sm="{span: 18, push: 3}" :md="{span: 12, push: 4}" :lg="{span: 11, push: 4}" :xl="{span: 9, push: 4}">
           <div
-            class="bodyText1">
+            class="bodyText1" style="color: #E92F75;font-weight: 600;font-size: 32px;line-height:1.4;">
+<!--            当KB Token与元宇宙-->
+            {{ $t('m.m4') }}
+            <div></div>
+<!--            碰撞的奇幻妙想-->
             {{ $t('m.m5') }}
           </div>
           <div class="bodyText2"
                style="width: 100%;font-weight: 500;color: #FFFFFF;line-height: 24px;">
+<!--            如果把现实生活中一切搬进虚拟世界，会是什么样？-->
             {{ $t('m.m6') }}
-          </div>
-          <div class="bodyText2"
-               style="width: 100%;font-weight: 500;color: #FFFFFF;line-height: 24px;">
+            <p style="height: 20px"></p>
+<!--            如果把我们心中共同的偶像重新在虚拟世界中复制出来，会是什么样？-->
             {{ $t('m.m7') }}
-          </div>
-          <div class="bodyText2"
-               style="width: 100%;font-weight: 500;color: #FFFFFF;line-height: 24px;">
+            <p style="height: 20px"></p>
+<!--            生命的尽头不是死亡，而是被遗忘，心系不舍的人，请别停止想念。Kobe Bryant，一个坚韧、热爱、乐观、无谓和纪律的代名词，他身上所承载的信仰，是我们对他难以割舍的原因，也是我们与他精神永系的基础。-->
             {{ $t('m.m8') }}
+            <p style="height: 20px"></p>
+<!--            所以在这里我们将做一件事，由致敬Kobe Bryant的区块链开发者通过打造一个专属于Kobe Bryant的社区，将Kobe这个身份复制到一个无比真实的虚拟世界中，以这种方式延续"黑曼巴"的传奇。在这里我们将分享他的旅程、故事和心态，让曼巴精神时刻在我们身旁发生着，贯穿一切生活的本质，而不仅仅只在篮球场上。-->
+            {{ $t('m.m9') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 16, push: 2}" :sm="{span: 16, push: 7}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 7}"
-                :xl="{span: 6, push: 8}" style="padding-top: 50px">
+        <el-col :xs="{span: 16, push: 2}" :sm="{span: 16, push: 7}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 5}"
+                :xl="{span: 12, push: 7}" style="padding-top: 50px;">
           <el-image :src="require('../assets/body_kobe.png')"
-                    style="height: 250px; width: 250px; z-index: 1"></el-image>
+                    style="height: 250px; width: 250px; "></el-image>
           <div style="margin-top: -150px; margin-left: 50px">
             <el-image :src="require('../assets/body_purple.png')" style="height: 436px; width: 436px;"></el-image>
           </div>
@@ -149,44 +143,128 @@
       </el-row>
       <div>
         <el-row>
+          <el-col :xs="{span: 22, push: 1}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 18,push:4}" style="">
+            <div style="height: 100px"></div>
+            <div style="font-size: 32px;font-weight: 600;color: #E92F75;">
+<!--                什么是元宇宙-->
+              {{ $t('m.m10') }}
+              </div>
+            <div style="font-weight: 500;font-size: 18px;color: #FFFFFF;">
+              <div style="height: 20px"></div>
+<!--            元宇宙是一个可以映射现实世界、又独立于现实世界的虚拟空间。-->
+              {{ $t('m.m11') }}
+              <div style="height: 20px"></div>
+<!--            通过在元宇宙中构造虚拟的Kobe Bryant形象，拥有和现实世界一样的“人生”生活、社交、工作、娱乐。-->
+              {{ $t('m.m12') }}
+              <div style="height: 20px"></div>
+<!--            激发人们无限想象的元宇宙将是属于下一代人的真实“数字”社会，是全球资本市场的新热点，更是当前互联网进阶形态 Web3.0 终将到达的方向。-->
+              {{ $t('m.m13') }}
+              <div style="height: 100px"></div>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+      <div>
+        <el-row>
+          <el-col :xs="{span: 24, push: 0}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 8,push:4}" style="background: #00FFE1">
+            <div style="ont-weight: 500;font-size: 18px;color: #FFFFFF;height: 300px">
+              视频
+            </div>
+          </el-col>
+          <el-col :xs="{span: 22, push: 1}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 8,push:5}" style="">
+            <div style="height: 50px"></div>
+            <div style="font-size: 32px;font-weight: 600;color: #E92F75;">
+<!--              Kobe Bryant亲密战友 强烈支持KB24-->
+              {{ $t('m.m14') }}
+              <div style="height: 50px"></div>
+            </div>
+            <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              <div style="height: 20px"></div>
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              <div style="height: 20px"></div>
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+      <div>
+        <div style="height: 100px"></div>
+        <el-row >
           <el-col :xs="{span: 18, push: 1}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
-                  :lg="{span: 6, push: 4}" :xl="{span: 6, push: 4}">
+                  :lg="{span: 6, push: 4}" :xl="{span: 6, push:4}" style="">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon1.png')"></el-image>
-              <div class="iconFont">{{ $t('m.m9') }}</div>
+              <div class="iconFont">
+<!--                坚韧-->
+                {{ $t('m.m15') }}
+              </div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{ $t('m.m10') }}</div>
-              <div>{{ $t('m.m11') }}</div>
+              <div style="margin-bottom: 24px">
+<!--                塑就强大内心-->
+                {{ $t('m.m16') }}
+              </div>
+              <div>
+<!--                永不屈服，以强大的内心应对每一个挫折与挑战，并从失败中强势归来。在科比20年的职业生涯中，坚韧的内心给予他不懈的动力，在追逐伟大的征程中不断前进。-->
+                {{ $t('m.m17') }}
+              </div>
             </div>
             <div style="height: 64px"></div>
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon3.png')"></el-image>
-              <div class="iconFont">{{ $t('m.m12') }}</div>
+              <div class="iconFont">
+<!--                乐观-->
+                {{ $t('m.m18') }}
+              </div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{ $t('m.m13') }}</div>
-              <div>{{ $t('m.m14') }}</div>
+              <div style="margin-bottom: 24px">
+<!--                把挫折视作机遇-->
+                {{ $t('m.m19') }}
+              </div>
+              <div>
+<!--                不论眼前面临多大的挑战，始终保持自信和积极的态度。乐观是自信的一种体现，只要愿意付出努力，最终一定会收获回报。-->
+                {{ $t('m.m20') }}
+              </div>
             </div>
           </el-col>
           <el-col :xs="{span: 18, push: 1}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
-                  :lg="{span: 6, push: 8}" :xl="{span: 6, push: 8}" class="iconPadding">
+                  :lg="{span: 6, push: 8}" :xl="{span: 6, push: 8}" style="" class="iconPadding">
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon2.png')"></el-image>
-              <div class="iconFont">{{ $t('m.m15') }}</div>
+              <div class="iconFont">
+<!--                热爱-->
+                {{ $t('m.m21') }}
+              </div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{ $t('m.m16') }}</div>
-              <div>{{ $t('m.m17') }}</div>
+              <div style="margin-bottom: 24px">
+<!--                执着造就成功-->
+                {{ $t('m.m22') }}
+              </div>
+              <div>
+<!--                用不懈的坚持和奉献，让自己全身心投入到目标当中。对他来说，热爱就是曼巴精神的基石。激励着他们努力奋进，激发自己的全部潜能。-->
+                {{ $t('m.m23') }}
+              </div>
             </div>
             <div style="height: 64px"></div>
             <div style="height: 128px; width: 128px;">
               <el-image :src="require('../assets/icon4.png')"></el-image>
-              <div class="iconFont">{{ $t('m.m18') }}</div>
+              <div class="iconFont">
+<!--                无谓-->
+                {{ $t('m.m24') }}
+              </div>
             </div>
             <div class="iconText" style="margin-left: 50px; width: 100%">
-              <div style="margin-bottom: 24px">{{ $t('m.m19') }}</div>
-              <div>{{ $t('m.m20') }}</div>
+              <div style="margin-bottom: 24px">
+<!--                无谓失败-->
+                {{ $t('m.m25') }}
+              </div>
+              <div>
+<!--                无谓失败 尝试新鲜事物，即使失败后仍敢于再次发起挑战的勇气。失败不可怕，即使自知身处劣势，仍抱持永不放弃的精神，一次又一次地继续挑战。想要成为最出色的自己，就绝对不能畏惧失败。-->
+                {{ $t('m.m26') }}
+              </div>
             </div>
           </el-col>
         </el-row>
@@ -198,8 +276,9 @@
             <el-col :xs="{span: 1, push: 2}" :sm="{span: 1, push: 2}" :md="{span: 1, push: 2}" :lg="{span: 1, push: 3}"
                     :xl="{span: 1, push: 2}">
               <div
-                style="width: 64px;height: 32px;font-size: 32px;font-weight: 500;color: #FFFFFF;line-height: 32px; margin-bottom: 77px">
-                {{ $t('m.m21') }}
+                style="width: 10064px;height: 32px;font-size: 32px;font-weight: 500;color: #FFFFFF;line-height: 32px; margin-bottom: 77px">
+<!--                KB24 X 元宇宙-->
+                {{ $t('m.m27') }}
               </div>
             </el-col>
           </el-row>
@@ -211,63 +290,87 @@
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon5.png')"></el-image>
               </div>
-              <div class="iconTitle">{{ $t('m.m22') }}</div>
-              <div class="iconText2">{{ $t('m.m23') }}</div>
+              <div class="iconTitle">
+<!--                虚拟化-->
+                {{ $t('m.m28') }}
+              </div>
+              <div class="iconText2">
+<!--                KB24能够迎合“元宇宙”发展所需，拥有其去中心化、不可篡改、可扩展等众多优势，构建虚拟形象，进而不断的拓展“元宇宙”的想象边界。-->
+                {{ $t('m.m29') }}
+              </div>
             </el-col>
             <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 6}" :xl="{span: 4, push: 6}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon6.png')"></el-image>
               </div>
-              <div class="iconTitle">{{ $t('m.m24') }}</div>
-              <div class="iconText2">{{ $t('m.m25') }}</div>
+              <div class="iconTitle">
+<!--                安全性-->
+                {{ $t('m.m30') }}
+              </div>
+              <div class="iconText2">
+<!--                KB24是“元宇宙”实现升维的关键技术，其作用在于保障用户虚拟资产、虚拟身份安全，进行价值交换，并保障“元宇宙”的规则透明。-->
+                {{ $t('m.m31') }}
+              </div>
             </el-col>
             <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
                     :lg="{span: 3, push: 10}" :xl="{span: 4, push: 8}">
               <div style="height: 164px; width: 164px;">
                 <el-image :src="require('../assets/icon7.png')"></el-image>
               </div>
-              <div class="iconTitle">{{ $t('m.m26') }}</div>
-              <div class="iconText2">{{ $t('m.m27') }}</div>
+              <div class="iconTitle">
+<!--                可访问-->
+                {{ $t('m.m32') }}
+              </div>
+              <div class="iconText2">
+<!--                KB24通过NFT进行融合链上和链下两个世界，达到资产和价值体系相互流通，打破传统实体市场与加密圈的壁垒。-->
+                {{ $t('m.m33') }}
+              </div>
             </el-col>
           </el-row>
         </div>
       </div>
     </div>
     <div
-      style="width: 100%; height: 332px; background: linear-gradient(270deg, #FF5045 0%, #E3287F 54%, #E32780 100%);">
+      style="width: 100%; height: 432px; background: linear-gradient(270deg, #FF5045 0%, #E3287F 54%, #E32780 100%);">
       <el-row style="height: 90px"></el-row>
       <el-row>
-        <el-col :xs="{span: 6, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
+        <el-col :xs="{span: 20, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
                 :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}">
           <div class="focusFont1">
-            {{ $t('m.m28') }}
+<!--            创造一个平行宇宙，将Kobe在元宇宙中构建出来。-->
+            {{ $t('m.m34') }}
           </div>
         </el-col>
-        <el-col :xs="{span: 12, push: 4}" :sm="{span: 10, push: 6}" :md="{span: 10, push: 6}"
-                :lg="{span: 8, push: 6}" :xl="{span: 6, push: 9}">
+        <el-col :xs="{span: 20, push: 2}" :sm="{span: 10, push: 4}" :md="{span: 12, push: 3}"
+                :lg="{span: 8, push: 6}" :xl="{span: 10, push: 5}" style="">
+          <div style="height: 30px"></div>
           <div style="padding-bottom: 35px">
             <div class="focusFont2">
-              {{ $t('m.m29') }}
+<!--              重塑新的商业价值-->
+              {{ $t('m.m35') }}
             </div>
             <div class="focusFont3">
-              {{ $t('m.m30') }}
+<!--              使用户能够在开放的全球环境下与传统资产和数字资产进行交互。-->
+              {{ $t('m.m36') }}
             </div>
           </div>
           <div>
             <div class="focusFont2">
-              {{ $t('m.m31') }}
+<!--              KB24将成为NFT新趋势-->
+              {{ $t('m.m37') }}
             </div>
             <div class="focusFont3">
-              {{ $t('m.m32') }}
+<!--              Kobe被虚拟进入元宇宙，延续曼巴精神，NFT只是元宇宙里面的一个应用之一-->
+              {{ $t('m.m38') }}
             </div>
           </div>
         </el-col>
       </el-row>
     </div>
-    <div style="width: 100%;height: 27.29vw;min-height: 320px">
-      <img src="@/assets/home_dunk.png"
-           style="height: auto;width: 100%;z-index: -1;position:absolute;min-height: 320px">
+    <div :style="{backgroundRepeat: 'no-repeat',backgroundSize: '100% 100%', backgroundImage:'url(' + require('@/assets/home_dunk.png') + ')'}">
+<!--      <img src="@/assets/home_dunk.png"-->
+<!--           style="height: auto;width: 100%;z-index: -1;position:absolute;min-height: 320px">-->
       <el-row :gutter="10">
         <div style="height: 3.29vw;">
         </div>
@@ -278,26 +381,33 @@
           <div style="height: 10px"></div>
           <div id="id_text_72px_1"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
-            {{ $t('m.m33') }}
+<!--            为追求最好而努力，-->
+            {{ $t('m.m39') }}
           </div>
           <div id="id_text_72px_2"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
-            {{ $t('m.m34') }}
+<!--            以KB24纪念Kobe Bryant-->
+            {{ $t('m.m40') }}
           </div>
           <div style="height: 40px;"></div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
-            {{ $t('m.m35') }}
+<!--            Kobe Bryant社区是尊重，欣赏，支持和热爱KobeBryant的人们的社区-->
+            {{ $t('m.m41') }}
           </div>
           <div style="height: 20px;"></div>
           <div
             style="font-size: 14px;font-weight: 600;color: #FFFFFF;float: left;"
             align="right">
-            {{ $t('m.m36') }}&nbsp;
+<!--            加入社区-->
+            {{ $t('m.m42') }}
           </div>
           <div style="">
+            <a href="https://t.me/kbtoken">
             <img src="@/assets/home_pinkArrow.png" style="height: 50px;width: 50px;margin: -13px 0px 0px 11px">
+            </a>
           </div>
+          <div style="height: 50px"></div>
         </el-col>
         <el-col :xs="0" :sm="0" :md="2" :lg="2" :xl="2">
           <div class="grid-content bg-purple"></div>
@@ -310,7 +420,7 @@
 
     <!-- 什么是kbn token -->
     <!--    <div style="width: 100%;height: 41.97vw;background: black">-->
-    <div style="width: 100%;height: 800px;background: black">
+    <div style="width: 100%;background: black">
       <el-row :gutter="10">
         <el-col :xs="5" :sm="5" :md="13" :lg="13" :xl="13">
           <div class="grid-content bg-purple-light"></div>
@@ -327,7 +437,8 @@
         <el-col :xs="{span: 20,offset:1,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:2,}" :lg="11"
                 :xl="{span: 20,offset:4,}">
           <div style="font-size: 72px;font-weight: 600;color: #E92F75;margin-top: -30px">
-            {{ $t('m.m37') }}&nbsp;
+<!--            什么是 KBN Token-->
+            {{ $t('m.m43') }}
           </div>
         </el-col>
 
@@ -337,116 +448,117 @@
         <el-col :xs="1" :sm="1" :md="0" :lg="0" :xl="0">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:1,}"
+        <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:3,}"
                 :lg="{span: 11,offset:4,}" :xl="{span: 20,offset:4,}">
+          <div style="height: 80px"></div>
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-            {{ $t('m.m38') }}&nbsp;
+<!--            KB Token是一种去中心化的NFT资产，以开创元宇宙版图，给无数球迷们搭建一个追寻、回忆、悼念的去中心开放式平台，并且KB Token也是首个纪念Kobe Bryant的NFT加密艺术代表，旨在成为娱乐交互和文化的通用支付方式。-->
+            {{ $t('m.m44') }}
             <div style="height: 15px"></div>
-            {{ $t('m.m39') }}&nbsp;
+<!--            KB Token赋予实体物品+NFT落地，不仅具有存储价值，还可以执行智能合约及艺术、影视、音乐、文化、游戏都NFT化。并在所有社会创造活动中都具有可衡量和可转让的价值。-->
+            {{ $t('m.m45') }}
             <div style="height: 15px"></div>
-            {{ $t('m.m40') }}&nbsp;
+<!--            随着网络的增长和价值创造而扩展，激励生态中各种角色，保证协议正常运转。-->
+            {{ $t('m.m46') }}
+            &nbsp;
           </div>
+          <div style="height: 100px"></div>
         </el-col>
         <el-col :xs="0" :sm="0" :md="1" :lg="1" :xl="3">
           <div class="grid-content bg-purple"></div>
         </el-col>
+        <div style="height: 100px"></div>
       </el-row>
     </div>
     <!-- 彩色扇形图 -->
     <div style="">
       <!--      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">-->
-      <el-row style="background: black" :style="homeColourPng">
+<!--      <el-row style="background: black" :style="{backgroundImage: 'url(' + require('@/assets/home_colour.png') + ')',backgroundRepeat: 'no-repeat',backgroundSize: '100% 100%'}">-->
+      <el-row style="background: linear-gradient(49deg, #000000 0%, #73157F 55%, #5549BA 73%, #3B005C 100%);" >
         <el-col :xs="{span: 23, push: 1 }" :sm="{span: 20, push: 4 }" :md="{span: 21, push: 1 }"
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
-          <div style="height: 2.94vw;"></div>
+          <div style="height: 100px;"></div>
           <div style="font-size: 32px;font-weight: 500;color: #FFFFFF;">
-            {{ $t('m.m41') }}&nbsp;
+<!--            KB代币-->
+            {{ $t('m.m47') }}
           </div>
           <div style="height: 1.94vw;"></div>
           <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;">
-            {{ $t('m.m42') }}&nbsp;
+<!--            KB Token赋予实体物品+NFT概念运用落地，通过NFT非同质化通证，体现KB Token的价值-->
+            {{ $t('m.m48') }}
           </div>
           <div style="height: 30px;"></div>
         </el-col>
         <div style="height: 10px"></div>
         <!--            :xs="{span: 24, offset: 0}" :xl="{span: 8, push: 4}"-->
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}"
-                :lg="{span: 9, offset:2, push: 2}" :xl="{span: 8, offset:2, push: 2}"
-                style="max-width:700px;max-height: 385px;min-width: 280px">
+                :lg="{span: 9, offset:2, push: 2}" :xl="{span: 8, push: 2}"
+                style="">
           <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
             <div style="height: 40px"></div>
             <el-row :gutter="20" id="gai002">
               <el-col :span="11" :offset="1" style="color: #FFFFFF;">
-                <p style="padding-bottom: 15px;">{{ $t('m.m43') }}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m44') }}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m45') }}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m46') }}&nbsp;</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m47') }}&nbsp;</p>
+                <p style="padding-bottom: 15px;">
+<!--                  上线日期：2021年第二季度-->
+                  {{ $t('m.m50') }}
+                </p>
+                <p style="padding-bottom: 15px;">
+<!--                  发行数：24,000,000-->
+                  {{ $t('m.m51') }}
+                </p>
+                <p style="padding-bottom: 15px;">
+<!--                  IDO：1ETH=10000KB-->
+                  {{ $t('m.m52') }}
+                </p>
+                <p style="padding-bottom: 15px;">
+<!--                  私募：5,000,000-->
+                  <span style="color: blueviolet;font-size: 1px">●</span>
+                  {{ $t('m.m53') }}
+                </p>
+                <p style="padding-bottom: 15px;">
+                  <span style="color: #00FFE1;font-size: 1px">●</span>
+<!--                  IDO公募：15,000,000-->
+                  {{ $t('m.m54') }}
+                </p>
+                <p style="padding-bottom: 15px;">
+                  <span style="color:  #00FFE1;font-size: 1px">●</span>
+<!--                  治理委员会：2,000,000-->
+                  {{ $t('m.m55') }}
+                </p>
               </el-col>
               <el-col :span="11" :offset="1" style="color: #FFFFFF;">
-                <p style="padding-bottom:   15px;">{{ $t('m.m48') }}</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m49') }}</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m50') }}</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m51') }}</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m52') }}</p>
-                <p style="padding-bottom: 15px;">{{ $t('m.m53') }}</p>
+                <p style="padding-bottom:   15px;">
+<!--                  空投：1,000,000-->
+                  <span style="color: #E32780;font-size: 1px">●</span>
+                  {{ $t('m.m56') }}
+                </p>
+                <p style="padding-bottom: 15px;">
+<!--                  团队：1,000,000-->
+                  <span style="color: darkorange;font-size: 1px">●</span>
+                  {{ $t('m.m57') }}
+                </p>
               </el-col>
             </el-row>
           </div>
           <div style="height: 1.94vw;"></div>
         </el-col>
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 10, offset:1, push: 1}"
-                :lg="{span: 9, offset:1, push: 2}" :xl="{span: 8, offset:1, push: 2}"
-                style="max-width:500px;max-height: 385px;min-width: 280px">
+                :lg="{span: 7, offset:1, push: 2}" :xl="{span: 8, push: 2}"
+                style="">
           <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
             <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
-              {{ $t('m.m54') }}
+              {{ $t('m.m58') }}
+<!--              KB 分配计划-->
             </div>
             <el-row>
               <el-col :span="16" :offset="4">
                 <div style="padding: 10px 70px 0px 0px">
                   <img src="@/assets/home_Fanchart.png" style="height: 100%;width: 100%;max-width:250px;
                       padding: 12px 13px 14px 25px">
+                  <div style=";;margin-left: 40px" >
+                  </div>
                 </div>
-                <div style="padding: 0px 0px 0px 0px;margin: 0px 0px 0px -37px">
-                  <tr style=";width: 100%">
-                    <td>
-                      <div style="width: 8px;height: 8px;background: #6040FC;border-radius: 18px;"></div>
-                    </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m55') }}</div>
-                    <td>
-                      &nbsp;
-                    </td>
-                    <td>
-                      <div style="width: 8px;height: 8px;background: #00FFE1;border-radius: 18px;"></div>
-                    </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m56') }}</div>
-                    <td>
-                      &nbsp;
-                    </td>
-                    <td>
-                      <div style="width: 8px;height: 8px;background: #FF9B26;border-radius: 18px;"></div>
-                    </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m57') }}</div>
-                    <td>
-                      &nbsp;
-                    </td>
-                    <td>
-                      <div style="width: 8px;height: 8px;background: #FF4060;border-radius: 18px;"></div>
-                    </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m58') }}</div>
-                    <td>
-                      &nbsp;
-                    </td>
-                    <td>
-                      <div style="width: 8px;height: 8px;background: #36CFA2;border-radius: 18px;"></div>
-                    </td>
-                    <div style="font-size: 12px;font-weight: 400;color: #FFFFFF;">&nbsp;{{ $t('m.m59') }}</div>
-                    <td>
-                      &nbsp;
-                    </td>
-                  </tr>
-                </div>
+
               </el-col>
             </el-row>
           </div>
@@ -454,31 +566,48 @@
         </el-col>
 
         <el-col :xs="{span: 22, push: 1 }" :sm="{span: 16, push: 4 }" :md="{span: 22, push: 1 }"
-                :lg="{span: 17, push: 4 }" :xl="{span: 15, push: 4 }"
+                :lg="{span: 17, push: 4 }" :xl="{span: 17, push: 4 }"
                 style="background: #1E1E1E;border-radius: 18px;margin-bottom: 100px">
-          <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+          <el-col :xs="24" :sm="6" :md="6" :lg="6" :xl="6">
             <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
-              空投剩余时间：
+<!--              空投剩余时间：-->
+              {{ $t('m.m59') }}
             </div>
             <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
               {{ day }}:Day {{ hour }}:{{ min }}:{{ second }}
             </div>
           </el-col>
-          <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+          <el-col :xs="24" :sm="6" :md="6" :lg="6" :xl="6">
             <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
-              IDO剩余时间：
+<!--              IDO公募剩余时间：-->
+              {{ $t('m.m60') }}
             </div>
             <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
               {{ day2 }}:Day {{ hour2 }}:{{ min2 }}:{{ second2 }}
             </div>
           </el-col>
-          <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+          <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
             <div style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px">
-              交易所上线时间：
+<!--              交易所上线时间：-->
+              {{ $t('m.m61') }}
             </div>
             <div style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px">
               2021 Q3
             </div>
+          </el-col>
+          <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6" style="padding: 30px 30px 30px 30px">
+            <a   @click="goToTokenUrl()">
+            <el-button style="background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);font-size: 16px;font-weight: 500;color: #FFFFFF;border: 0;width: 100%;
+              height: 36px;">
+<!--              空投-->
+              {{ $t('m.m62') }}
+            </el-button>
+              </a>
+            <div style="height: 10px"></div>
+            <a   @click="goToTokenUrl()">
+            <el-button style="background: #353535;font-size: 16px;font-weight: 500;color: #E92F75;border: 0;width: 100%;
+height: 36px;">IDO</el-button>
+            </a>
           </el-col>
         </el-col>
       </el-row>
@@ -487,65 +616,120 @@
     <!--         style="width: 560px;height: 56px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);border-radius: 7px;">-->
     <!--      <a href="imtokenv2://navigate/AssetsTab">立即购买</a></div>-->
 
-    <div style="width: 100%;height: 810px;background: black;">
+    <div style="width: 100%;background: black;">
+      <div style="height: 50px"></div>
       <el-row :gutter="10">
         <div style="height: 30px"></div>
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 20,offset:4,}" :md="{span: 11,offset:1,}"
                 :lg="{span: 7,offset:4}" :xl="{span: 7,offset:4}">
           <div id="m60" style="font-size: 72px;font-weight: 600;color: #E92F75;">
-            {{ $t('m.m60') }}
+<!--            第一次完全-->
+            {{ $t('m.m63') }}
             <div></div>
-            {{ $t('m.m61') }}
+<!--            真正的-->
+            {{ $t('m.m64') }}
             <div></div>
-            {{ $t('m.m62') }}
+<!--            NFT资产-->
+            {{ $t('m.m65') }}
           </div>
         </el-col>
 
         <el-col :xs="{span: 22,offset:1,}" :sm="{span: 16,offset:4,}" :md="{span: 11,offset:0}" :lg="{span: 8,offset:3}"
-                :xl="{span: 8,offset:3}">
+                :xl="{span: 8,offset:3}" style="">
           <div class="hidden-sm-and-down">
-            <div style="height: 180px"></div>
+            <div style="height: 100px"></div>
           </div>
-          <div style="height: 20px"></div>
-          <div style="background: #1E1E1E;width: 100%;height: 136px">
-            <div style="padding: 32px">
-              <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                {{ $t('m.m63') }}
-              </div>
-              <div style="height: 20px"></div>
-              <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                {{ $t('m.m64') }}
-              </div>
-            </div>
-          </div>
-          <div style="height: 20px"></div>
-          <div style="background: #1E1E1E;width: 100%;height: 136px">
-            <div style="padding: 32px">
-              <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                {{ $t('m.m65') }}
-              </div>
-              <div style="height: 20px"></div>
-              <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                {{ $t('m.m66') }}<span style="color: #00FFE1"> {{ $t('m.m67') }}</span>
-              </div>
-            </div>
-          </div>
-          <div style="height: 20px"></div>
-          <div style="background: #1E1E1E;width: 100%;height: 136px">
-            <div style="padding: 32px">
-              <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-                {{ $t('m.m68') }}
-              </div>
-              <div style="height: 20px"></div>
-              <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-                {{ $t('m.m69') }}
-              </div>
-              <div style="height: 2px"></div>
-              <div style="font-size: 14px;font-weight: 500;color: #00FFE1;width: 100%;overflow: hidden;">
-                {{ $t('m.m70') }}
-              </div>
-            </div>
-          </div>
+          <div style="height: 100px"></div>
+         <div style="font-weight: 500;font-size: 18px;">
+           <!-- 一段 -->
+           <div style="padding-bottom: 20px">
+           <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
+<!--             KB Token用途是什么?-->
+           {{ $t('m.m66') }}
+           </span>
+           </div>
+           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+<!--             使用「 KB Token」通证在 Meta Network 元宇宙中实现更多功能，比如：购买Kobe纪念球衣、下载Kobe精彩集锦、生成只属于你的Kobe NFT图像、跨链传送，进行社区投票和治理、二级市场中交易等。至此，无数的球迷都能重新依靠这种方式，让虚拟世界中的Kobe一路陪伴，从实体转向无物理空间限制的加密艺术带来沉浸式体验。-->
+             {{ $t('m.m67') }}
+           </div>
+           <!-- 一段 -->
+           <!-- 一段 -->
+           <div style="padding-bottom: 20px">
+             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
+<!--             如何购买KB Token？-->
+             {{ $t('m.m68') }}
+           </span>
+           </div>
+           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+             {{ $t('m.m69') }}
+           </div>
+           <!-- 一段 -->
+           <!-- 一段 -->
+           <div style="padding-bottom: 20px">
+             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
+<!--             KB Token合约地址是什么？-->
+            {{ $t('m.m70') }}
+           </span>
+           </div>
+           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+             {{ $t('m.m71') }}
+<!--             以太坊主网上的代币合约地址：-->
+             <div style="color: #00FFE1">
+               {{ $t('m.m72') }}
+<!--               0xf30547ff2Df1F1CBE5C8DD758B3dd098C856e38f-->
+             </div>
+           </div>
+           <!-- 一段 -->
+           <!-- 一段 -->
+           <div style="padding-bottom: 20px">
+             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
+<!--             什么是Kobe Bryant社区？-->
+           {{ $t('m.m73') }}
+           </span>
+           </div>
+           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+<!--             KB24要创建的是一个基于区块链的全球社区用户共建自治的Kobe Bryant社区，并通过不断开发一系列产品功能更好地服务社区；通过先进的社区管理系统管理社区，提高社区粘性，提升社区活跃度；通过区块链底层技术和智能合约，保障社区用户权益，增强社区信任度，共建一个可持续发展Kobe Bryant社区生态圈。-->
+             {{ $t('m.m74') }}
+           </div>
+           <!-- 一段 -->
+           <!-- 一段 -->
+           <div style="padding-bottom: 20px">
+             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
+<!--             KB Token的价值？-->
+           {{ $t('m.m75') }}
+           </span>
+           </div>
+           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+<!--             KB Token不仅仅只是流通在元宇宙中兑换纪念品的基础通证，还是价值的代表，其NFT资产伴随着稀缺性、不可改变的唯一可验证的数字对象，伴随Kobe Bryant社区的生态基础设施和底层建筑不断完善，KB Token将创造数字经济的全新面貌。-->
+             {{ $t('m.m76') }}
+           </div>
+           <!-- 一段 -->
+           <!-- 一段 -->
+           <div style="padding-bottom: 20px">
+             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
+<!--             什么是KB24 的延续性？-->
+            {{ $t('m.m77') }}
+           </span>
+           </div>
+           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+<!--             对比目前市面上售卖的Kobe周边，KB Token的出现将Kobe的价值变的具有可延续性，打破传统实体市场与加密圈的壁垒，构建包括球员、俱乐部、藏品、装备等完整的体育数据，并逐步拓展到其他领域。让物品不再只是具有“一次性”价值，而是拥有无限升值的空间。-->
+             {{ $t('m.m78') }}
+           </div>
+           <!-- 一段 -->
+           <!-- 一段 -->
+           <div style="padding-bottom: 20px">
+             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
+<!--             KB24的愿景是什么？-->
+           {{ $t('m.m79') }}
+           </span>
+           </div>
+           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+<!--             我们的衷心是希望用户能够在开放的全球环境下，将传统资产和数字资产进行交互，并为用户提供最优质的加密艺术展现和交互形式。通过元宇宙与区块链创作的结合，将曼巴精神从物理世界向数字世界的变迁。-->
+             {{ $t('m.m80') }}
+           </div>
+           <!-- 一段 -->
+         </div>
+          <div style="height: 100px"></div>
         </el-col>
       </el-row>
 
@@ -557,8 +741,8 @@
       <div style="height: 70px"></div>
       <el-row :gutter="40">
 
-        <el-col :xs="{span: 10,offset:2} " :sm="{span: 10,offset:4} " :md="{span: 5,offset:2,}"
-                :lg="{span: 5,offset:4,}" :xl="{span: 4,offset:4,}">
+        <el-col :xs="{span: 11,push:1} " :sm="{span: 8,push:4} " :md="{span: 5,push:2,}"
+                :lg="{span: 5,push:3,}" :xl="{span: 4,push:4,}" >
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2020
           </div>
@@ -571,16 +755,16 @@
             Q1～Q2
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
-            {{ $t('m.m71') }}
+            {{ $t('m.q71') }}
             <p></p>
-            {{ $t('m.m72') }}
+            {{ $t('m.q72') }}
             <p></p>
             &nbsp;
           </div>
           <div style="height: 1px"></div>
         </el-col>
-        <el-col :xs="{span: 10,offset:0,}" :sm="{span: 10,offset:0,}" :md="{span: 5,offset:0,}"
-                :lg="{span: 5,offset:0,}" :xl="{span: 4,offset:0,}">
+        <el-col :xs="{span: 11,push:1,}" :sm="{span: 10,push:4,}" :md="{span: 5,push:2,}"
+                :lg="{span: 5,push:3,}" :xl="{span: 4,push:4,}" >
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2020
           </div>
@@ -593,18 +777,18 @@
             Q3～Q4
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
-            {{ $t('m.m73') }}
+            {{ $t('m.q73') }}
             <p></p>
-            {{ $t('m.m74') }}
+            {{ $t('m.q74') }}
             <p></p>
-            {{ $t('m.m75') }}
+            {{ $t('m.q75') }}
             <p></p>
             &nbsp;
           </div>
           <div style="height: 20px"></div>
         </el-col>
-        <el-col :xs="{span: 10,offset:2}" :sm="{span: 10,offset:4}" :md="{span: 5,offset:0}"
-                :lg="{span: 5,offset:0}" :xl="{span: 4,offset:0}">
+        <el-col :xs="{span: 11,push:1}" :sm="{span: 8,push:4}" :md="{span: 5,push:2}"
+                :lg="{span: 5,push:3}" :xl="{span: 4,push:4}" >
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
@@ -617,17 +801,17 @@
             Q1～Q2
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
-            {{ $t('m.m76') }}
+            {{ $t('m.q76') }}
             <p></p>
-            {{ $t('m.m77') }}
+            {{ $t('m.q77') }}
             <p></p>
-            {{ $t('m.m78') }}
+            {{ $t('m.q78') }}
             <p></p>
             &nbsp;
           </div>
         </el-col>
-        <el-col :xs="{span: 10,offset:0}" :sm="{span: 10,offset:0}" :md="{span: 5,offset:0}"
-                :lg="{span: 5,offset:0}" :xl="{span: 4,offset:0}">
+        <el-col :xs="{span: 11,push:1}" :sm="{span: 8,push:4}" :md="{span: 5,push:2}"
+                :lg="{span: 5,push:3}" :xl="{span: 4,push:4}">
           <div style="font-size: 24px;font-weight: 500;color: #FFFFFF;">
             2021
           </div>
@@ -640,11 +824,11 @@
             Q3～Q4
           </div>
           <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;height: 100px">
-            {{ $t('m.m79') }}
+            {{ $t('m.q79') }}
             <p></p>
-            {{ $t('m.m80') }}
+            {{ $t('m.q80') }}
             <p></p>
-            {{ $t('m.m81') }}
+            {{ $t('m.q81') }}
             <p></p>
             &nbsp;
           </div>
@@ -652,95 +836,96 @@
       </el-row>
       <div class="hidden-sm-and-down">
         <el-row :gutter="40">
-          <el-col :xs="{span: 10,offset:0 }" :sm="{span: 10,offset:0 }" :md="{span: 18,offset:2 }"
-                  :lg="{span: 17,offset:4 }" :xl="{span: 13,offset:4 }">
-            <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -143px 0px 0px 10px">
+          <el-col :xs="{span: 10,push:0 }" :sm="{span: 10,push:0 }" :md="{span: 18,push:2 }"
+                  :lg="{span: 17,push:3 }" :xl="{span: 17,push:4 }">
+            <div style="height: 1px;background: #FFFFFF;opacity: 0.48;width: 100%;margin: -163px 0px 0px 10px">
             </div>
           </el-col>
         </el-row>
       </div>
     </div>
+    <div class="hello" >
 
-    <div style="width: 100%;height: 690px;background: black" id="bottom_frame">
-      <div style="height: 50px"></div>
-      <el-row :gutter="10">
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:1,}"
-                :lg="{span: 10,offset:2,}" :xl="{span: 10,offset:2,}">
-          <div class="grid-content bg-purple"></div>
-        </el-col>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 11,offset:0,}"
-                :lg="{span: 9,offset:3,}" :xl="{span: 10,offset:0,}">
-          <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
-          <div style="font-size: 14px;font-weight: 400;color: #FFFFFF;">
-            {{ $t('m.m82') }}
-            <p></p>
+      <el-row style="background: black;text-align: left">
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '3',offset:'3'}" :xl="{span: '2',push:'1'}" style=";font-size: 28px;font-family: Nunito-SemiBold, Nunito;font-weight: 600;color: #FFFFFF;">
+          <div style="height: 61px"></div>
+          <div class="hidden-md-and-down">
+            <div style="height: 100px">
+            </div>
+          </div>
+          <div style="padding-bottom: 32px">
+            <span>
+<!--              简介-->
+            {{ $t('m.m81') }}
+            </span><span style="float:right">+</span>
+          </div>
+          <div style="padding-bottom: 32px">
+            <span>
+<!--              特性-->
+            {{ $t('m.m82') }}</span><span style="float:right">+</span>
+          </div>
+          <div style="padding-bottom: 32px">
+            <span>
+<!--              代币-->
             {{ $t('m.m83') }}
-            <p></p>
+            </span><span style="float:right">+</span>
+          </div>
+          <div style="padding-bottom: 32px">
+            <span>
+<!--              线路图-->
             {{ $t('m.m84') }}
-            <div style="height: 70px"></div>
-            <div style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
-              {{ $t('m.m85') }}
-            </div>
-            <div style="height: 20px;font-size: 14px;font-weight: 600;color: #FFFFFF;">
-              {{ $t('m.m86') }}
-            </div>
+            </span><span style="float:right">+</span>
+          </div>
+          <div style="padding-bottom: 32px">
+            <span>
+<!--              社区-->
+            {{ $t('m.m85') }}
+            </span><span style="float:right">+</span>
           </div>
         </el-col>
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 3,offset:2,}"
-                :lg="{span: 3,offset:4,}" :xl="{span: 2,offset:4,}">
-          <div id="introduction_to_the_bottom_red" style="margin: -227px 0px 0px 0px">
-            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{ $t('m.m87') }}
-              <span style="float:right ">+</span>
-              <div style="height: 20px"></div>
-            </div>
-            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{ $t('m.m88') }}
-              <span style="float:right ">+</span>
-              <div style="height: 20px"></div>
-            </div>
-            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{ $t('m.m89') }}
-              <span style="float:right ">+</span>
-              <div style="height: 20px"></div>
-            </div>
-            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{ $t('m.m90') }}
-              <span style="float:right ">+</span>
-              <div style="height: 20px"></div>
-            </div>
-            <div style="font-size: 28px;font-weight: 600;color: #FFFFFF;">
-              {{ $t('m.m91') }}
-              <span style="float:right ">+</span>
-              <div style="height: 20px"></div>
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'8'}" :xl="{span: '7',push:''}" style="">
+          <div style="height: 31px"></div>
+          <div class="hidden-md-and-down">
+            <div style="height: 130px">
             </div>
           </div>
+          <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
+          <div style="height: 41px"></div>
+          <div style="height: 20px"></div>
+          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+<!--            是一个来自分布式计算、金融交易、区块链共识设计和跨链等各领域经验丰富的团队。同时，KB24的核心团队都是科比的忠实球迷。KB24团队通过加密技术，构建出一个完全去中心化的、公开透明且永续的应用平台，为用户提供传统体育生态无法比拟的体验感。-->
+            {{ $t('m.m86') }}
+          </div>
+          <div style="height: 50px"></div>
+          <div style="font-size: 14px;font-weight: 600;color: #FFFFFF;">
+<!--            联系我们-->
+            {{ $t('m.m87') }}
+            <div style="height: 10px"></div>
+            kbtoken24.com@hotmail.com
+          </div>
         </el-col>
+
       </el-row>
-
-      <div class="hidden-sm-and-down">
-        <div style="height: 260px"></div>
-      </div>
-
-      <div style="width: 100%;height: 1px;background: #222222;">
-      </div>
-      <div style="height:  35px"></div>
-      <el-row :gutter="10">
-        <el-col :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 8,offset:2,}"
-                :lg="{span: 8,offset:4,}" :xl="{span: 8,offset:4,}">
-          <div id="bottom_contact" style="font-size: 14px;font-weight: 500;color: #FFFFFF;line-height: 20px;">
+      <el-row style="background: black;text-align: left">
+        <div style="height: 100px;background: black"></div>
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'3'}" :xl="{span: '7',push:'1'}" style="">
+          <div style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;line-height: 20px;">
+            <div style="height: 10px"></div>
             © 2021 KB24 All rights reserved
+            <div style="height: 10px"></div>
           </div>
         </el-col>
-        <el-col id="bottom3png" :xs="{span: 22,offset:1,}" :sm="{span: 22,offset:1,}" :md="{span: 5,offset:8,}"
-                :lg="{span: 4,offset:3,}" :xl="{span: 4,offset:3}">
-          <img src="@/assets/home_feixin_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '9',offset:'4'}" :xl="{span: '7',push:'0'}" style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;padding-top: -20px">
+          <a href="https://t.me/kbtoken">
+            <img src="@/assets/home_feixin_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+          </a>
           &nbsp;&nbsp;&nbsp;
-          <img src="@/assets/home_twitter_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
-          &nbsp;&nbsp;&nbsp;
-          <img src="@/assets/home_facebook_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
-
+          <a href="https://mobile.twitter.com/kobetoken24">
+            <img src="@/assets/home_twitter_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+          </a>
+          <div style="height: 10px"></div>
         </el-col>
+        <div style="height: 60px;background: black"></div>
       </el-row>
     </div>
   </div>
@@ -751,8 +936,6 @@
 
 <script>
 window.onload = function () {
-  Adaptation()
-  Adaptation()
   Adaptation()
 }
 window.onresize = function () {
@@ -850,6 +1033,11 @@ export default {
         backgroundImage: 'url(' + require('@/assets/home_colour.png') + ')',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%'
+      },
+      homeColourPng2: {
+        backgroundImage: 'url(' + require('@/assets/home_dunk.png') + ')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
       }
     }
   },
@@ -939,6 +1127,25 @@ export default {
         // 递归每秒调用countTime方法，显示动态时间效果,
         setTimeout(this.countTime2, 1000)
       }
+    },
+    goToTokenUrl () {
+      // http://192.168.2.12:3000/
+      // window.open("imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F")
+      self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages
+      // alert('imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages)
+      setTimeout(function () {
+        var obj = document.getElementById('select_languages')
+        var index = obj.selectedIndex
+        var value = obj.options[index].value
+        // alert(value)
+        // self.location.href = 'http://156.240.109.163:3200/?' + value
+        self.location.href = 'http://156.240.109.163:3200/?' + value
+      }, 500)
+
+      // self.location.href = 'http://156.240.109.163:3200/'
+      // window.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F'
+      // window.location.href = 'http://156.240.109.163:3200/'
+      // window.open('http://156.240.109.163:3200/')
     }
   }
 }
@@ -994,7 +1201,7 @@ export default {
   .headSubTitle {
     width: 325px;
     height: 45px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #FFFFFF;
     line-height: 45px;
@@ -1085,7 +1292,7 @@ export default {
   }
 
   .focusFont1 {
-    height: 56px;
+    height: 106px;
     font-size: 24px;
     font-weight: 600;
     color: #FFFFFF;
@@ -1104,7 +1311,6 @@ export default {
   }
 
   .focusFont3 {
-    width: 200px;
     height: 20px;
     font-size: 12px;
     font-weight: 500;
@@ -1269,7 +1475,7 @@ export default {
 
   .iconFont {
     font-size: 32px;
-    width: 64px;
+    width: 164px;
     height: 45px;
     font-weight: 500;
     color: #FFFFFF;
@@ -1294,7 +1500,7 @@ export default {
   }
 
   .iconTitle {
-    width: 96px;
+    width: 196px;
     height: 32px;
     font-size: 32px;
     font-weight: 500;
@@ -1336,7 +1542,6 @@ export default {
   }
 
   .focusFont3 {
-    width: 210px;
     height: 20px;
     font-size: 14px;
     font-weight: 500;
