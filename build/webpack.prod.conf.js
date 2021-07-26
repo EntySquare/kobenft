@@ -64,6 +64,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: config.build.index,
       template: 'index.html',
+      favicon: path.resolve('./kb24.ico'),
       inject: true,
       minify: {
         removeComments: true,

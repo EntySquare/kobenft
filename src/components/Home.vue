@@ -13,9 +13,9 @@
         />
       </picture>
       <el-row :span="24" style="height: 65px"></el-row>
-      <div>
+      <div style="">
         <el-row>
-          <el-col :xs="{span: 3, push: 2} " :sm="{span: 3, push: 2} " :md="{span: 3, push: 2} " :lg="{span: 3, push: 2}" :xl="{span: 3, push: 2}" style="">
+          <el-col :xs="{span: 3, push: 1} " :sm="{span: 3, push: 2} " :md="{span: 3, push: 2} " :lg="{span: 3, push: 2}" :xl="{span: 3, push: 2}" style="">
             <router-link to="/">
               <el-image :src="require('../assets/headLogo.png')" style="height: 40px; width: 92px;margin-top: -13px"></el-image>
             </router-link>
@@ -48,7 +48,7 @@
               </el-col>
             </el-row>
           </el-col>
-          <el-col :xs="{span: 3, push: 4} " :sm="{span: 3, push: 4} " :md="{span: 3, push: 4} " :lg="{span: 3, push: 8}" :xl="{span: 3, push: 8}" style="margin-top: -4px">
+          <el-col :xs="{span: 3, push: 6} " :sm="{span: 3, push: 4} " :md="{span: 3, push: 4} " :lg="{span: 3, push: 8}" :xl="{span: 3, push: 8}" style="margin-top: -4px">
 <!--            <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>-->
             <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
             <select id="select_languages" v-model="languages" @change='getValue'
@@ -70,9 +70,9 @@
         </el-row>
       </div>
 
-      <el-row style="height: 153px"></el-row>
-      <el-row >
-        <el-col :xs="{span: 2, offset: 2}" :sm="{span: 2, offset: 2}" :md="{span: 2, push: 2}" :lg="{span: 2, push: 2}"
+      <el-row style="">
+        <div style="height: 200px"></div>
+        <el-col :xs="{span: 22, push: 2}" :sm="{span: 2, push: 2}" :md="{span: 2, push: 2}" :lg="{span: 2, push: 2}"
                 :xl="{span: 8, push: 2}">
           <div class="headTitle">
             <!--曼巴精神不熄-->
@@ -81,24 +81,25 @@
           <div class="headSubTitle">
 <!--            全球首个去中心化NFT纪念币-->
             {{ $t('m.m2') }}
+            <div style="height: 40px"></div>
           </div>
         </el-col>
-        <el-col :xs="{span: 24,}" :sm="{span: 9, push: 10}" :md="{span: 8, push: 11}" :lg="{span: 8, push: 9}"
-                :xl="{span: 8, push: 2}" style="background: #36CFA2">
+        <el-col :xs="{span: 24}" :sm="{span: 9, push: 10}" :md="{span: 8, push: 11}" :lg="{span: 8, push: 9}"
+                :xl="{span: 8, push: 2}">
           <!--          <img-->
           <!--            class="headPerson"-->
           <!--            src="../assets/head_person.png"-->
           <!--          />-->
             <video-player class="video-player vjs-custom-skin"
                           ref="videoPlayer"
-                          :playsinline="true"
+                          :playsinline="false"
                           :options="playerOptions">
             </video-player>
         </el-col>
       </el-row>
     </div>
     <div style="width: 100%; background-color: black">
-      <el-row style="height: 160px"></el-row>
+      <el-row style="height: 100px"></el-row>
       <el-row >
         <el-col :xs="{span: 19, push: 2}" :sm="{span: 19, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 15, push: 4}" :xl="{span: 16, push: 4 }" style="">
           <div class="bodyTitle1" style="width: 100%">
@@ -130,6 +131,13 @@
             <p style="height: 20px"></p>
 <!--            所以在这里我们将做一件事，由致敬Kobe Bryant的区块链开发者通过打造一个专属于Kobe Bryant的社区，将Kobe这个身份复制到一个无比真实的虚拟世界中，以这种方式延续"黑曼巴"的传奇。在这里我们将分享他的旅程、故事和心态，让曼巴精神时刻在我们身旁发生着，贯穿一切生活的本质，而不仅仅只在篮球场上。-->
             {{ $t('m.m9') }}
+            <p style="height: 100px"></p>
+            <div style="font-size: 32px;font-weight: 600;color: #E92F75;">
+              <!--                什么是元宇宙-->
+              {{ $t('m.m10') }}
+            </div>
+            <p style="height: 40px"></p>
+            {{ $t('m.m11') }}
           </div>
         </el-col>
         <el-col :xs="{span: 16, push: 2}" :sm="{span: 16, push: 7}" :md="{span: 8, push: 6}" :lg="{span: 8, push: 5}"
@@ -145,51 +153,118 @@
         <el-row>
           <el-col :xs="{span: 22, push: 1}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 18,push:4}" style="">
             <div style="height: 100px"></div>
-            <div style="font-size: 32px;font-weight: 600;color: #E92F75;">
-<!--                什么是元宇宙-->
-              {{ $t('m.m10') }}
-              </div>
-            <div style="font-weight: 500;font-size: 18px;color: #FFFFFF;">
-              <div style="height: 20px"></div>
-<!--            元宇宙是一个可以映射现实世界、又独立于现实世界的虚拟空间。-->
-              {{ $t('m.m11') }}
-              <div style="height: 20px"></div>
-<!--            通过在元宇宙中构造虚拟的Kobe Bryant形象，拥有和现实世界一样的“人生”生活、社交、工作、娱乐。-->
-              {{ $t('m.m12') }}
-              <div style="height: 20px"></div>
-<!--            激发人们无限想象的元宇宙将是属于下一代人的真实“数字”社会，是全球资本市场的新热点，更是当前互联网进阶形态 Web3.0 终将到达的方向。-->
-              {{ $t('m.m13') }}
-              <div style="height: 100px"></div>
-            </div>
+            &nbsp;
           </el-col>
         </el-row>
       </div>
       <div>
         <el-row>
-          <el-col :xs="{span: 24, push: 0}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 8,push:4}" style="background: #00FFE1">
-            <div style="ont-weight: 500;font-size: 18px;color: #FFFFFF;height: 300px">
-              视频
+          <el-col :xs="{span: 20, push: 2}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 7,push:4}" style=";">
+<!--            <div style="ont-weight: 500;font-size: 18px;color: #FFFFFF;height: 300px">-->
+            <div style="max-width: 800px">
+              <video-player class="video-player vjs-custom-skin"
+                            ref="videoPlayer"
+                            :playsinline="false"
+                            :options="playerOptions2">
+              </video-player>
             </div>
           </el-col>
-          <el-col :xs="{span: 22, push: 1}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 8,push:5}" style="">
+          <el-col :xs="{span: 18, push: 3}" :sm="{span: 18, push: 3}" :md="{span: 17, push: 4}" :lg="{span: 8,push:5}" style="">
             <div style="height: 50px"></div>
             <div style="font-size: 32px;font-weight: 600;color: #E92F75;">
 <!--              Kobe Bryant亲密战友 强烈支持KB24-->
               {{ $t('m.m14') }}
               <div style="height: 50px"></div>
             </div>
-            <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-              <div style="height: 20px"></div>
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-              <div style="height: 20px"></div>
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <div style="font-weight: 500;color: #FFFFFF">
+             <div style="font-weight: 500;font-size: 20px;">
+<!--               NBA球星-加索尔：-->
+               {{ $t('m.k1') }}
+             </div>
+              <div style="height: 15px"></div>
+             <div style="font-weight: 500;font-size: 16px;">
+<!--               对KB24的创新表示赞赏，以及对“曼巴精神”的信仰和崇拜-->
+               {{ $t('m.k2') }}
+             </div>
+              <div style="height: 30px"></div>
+              <div style="font-weight: 500;font-size: 20px;">
+<!--                NBA球星-奥多姆：-->
+                {{ $t('m.k3') }}
+              </div>
+              <div style="height: 15px"></div>
+              <div style="font-weight: 500;font-size: 16px;">
+<!--                对KB24的热爱。作为kobe的信徒之一，鼓励粉丝为更好而努力坚持-->
+                {{ $t('m.k4') }}
+              </div>
+              <div style="height: 30px"></div>
+              <div style="font-weight: 500;font-size: 20px;">
+<!--                NBA球星-菲舍尔：-->
+                {{ $t('m.k5') }}
+              </div>
+              <div style="height: 15px"></div>
+              <div style="font-weight: 500;font-size: 16px;">
+<!--                对KB24的创新表示赞赏，以及对“曼巴精神”的信仰和崇拜-->
+                {{ $t('m.k6') }}
+              </div>
             </div>
           </el-col>
         </el-row>
       </div>
       <div>
         <div style="height: 100px"></div>
+        <el-row style="">
+          <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
+                  :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 60px">
+            <img src="../assets/new1.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+           <div style="color: #FFFFFF">
+<!--             KB24定义是 NFT 元宇宙，您可以在其中收集和玩独特的数字项目。-->
+             {{ $t('m.q1') }}
+           </div>
+          </el-col>
+          <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
+                  :lg="{span: 8, push: 6}" :xl="{span: 7, push: 7}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 30px">
+            <img src="../assets/new2.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+            <div style="color: #FFFFFF">
+<!--              KB24作为通往现实经济和NFT世界的枢纽，将联动Kobe Bryant社区用户，真正实现价值和价格的跨越。-->
+              {{ $t('m.q2') }}
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+      <div>
+        <div style="height: 30px"></div>
+        <el-row style="">
+          <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
+                  :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 60px">
+            <img src="../assets/new3.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+            <div style="color: #FFFFFF">
+<!--              KB24用户可以一键创建NFT,并将他们启动到流动市场中，无需编码。-->
+              {{ $t('m.q3') }}
+            </div>
+          </el-col>
+          <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
+                  :lg="{span: 8, push: 6}" :xl="{span: 7, push: 7}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 30px">
+            <img src="../assets/new4.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+            <div style="color: #FFFFFF">
+<!--              创作者在二级销售中的80%版税奖励持有KB的用户。-->
+              {{ $t('m.q4') }}
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+      <div>
+        <div style="height: 100px"></div>
+        <div style="height: 200px;width: 100%;background: black;font-size: 72px;font-weight: 600;color: #E92F75;">
+          <el-row>
+            <el-col :xs="{span: 20, push: 2}" :sm="{span: 20, push: 4}" :md="{span: 20, push: 4}"
+                    :lg="{span: 20, push: 4}" :xl="{span: 20, push:4}">
+              <div id="new-text-1">
+<!--                “曼巴”文化遗产-->
+                {{ $t('m.j1') }}
+              </div>
+            </el-col>
+          </el-row>
+        </div>
         <el-row >
           <el-col :xs="{span: 18, push: 1}" :sm="{span: 14, push: 4}" :md="{span: 14, push: 4}"
                   :lg="{span: 6, push: 4}" :xl="{span: 6, push:4}" style="">
@@ -270,74 +345,19 @@
         </el-row>
       </div>
       <el-row style="height: 194px"></el-row>
-      <div>
-        <div>
-          <el-row>
-            <el-col :xs="{span: 1, push: 2}" :sm="{span: 1, push: 2}" :md="{span: 1, push: 2}" :lg="{span: 1, push: 3}"
-                    :xl="{span: 1, push: 2}">
-              <div
-                style="width: 10064px;height: 32px;font-size: 32px;font-weight: 500;color: #FFFFFF;line-height: 32px; margin-bottom: 77px">
-<!--                KB24 X 元宇宙-->
-                {{ $t('m.m27') }}
-              </div>
-            </el-col>
-          </el-row>
-        </div>
-        <div>
-          <el-row>
-            <el-col :xs="{span: 14, push: 6}" :sm="{span: 14, push: 9}" :md="{span: 15, push: 9}"
-                    :lg="{span: 3, push: 2}" :xl="{span: 4, push: 4}">
-              <div style="height: 164px; width: 164px;">
-                <el-image :src="require('../assets/icon5.png')"></el-image>
-              </div>
-              <div class="iconTitle">
-<!--                虚拟化-->
-                {{ $t('m.m28') }}
-              </div>
-              <div class="iconText2">
-<!--                KB24能够迎合“元宇宙”发展所需，拥有其去中心化、不可篡改、可扩展等众多优势，构建虚拟形象，进而不断的拓展“元宇宙”的想象边界。-->
-                {{ $t('m.m29') }}
-              </div>
-            </el-col>
-            <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
-                    :lg="{span: 3, push: 6}" :xl="{span: 4, push: 6}">
-              <div style="height: 164px; width: 164px;">
-                <el-image :src="require('../assets/icon6.png')"></el-image>
-              </div>
-              <div class="iconTitle">
-<!--                安全性-->
-                {{ $t('m.m30') }}
-              </div>
-              <div class="iconText2">
-<!--                KB24是“元宇宙”实现升维的关键技术，其作用在于保障用户虚拟资产、虚拟身份安全，进行价值交换，并保障“元宇宙”的规则透明。-->
-                {{ $t('m.m31') }}
-              </div>
-            </el-col>
-            <el-col :xs="{span: 14, push: 7}" :sm="{span: 14, push: 10}" :md="{span: 15, push: 10}"
-                    :lg="{span: 3, push: 10}" :xl="{span: 4, push: 8}">
-              <div style="height: 164px; width: 164px;">
-                <el-image :src="require('../assets/icon7.png')"></el-image>
-              </div>
-              <div class="iconTitle">
-<!--                可访问-->
-                {{ $t('m.m32') }}
-              </div>
-              <div class="iconText2">
-<!--                KB24通过NFT进行融合链上和链下两个世界，达到资产和价值体系相互流通，打破传统实体市场与加密圈的壁垒。-->
-                {{ $t('m.m33') }}
-              </div>
-            </el-col>
-          </el-row>
-        </div>
-      </div>
     </div>
+
     <div
       style="width: 100%; height: 432px; background: linear-gradient(270deg, #FF5045 0%, #E3287F 54%, #E32780 100%);">
-      <el-row style="height: 90px"></el-row>
+      <el-row style="height: 50px"></el-row>
+      <div class="hidden-sm-and-down">
+        <div style="height: 40px">
+        </div>
+      </div>
       <el-row>
         <el-col :xs="{span: 20, push: 2}" :sm="{span: 8, push: 3}" :md="{span: 8, push: 1}"
                 :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}">
-          <div class="focusFont1">
+          <div class="focusFont1" style="line-height:1.3">
 <!--            创造一个平行宇宙，将Kobe在元宇宙中构建出来。-->
             {{ $t('m.m34') }}
           </div>
@@ -368,16 +388,17 @@
         </el-col>
       </el-row>
     </div>
+
     <div :style="{backgroundRepeat: 'no-repeat',backgroundSize: '100% 100%', backgroundImage:'url(' + require('@/assets/home_dunk.png') + ')'}">
 <!--      <img src="@/assets/home_dunk.png"-->
 <!--           style="height: auto;width: 100%;z-index: -1;position:absolute;min-height: 320px">-->
       <el-row :gutter="10">
-        <div style="height: 3.29vw;">
+        <div style="height: 80px;">
         </div>
         <el-col :xs="1" :sm="3" :md="1" :lg="4" :xl="4">
           <div class="grid-content bg-purple"></div>
         </el-col>
-        <el-col :xs="23" :sm="21" :md="20" :lg="18" :xl="18">
+        <el-col :xs="{span: 20, push: 1}" :sm="21" :md="20" :lg="18" :xl="18">
           <div style="height: 10px"></div>
           <div id="id_text_72px_1"
                style="font-size: 48px;font-weight: 500;color: #FFFFFF;">
@@ -417,7 +438,6 @@
         </el-col>
       </el-row>
     </div>
-
     <!-- 什么是kbn token -->
     <!--    <div style="width: 100%;height: 41.97vw;background: black">-->
     <div style="width: 100%;background: black">
@@ -449,7 +469,7 @@
           <div class="grid-content bg-purple"></div>
         </el-col>
         <el-col :xs="{span: 20,offset:2,}" :sm="{span: 20,offset:2,}" :md="{span: 20,offset:3,}"
-                :lg="{span: 11,offset:4,}" :xl="{span: 20,offset:4,}">
+                :lg="{span: 11,offset:4,}" :xl="{span: 16,offset:4,}">
           <div style="height: 80px"></div>
           <div style="font-size: 18px;font-weight: 500;color: #FFFFFF;">
 <!--            KB Token是一种去中心化的NFT资产，以开创元宇宙版图，给无数球迷们搭建一个追寻、回忆、悼念的去中心开放式平台，并且KB Token也是首个纪念Kobe Bryant的NFT加密艺术代表，旨在成为娱乐交互和文化的通用支付方式。-->
@@ -475,7 +495,7 @@
       <!--      <img src="@/assets/home_colour.png" style="height: auto;width: 100%;z-index: 0;min-height: 850px;position:absolute;background: black;">-->
 <!--      <el-row style="background: black" :style="{backgroundImage: 'url(' + require('@/assets/home_colour.png') + ')',backgroundRepeat: 'no-repeat',backgroundSize: '100% 100%'}">-->
       <el-row style="background: linear-gradient(49deg, #000000 0%, #73157F 55%, #5549BA 73%, #3B005C 100%);" >
-        <el-col :xs="{span: 23, push: 1 }" :sm="{span: 20, push: 4 }" :md="{span: 21, push: 1 }"
+        <el-col :xs="{span: 23, push: 1 }" :sm="{span: 16, push: 4 }" :md="{span: 21, push: 1 }"
                 :lg="{span: 20, push: 4 }" :xl="{span: 20, push: 4 }">
           <div style="height: 100px;"></div>
           <div style="font-size: 32px;font-weight: 500;color: #FFFFFF;">
@@ -494,75 +514,43 @@
         <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 11, push: 1}"
                 :lg="{span: 9, offset:2, push: 2}" :xl="{span: 8, push: 2}"
                 style="">
-          <div style="width: 100%;height: 358px;;background: #1E1E1E;border-radius: 18px;">
+          <div style="width: 100%;background: #1E1E1E;border-radius: 18px;height: 340px;">
             <div style="height: 40px"></div>
             <el-row :gutter="20" id="gai002">
               <el-col :span="11" :offset="1" style="color: #FFFFFF;">
-                <p style="padding-bottom: 15px;">
-<!--                  上线日期：2021年第二季度-->
-                  {{ $t('m.m50') }}
-                </p>
-                <p style="padding-bottom: 15px;">
-<!--                  发行数：24,000,000-->
+                <p style="font-size: 18px;white-space:nowrap;">
                   {{ $t('m.m51') }}
                 </p>
-                <p style="padding-bottom: 15px;">
-<!--                  IDO：1ETH=10000KB-->
+                <p style="padding-bottom: 25px;white-space:nowrap;font-size: 44px;">
+<!--                  发行数：24,000,000-->
+                  24,000,000 KB
+                </p>
+                <p style="font-size: 18px;white-space:nowrap;">
                   {{ $t('m.m52') }}
                 </p>
-                <p style="padding-bottom: 15px;">
-<!--                  私募：5,000,000-->
-                  <span style="color: blueviolet;font-size: 1px">●</span>
-                  {{ $t('m.m53') }}
+                <p style="padding-bottom: 25px;white-space:nowrap;font-size: 36px;">
+                  1 ETH = 10000 KB
                 </p>
-                <p style="padding-bottom: 15px;">
-                  <span style="color: #00FFE1;font-size: 1px">●</span>
-<!--                  IDO公募：15,000,000-->
-                  {{ $t('m.m54') }}
+                <p style="font-size: 18px;white-space:nowrap;">
+                  {{ $t('m.m50') }}
                 </p>
-                <p style="padding-bottom: 15px;">
-                  <span style="color:  #00FFE1;font-size: 1px">●</span>
-<!--                  治理委员会：2,000,000-->
-                  {{ $t('m.m55') }}
-                </p>
-              </el-col>
-              <el-col :span="11" :offset="1" style="color: #FFFFFF;">
-                <p style="padding-bottom:   15px;">
-<!--                  空投：1,000,000-->
-                  <span style="color: #E32780;font-size: 1px">●</span>
-                  {{ $t('m.m56') }}
-                </p>
-                <p style="padding-bottom: 15px;">
-<!--                  团队：1,000,000-->
-                  <span style="color: darkorange;font-size: 1px">●</span>
-                  {{ $t('m.m57') }}
+                <p style="padding-bottom: 15px;white-space:nowrap;font-size: 36px;">
+                  <!--                  上线日期：2021年第二季度-->
+                  1 ETH = 8000 KB
                 </p>
               </el-col>
             </el-row>
           </div>
-          <div style="height: 1.94vw;"></div>
+          <div style="height: 30px;"></div>
         </el-col>
-        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 10, offset:1, push: 1}"
-                :lg="{span: 7, offset:1, push: 2}" :xl="{span: 8, push: 2}"
+        <el-col :xs="{span: 22,push:1,pull:1}" :sm="{span: 16,push:4,pull:2}" :md="{span: 10, push:1, push: 2}"
+                :lg="{span: 7, push:1, push: 3}" :xl="{span: 8, push: 3}"
                 style="">
-          <div style="width: 100%;height: 358px;background: #1E1E1E;border-radius: 18px;">
-            <div style="font-size: 20px;font-weight: 600;color: #FFFFFF;line-height: 28px;padding: 30px 0px 0px 50px">
-              {{ $t('m.m58') }}
-<!--              KB 分配计划-->
+          <div style="height: 340px;width: 100%;background: #1E1E1E;border-radius: 18px;display: flex;justify-content: center; margin-bottom: 30px">
+            <div class="is-align-middle">
+              <img :src="img001" style="height: 270px;width: auto;max-width: 440px;margin-top: 40px" id="img001">
             </div>
-            <el-row>
-              <el-col :span="16" :offset="4">
-                <div style="padding: 10px 70px 0px 0px">
-                  <img src="@/assets/home_Fanchart.png" style="height: 100%;width: 100%;max-width:250px;
-                      padding: 12px 13px 14px 25px">
-                  <div style=";;margin-left: 40px" >
-                  </div>
-                </div>
-
-              </el-col>
-            </el-row>
           </div>
-          <div style="height: 1.94vw;"></div>
         </el-col>
 
         <el-col :xs="{span: 22, push: 1 }" :sm="{span: 16, push: 4 }" :md="{span: 22, push: 1 }"
@@ -597,16 +585,16 @@
           </el-col>
           <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6" style="padding: 30px 30px 30px 30px">
             <a   @click="goToTokenUrl()">
-            <el-button style="background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);font-size: 16px;font-weight: 500;color: #FFFFFF;border: 0;width: 100%;
-              height: 36px;">
-<!--              空投-->
-              {{ $t('m.m62') }}
-            </el-button>
-              </a>
+              <el-button style="background: #353535;font-size: 16px;font-weight: 500;color: #E92F75;border: 0;width: 100%;
+height: 36px;">IDO</el-button>
+            </a>
             <div style="height: 10px"></div>
             <a   @click="goToTokenUrl()">
-            <el-button style="background: #353535;font-size: 16px;font-weight: 500;color: #E92F75;border: 0;width: 100%;
-height: 36px;">IDO</el-button>
+              <el-button style="background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);font-size: 16px;font-weight: 500;color: #FFFFFF;border: 0;width: 100%;
+              height: 36px;">
+                <!--              空投-->
+                {{ $t('m.m62') }}
+              </el-button>
             </a>
           </el-col>
         </el-col>
@@ -660,7 +648,7 @@ height: 36px;">IDO</el-button>
              {{ $t('m.m68') }}
            </span>
            </div>
-           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
+           <div style="padding-bottom: 70px;font-weight: 400;color: #00FFE1;font-size: 14px;">
              {{ $t('m.m69') }}
            </div>
            <!-- 一段 -->
@@ -676,7 +664,7 @@ height: 36px;">IDO</el-button>
 <!--             以太坊主网上的代币合约地址：-->
              <div style="color: #00FFE1">
                {{ $t('m.m72') }}
-<!--               0xf30547ff2Df1F1CBE5C8DD758B3dd098C856e38f-->
+<!--               0x236fb5828b887Df135BCcF4c5aF5F0A7C5236f09-->
              </div>
            </div>
            <!-- 一段 -->
@@ -702,30 +690,6 @@ height: 36px;">IDO</el-button>
            <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
 <!--             KB Token不仅仅只是流通在元宇宙中兑换纪念品的基础通证，还是价值的代表，其NFT资产伴随着稀缺性、不可改变的唯一可验证的数字对象，伴随Kobe Bryant社区的生态基础设施和底层建筑不断完善，KB Token将创造数字经济的全新面貌。-->
              {{ $t('m.m76') }}
-           </div>
-           <!-- 一段 -->
-           <!-- 一段 -->
-           <div style="padding-bottom: 20px">
-             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
-<!--             什么是KB24 的延续性？-->
-            {{ $t('m.m77') }}
-           </span>
-           </div>
-           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
-<!--             对比目前市面上售卖的Kobe周边，KB Token的出现将Kobe的价值变的具有可延续性，打破传统实体市场与加密圈的壁垒，构建包括球员、俱乐部、藏品、装备等完整的体育数据，并逐步拓展到其他领域。让物品不再只是具有“一次性”价值，而是拥有无限升值的空间。-->
-             {{ $t('m.m78') }}
-           </div>
-           <!-- 一段 -->
-           <!-- 一段 -->
-           <div style="padding-bottom: 20px">
-             <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
-<!--             KB24的愿景是什么？-->
-           {{ $t('m.m79') }}
-           </span>
-           </div>
-           <div style="padding-bottom: 70px;font-weight: 400;color: #FFFFFF;font-size: 14px;">
-<!--             我们的衷心是希望用户能够在开放的全球环境下，将传统资产和数字资产进行交互，并为用户提供最优质的加密艺术展现和交互形式。通过元宇宙与区块链创作的结合，将曼巴精神从物理世界向数字世界的变迁。-->
-             {{ $t('m.m80') }}
            </div>
            <!-- 一段 -->
          </div>
@@ -847,7 +811,7 @@ height: 36px;">IDO</el-button>
     <div class="hello" >
 
       <el-row style="background: black;text-align: left">
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '3',offset:'3'}" :xl="{span: '2',push:'1'}" style=";font-size: 28px;font-family: Nunito-SemiBold, Nunito;font-weight: 600;color: #FFFFFF;">
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '4',offset:'3'}" :xl="{span: '2',push:'1'}" style=";font-size: 28px;;font-weight: 600;color: #FFFFFF;">
           <div style="height: 61px"></div>
           <div class="hidden-md-and-down">
             <div style="height: 100px">
@@ -857,33 +821,33 @@ height: 36px;">IDO</el-button>
             <span>
 <!--              简介-->
             {{ $t('m.m81') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              特性-->
-            {{ $t('m.m82') }}</span><span style="float:right">+</span>
+            {{ $t('m.m82') }}</span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              代币-->
             {{ $t('m.m83') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              线路图-->
             {{ $t('m.m84') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              社区-->
             {{ $t('m.m85') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
         </el-col>
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'8'}" :xl="{span: '7',push:''}" style="">
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'7'}" :xl="{span: '7',push:''}" style="">
           <div style="height: 31px"></div>
           <div class="hidden-md-and-down">
             <div style="height: 130px">
@@ -892,7 +856,7 @@ height: 36px;">IDO</el-button>
           <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
           <div style="height: 41px"></div>
           <div style="height: 20px"></div>
-          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
 <!--            是一个来自分布式计算、金融交易、区块链共识设计和跨链等各领域经验丰富的团队。同时，KB24的核心团队都是科比的忠实球迷。KB24团队通过加密技术，构建出一个完全去中心化的、公开透明且永续的应用平台，为用户提供传统体育生态无法比拟的体验感。-->
             {{ $t('m.m86') }}
           </div>
@@ -908,20 +872,28 @@ height: 36px;">IDO</el-button>
       </el-row>
       <el-row style="background: black;text-align: left">
         <div style="height: 100px;background: black"></div>
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'3'}" :xl="{span: '7',push:'1'}" style="">
-          <div style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;line-height: 20px;">
+        <el-col :xs="{span: '22',push:'1'}" :sm="{span: '20',push:'2'}" :md="{span: '18',push:'3'}" :lg="{span: '7',push:'3'}" :xl="{span: '7',push:'4'}" style="">
+          <div style="font-size: 14px;font-weight: 600;color: #FFFFFF;line-height: 20px;">
             <div style="height: 10px"></div>
             © 2021 KB24 All rights reserved
             <div style="height: 10px"></div>
           </div>
         </el-col>
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '9',offset:'4'}" :xl="{span: '7',push:'0'}" style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;padding-top: -20px">
+        <el-col :xs="{span: '22',push:'1'}" :sm="{span: '20',push:'2'}" :md="{span: '18',push:'3'}" :lg="{span: '9',push:'7'}" :xl="{span: '7',push:'5'}" style="font-size: 14px;font-weight: 600;color: #FFFFFF;padding-top: -20px">
           <a href="https://t.me/kbtoken">
             <img src="@/assets/home_feixin_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
           </a>
           &nbsp;&nbsp;&nbsp;
           <a href="https://mobile.twitter.com/kobetoken24">
             <img src="@/assets/home_twitter_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a @click="goToTokenUrl()">
+            <img src="@/assets/imtoken_001.png" style="height: 36px;width: 36px;white-space:nowrap">
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a @click="goToTokenUrl2()">
+            <img src="@/assets/TP_001.png" style="height: 36px;width: 36px;white-space:nowrap">
           </a>
           <div style="height: 10px"></div>
         </el-col>
@@ -945,18 +917,13 @@ window.onresize = function () {
 function Adaptation () {
   var docWidth = document.body.clientWidth.valueOf()
   console.log('111')
-  if (docWidth <= 376) {
-    document.getElementById('bottom_frame').style.height = '740px'
-  } else {
-    document.getElementById('bottom_frame').style.height = '690px'
-  }
+  // alert(docWidth)
+  // if (docWidth <= 376) {
+  //   document.getElementById('bottom_frame').style.height = '740px'
+  // } else {
+  //   document.getElementById('bottom_frame').style.height = '690px'
+  // }
   if (docWidth >= 992) {
-    document.getElementById('introduction_to_the_bottom_red').style.margin = '-227px 0px 0px 0px'
-    document.getElementById('bottom_contact').style.margin = '0px'
-    document.getElementById('bottom_contact').style.position = ''
-    document.getElementById('bottom_contact').style.top = ''
-    document.getElementById('bottom3png').style.margin = ''
-
     document.getElementById('id_text_72px_1').style.fontSize = '48px'
     document.getElementById('id_text_72px_2').style.fontSize = '48px'
     document.getElementById('gai002').style.fontSize = '16px'
@@ -964,19 +931,18 @@ function Adaptation () {
 
     document.getElementById('m60').style.fontWeight = '600'
     document.getElementById('m60').style.fontSize = '72px'
-  } else {
-    document.getElementById('introduction_to_the_bottom_red').style.margin = '0px'
-    document.getElementById('bottom_contact').style.position = 'absolute'
-    document.getElementById('bottom_contact').style.top = '45px'
-    document.getElementById('bottom3png').style.margin = '-12px 2vm 0px'
 
-    document.getElementById('id_text_72px_1').style.fontSize = '36px'
-    document.getElementById('id_text_72px_2').style.fontSize = '36px'
+    document.getElementById('new-text-1').style.fontSize = '72px'
+  } else {
+    document.getElementById('id_text_72px_1').style.fontSize = '30px'
+    document.getElementById('id_text_72px_2').style.fontSize = '30px'
     document.getElementById('gai002').style.fontSize = '14px'
     document.getElementById('gai002').style.fontWeight = '400'
 
     document.getElementById('m60').style.fontWeight = '600'
     document.getElementById('m60').style.fontSize = '42px'
+
+    document.getElementById('new-text-1').style.fontSize = '42px'
   }
 }
 
@@ -984,8 +950,8 @@ export default {
   name: 'Home',
   data () {
     return {
+      img001: require('@/assets/home_Fanchart.png'),
       starttime: '2020 / 05 / 01',
-      // 倒计时
       date: '',
       curStartTime: '',
       curStartTime2: '',
@@ -1011,22 +977,45 @@ export default {
         playbackRates: [0.5, 1.0, 2.0], // 可选的播放速度
         autoplay: true, // 如果为true,浏览器准备好时开始回放。
         muted: false, // 默认情况下将会消除任何音频。
-        loop: true, // 是否视频一结束就重新开始。
+        loop: false, // 是否视频一结束就重新开始。
         preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
         aspectRatio: '16:9', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
-        fluid: false, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
+        fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
         sources: [{
           type: 'video/mp4', // 类型
           src: '\n' +
             'https://kbtoken.oss-cn-beijing.aliyuncs.com/kobe.mp4' // url地址
         }],
-        poster: '../assets/head_person.png', // 封面地址
+        // poster: '../assets/head_person.png', // 封面地址
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
+        // controls: false,
         controlBar: {
-          timeDivider: true, // 当前时间和持续时间的分隔符
+          timeDivider: false, // 当前时间和持续时间的分隔符
           durationDisplay: false, // 显示持续时间
           remainingTimeDisplay: false, // 是否显示剩余时间功能
-          fullscreenToggle: true // 是否显示全屏按钮
+          fullscreenToggle: false // 是否显示全屏按钮
+        }
+      },
+      playerOptions2: {
+        playbackRates: [0.5, 1.0, 2.0], // 可选的播放速度
+        autoplay: false, // 如果为true,浏览器准备好时开始回放。
+        muted: false, // 默认情况下将会消除任何音频。
+        loop: false, // 是否视频一结束就重新开始。
+        preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
+        aspectRatio: '2:3', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
+        fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
+        sources: [{
+          type: 'video/mp4', // 类型
+          src: '\n' +
+            'https://kbtoken.oss-cn-beijing.aliyuncs.com/1625225616128386-en.mp4' // url地址
+        }],
+        // poster: '../assets/commodity_5.png', // 封面地址
+        notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
+        controlBar: {
+          timeDivider: false, // 当前时间和持续时间的分隔符
+          durationDisplay: false, // 显示持续时间
+          remainingTimeDisplay: false, // 是否显示剩余时间功能
+          fullscreenToggle: false // 是否显示全屏按钮
         }
       },
       homeColourPng: {
@@ -1056,6 +1045,55 @@ export default {
     },
     getValue: function () {
       console.log('您选择了', this.languages)
+      if (this.languages === 'zh') {
+        this.img001 = require('@/assets/home_Fanchart_zh.png')
+        this.playerOptions2 = {
+          playbackRates: [0.5, 1.0, 2.0], // 可选的播放速度
+          autoplay: false, // 如果为true,浏览器准备好时开始回放。
+          muted: false, // 默认情况下将会消除任何音频。
+          loop: false, // 是否视频一结束就重新开始。
+          preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
+          aspectRatio: '2:3', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
+          fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
+          sources: [{
+            type: 'video/mp4', // 类型
+            src: '\n' +
+              'https://kbtoken.oss-cn-beijing.aliyuncs.com/1625225616128386.mp4' // url地址
+          }],
+          // poster: '../assets/commodity_5.png', // 封面地址
+          notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
+          controlBar: {
+            timeDivider: false, // 当前时间和持续时间的分隔符
+            durationDisplay: false, // 显示持续时间
+            remainingTimeDisplay: false, // 是否显示剩余时间功能
+            fullscreenToggle: false // 是否显示全屏按钮
+          }
+        }
+      } else {
+        this.img001 = require('@/assets/home_Fanchart.png')
+        this.playerOptions2 = {
+          playbackRates: [0.5, 1.0, 2.0], // 可选的播放速度
+          autoplay: false, // 如果为true,浏览器准备好时开始回放。
+          muted: false, // 默认情况下将会消除任何音频。
+          loop: false, // 是否视频一结束就重新开始。
+          preload: 'auto', // 建议浏览器在<video>加载元素后是否应该开始下载视频数据。auto浏览器选择最佳行为,立即开始加载视频（如果浏览器支持）
+          aspectRatio: '2:3', // 将播放器置于流畅模式，并在计算播放器的动态大小时使用该值。值应该代表一个比例 - 用冒号分隔的两个数字（例如"16:9"或"4:3"）
+          fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
+          sources: [{
+            type: 'video/mp4', // 类型
+            src: '\n' +
+              'https://kbtoken.oss-cn-beijing.aliyuncs.com/1625225616128386-en.mp4' // url地址
+          }],
+          // poster: '../assets/commodity_5.png', // 封面地址
+          notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
+          controlBar: {
+            timeDivider: false, // 当前时间和持续时间的分隔符
+            durationDisplay: false, // 显示持续时间
+            remainingTimeDisplay: false, // 是否显示剩余时间功能
+            fullscreenToggle: false // 是否显示全屏按钮
+          }
+        }
+      }
       this.switchLang(this.languages)
     },
     countTime: function () {
@@ -1132,13 +1170,15 @@ export default {
       // http://192.168.2.12:3000/
       // window.open("imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F")
       self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages
-      // alert('imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages)
+      // self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F?' + this.languages
+      // self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F?' + this.languages
       setTimeout(function () {
         var obj = document.getElementById('select_languages')
         var index = obj.selectedIndex
         var value = obj.options[index].value
         // alert(value)
         // self.location.href = 'http://156.240.109.163:3200/?' + value
+        // self.location.href = 'http://192.168.2.12:3000/?' + value
         self.location.href = 'http://156.240.109.163:3200/?' + value
       }, 500)
 
@@ -1146,6 +1186,9 @@ export default {
       // window.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F'
       // window.location.href = 'http://156.240.109.163:3200/'
       // window.open('http://156.240.109.163:3200/')
+    },
+    goToTokenUrl2 () {
+      alert('Enter tokenpocket App wallet, visit kbtoken.co')
     }
   }
 }
@@ -1163,7 +1206,7 @@ export default {
   .mainPage {
     width: 100%;
     max-width: 100%;
-    height: 500px;
+    /*height: 500px;*/
   }
 
   .headBackground {
@@ -1191,7 +1234,6 @@ export default {
 
   .headTitle {
     width: 536px;
-    height: 78px;
     font-size: 36px;
     font-weight: 600;
     color: #E92F75;
@@ -1200,7 +1242,6 @@ export default {
 
   .headSubTitle {
     width: 325px;
-    height: 45px;
     font-size: 20px;
     font-weight: 600;
     color: #FFFFFF;
@@ -1209,7 +1250,6 @@ export default {
 
   .bodyTitle1 {
     width: 427px;
-    height: 50px;
     font-size: 36px;
     font-weight: 600;
     color: #E92F75;
@@ -1243,7 +1283,6 @@ export default {
 
   .iconFont {
     font-size: 24px;
-    width: 64px;
     height: 45px;
     font-weight: 500;
     color: #FFFFFF;
@@ -1421,7 +1460,6 @@ export default {
 @media screen and (min-width: 750px) {
   .headTitle {
     width: 536px;
-    height: 78px;
     font-size: 56px;
     font-weight: 600;
     color: #E92F75;
@@ -1431,7 +1469,6 @@ export default {
 
   .headSubTitle {
     width: 425px;
-    height: 45px;
     font-size: 32px;
     font-weight: 600;
     color: #FFFFFF;
@@ -1441,7 +1478,6 @@ export default {
 
   .bodyTitle1 {
     width: 427px;
-    height: 100px;
     font-size: 72px;
     font-weight: 600;
     color: #E92F75;
@@ -1475,7 +1511,6 @@ export default {
 
   .iconFont {
     font-size: 32px;
-    width: 164px;
     height: 45px;
     font-weight: 500;
     color: #FFFFFF;

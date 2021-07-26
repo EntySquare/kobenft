@@ -8,42 +8,43 @@
         <el-row :span="24" style="height: 65px"></el-row>
         <div>
           <el-row>
-            <el-col :xs="{span: 3, push: 2} " :sm="{span: 3, push: 2} " :md="{span: 3, push: 2} " :lg="{span: 3, push: 2}" :xl="{span: 3, push: 2}" style="">
+            <el-col :xs="{span: 3, push: 1} " :sm="{span: 3, push: 2} " :md="{span: 3, push: 2} " :lg="{span: 3, push: 2}" :xl="{span: 3, push: 2}" style="">
               <router-link to="/">
-              <el-image :src="require('../assets/headLogo.png')" style="height: 40px; width: 92px;margin-top: -13px"></el-image>
+                <el-image :src="require('../assets/headLogo.png')" style="height: 40px; width: 92px;margin-top: -13px"></el-image>
               </router-link>
             </el-col>
             <el-col :xs="{span: 12, push: 3}" :sm="{span: 12, push: 3}" :md="{span: 12, push: 3}" :lg="{span: 8, push: 5}" :xl="{span: 8, push: 5}" style="">
               <el-row>
                 <el-col span="8">
                   <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;float: right">
-                    <a  @click="goToTokenUrl()" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
-                    IDO
-                      </a>
+                    <!--                  <a href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"  @click="goToTokenUrl()" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">-->
+                    <a @click="goToTokenUrl()" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
+                      IDO
+                    </a>
                   </div>
                 </el-col>
                 <el-col span="8">
                   <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;float: right;">
                     <router-link to="/market" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
-                    NFT
+                      NFT
                     </router-link>
                   </div>
                 </el-col>
                 <el-col span="8">
                   <div class=""><a
-                      @click="goToTokenUrl()"
+                    @click="goToTokenUrl()"
                     style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
                     {{ $t('m.t6') }}
-<!--                    <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>-->
+                    <!--                    <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>-->
                   </a>
                   </div>
                 </el-col>
               </el-row>
             </el-col>
-            <el-col :xs="{span: 3, push: 4} " :sm="{span: 3, push: 4} " :md="{span: 3, push: 4} " :lg="{span: 3, push: 8}" :xl="{span: 3, push: 8}" style="margin-top: -4px">
-<!--              <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>-->
+            <el-col :xs="{span: 3, push: 6} " :sm="{span: 3, push: 4} " :md="{span: 3, push: 4} " :lg="{span: 3, push: 8}" :xl="{span: 3, push: 8}" style="margin-top: -4px">
+              <!--            <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>-->
               <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
-              <select v-model="languages" @change='getValue'
+              <select id="select_languages" v-model="languages" @change='getValue'
                       style="color: white; position: absolute; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none;font-size: 16px;font-weight: 500;">
                 <option style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap"
                         value="zh">中文
@@ -383,7 +384,7 @@
     <div class="hello" >
 
       <el-row style="background: black;text-align: left">
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '3',offset:'3'}" :xl="{span: '2',push:'1'}" style=";font-size: 28px;font-family: Nunito-SemiBold, Nunito;font-weight: 600;color: #FFFFFF;">
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '4',offset:'3'}" :xl="{span: '2',push:'1'}" style=";font-size: 28px;;font-weight: 600;color: #FFFFFF;">
           <div style="height: 61px"></div>
           <div class="hidden-md-and-down">
             <div style="height: 100px">
@@ -393,33 +394,33 @@
             <span>
 <!--              简介-->
             {{ $t('m.m81') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              特性-->
-            {{ $t('m.m82') }}</span><span style="float:right">+</span>
+            {{ $t('m.m82') }}</span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              代币-->
             {{ $t('m.m83') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              线路图-->
             {{ $t('m.m84') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
           <div style="padding-bottom: 32px">
             <span>
 <!--              社区-->
             {{ $t('m.m85') }}
-            </span><span style="float:right">+</span>
+            </span><span style="float:right"></span>
           </div>
         </el-col>
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'8'}" :xl="{span: '7',push:''}" style="">
+        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'7'}" :xl="{span: '7',push:''}" style="">
           <div style="height: 31px"></div>
           <div class="hidden-md-and-down">
             <div style="height: 130px">
@@ -428,7 +429,7 @@
           <img src="@/assets/home_redLogo01.png" style="height: auto;width: 128px;">
           <div style="height: 41px"></div>
           <div style="height: 20px"></div>
-          <div style="font-size: 14px;font-family: PingFang-SC-Medium, PingFang-SC;font-weight: 500;color: #FFFFFF;">
+          <div style="font-size: 14px;font-weight: 500;color: #FFFFFF;">
             <!--            是一个来自分布式计算、金融交易、区块链共识设计和跨链等各领域经验丰富的团队。同时，KB24的核心团队都是科比的忠实球迷。KB24团队通过加密技术，构建出一个完全去中心化的、公开透明且永续的应用平台，为用户提供传统体育生态无法比拟的体验感。-->
             {{ $t('m.m86') }}
           </div>
@@ -444,20 +445,28 @@
       </el-row>
       <el-row style="background: black;text-align: left">
         <div style="height: 100px;background: black"></div>
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '7',offset:'3'}" :xl="{span: '7',push:'1'}" style="">
-          <div style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;line-height: 20px;">
+        <el-col :xs="{span: '22',push:'1'}" :sm="{span: '20',push:'2'}" :md="{span: '18',push:'3'}" :lg="{span: '7',push:'3'}" :xl="{span: '7',push:'4'}" style="">
+          <div style="font-size: 14px;font-weight: 600;color: #FFFFFF;line-height: 20px;">
             <div style="height: 10px"></div>
             © 2021 KB24 All rights reserved
             <div style="height: 10px"></div>
           </div>
         </el-col>
-        <el-col :xs="{span: '22',offset:'1'}" :sm="{span: '20',offset:'2'}" :md="{span: '18',offset:'3'}" :lg="{span: '9',offset:'4'}" :xl="{span: '7',push:'0'}" style="font-size: 14px;font-family: PingFang-SC-Semibold, PingFang-SC;font-weight: 600;color: #FFFFFF;padding-top: -20px">
+        <el-col :xs="{span: '22',push:'1'}" :sm="{span: '20',push:'2'}" :md="{span: '18',push:'3'}" :lg="{span: '9',push:'7'}" :xl="{span: '7',push:'5'}" style="font-size: 14px;font-weight: 600;color: #FFFFFF;padding-top: -20px">
           <a href="https://t.me/kbtoken">
             <img src="@/assets/home_feixin_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
           </a>
           &nbsp;&nbsp;&nbsp;
           <a href="https://mobile.twitter.com/kobetoken24">
             <img src="@/assets/home_twitter_logo.png" style="height: 36px;width: 36px;white-space:nowrap">
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a @click="goToTokenUrl()">
+            <img src="@/assets/imtoken_001.png" style="height: 36px;width: 36px;white-space:nowrap">
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a @click="goToTokenUrl2()">
+            <img src="@/assets/TP_001.png" style="height: 36px;width: 36px;white-space:nowrap">
           </a>
           <div style="height: 10px"></div>
         </el-col>
@@ -669,6 +678,9 @@ export default {
         // self.location.href = 'http://156.240.109.163:3200/?' + value
         self.location.href = 'http://156.240.109.163:3200/?' + value
       }, 500)
+    },
+    goToTokenUrl2 () {
+      alert('Enter tokenpocket App wallet, visit kbtoken.co')
     }
   }
 }
