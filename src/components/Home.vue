@@ -529,14 +529,14 @@
                   {{ $t('m.m52') }}
                 </p>
                 <p style="padding-bottom: 25px;white-space:nowrap;font-size: 36px;">
-                  1 ETH = 10000 KB
+                  1 BNB = 10000 KB
                 </p>
                 <p style="font-size: 18px;white-space:nowrap;">
                   {{ $t('m.m50') }}
                 </p>
                 <p style="padding-bottom: 15px;white-space:nowrap;font-size: 36px;">
                   <!--                  上线日期：2021年第二季度-->
-                  1 ETH = 8000 KB
+                  1 BNB = 8000 KB
                 </p>
               </el-col>
             </el-row>
@@ -1168,18 +1168,16 @@ export default {
     },
     goToTokenUrl () {
       // http://192.168.2.12:3000/
-      // window.open("imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F")
       self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages
-      // self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F?' + this.languages
+      // self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.25%3A3200%2F?' + this.languages
       // self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F?' + this.languages
       setTimeout(function () {
         var obj = document.getElementById('select_languages')
         var index = obj.selectedIndex
         var value = obj.options[index].value
         // alert(value)
-        // self.location.href = 'http://156.240.109.163:3200/?' + value
-        // self.location.href = 'http://192.168.2.12:3000/?' + value
         self.location.href = 'http://156.240.109.163:3200/?' + value
+        // self.location.href = 'http://192.168.2.25:3000/?' + value
       }, 500)
 
       // self.location.href = 'http://156.240.109.163:3200/'
