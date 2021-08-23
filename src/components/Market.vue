@@ -116,7 +116,7 @@
             <div style="height: 15px"></div>
             <div style="height: 30px">
 <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-              <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+              <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
               <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
             </div>
             <div style="height: 20px"></div>
@@ -151,7 +151,7 @@
               <div style="height: 15px"></div>
               <div style="height: 30px">
                 <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                 <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
               </div>
               <div style="height: 20px"></div>
@@ -186,7 +186,7 @@
               <div style="height: 15px"></div>
               <div style="height: 30px">
                 <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                 <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
               </div>
               <div style="height: 20px"></div>
@@ -221,7 +221,7 @@
               <div style="height: 15px"></div>
               <div style="height: 30px">
                 <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                 <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
               </div>
               <div style="height: 20px"></div>
@@ -252,7 +252,7 @@
                 <div style="height: 15px"></div>
                 <div style="height: 30px">
                   <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                  <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                  <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                   <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
                 </div>
                 <div style="height: 20px"></div>
@@ -274,7 +274,7 @@
                 <div style="height: 15px"></div>
                 <div style="height: 30px">
                   <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                  <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                  <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                   <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
                 </div>
                 <div style="height: 20px"></div>
@@ -296,7 +296,7 @@
                 <div style="height: 15px"></div>
                 <div style="height: 30px">
                   <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                  <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                  <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                   <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
                 </div>
                 <div style="height: 20px"></div>
@@ -318,7 +318,7 @@
                 <div style="height: 15px"></div>
                 <div style="height: 30px">
                   <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                  <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                  <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                   <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
                 </div>
                 <div style="height: 20px"></div>
@@ -340,7 +340,7 @@
                 <div style="height: 15px"></div>
                 <div style="height: 30px">
                   <!--              <div style="width: 24px;height: 24px;background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);display:inline;">23</div>-->
-                  <img src="../assets/red-small-logo.png" style="height: 24px;width: 24px;">
+                  <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/red-small-logo.png" style="height: 24px;width: 24px;">
                   <div style="font-size: 14px;font-weight: 500;color: #999999;margin: -23px 0px 0px 30px;height: 30px">KB24</div>
                 </div>
                 <div style="height: 20px"></div>
@@ -668,7 +668,7 @@ export default {
       }
     },
     goToTokenUrl () {
-      self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages
+      self.location.href = 'imtokenv2://navigate/DappView?url=https%3A%2F%2Fapi.kbtoken.co%2F?' + this.languages
       // alert('imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages)
       setTimeout(function () {
         var obj = document.getElementById('select_languages')
@@ -676,7 +676,7 @@ export default {
         var value = obj.options[index].value
         // alert(value)
         // self.location.href = 'http://156.240.109.163:3200/?' + value
-        self.location.href = 'http://156.240.109.163:3200/?' + value
+        self.location.href = 'https://api.kbtoken.co/?' + value
       }, 500)
     },
     goToTokenUrl2 () {

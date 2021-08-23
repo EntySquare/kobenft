@@ -130,7 +130,7 @@ const ko = {
     'k2': 'KB24의 혁신에 대한 감사와 "맘바 스피릿"의 신념과 숭배',
     'k3': 'NBA star-Odom：',
     'k4': 'KB24에 대한 사랑. 고베의 신자 중 한 명으로서 팬들이 더 나은 것을 위해 인내하도록 격려하십시오.',
-    'k5': 'NBA star-Derek Fisher：',
+    'k5': 'NBA star-Stephon Marbury：',
     'k6': 'KB24의 혁신적인 모델과 NFT 메타 우주의 기대를 지원',
     'new1': 'IDO 2 차：5,000,000',
     'qiu1': '투자：15%',

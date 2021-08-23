@@ -5,11 +5,11 @@
       <!--      <el-image :src="require('../assets/home_background.png')"-->
       <!--                style="z-index: -1;position:absolute;"></el-image>-->
       <picture style="width: 100%">
-        <source srcset="../assets/home_background2.png" media="(max-width: 991px)">
-        <source srcset="../assets/home_background.png" media="(min-width: 1920px)">
+        <source srcset="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/home_background2.png" media="(max-width: 991px)">
+        <source srcset="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/home_background.png" media="(min-width: 1920px)">
         <img
           class="headBackground"
-          src="../assets/home_background.png" style="z-index: -1; position:absolute"
+          src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/home_background.png" style="z-index: -1; position:absolute"
         />
       </picture>
       <el-row :span="24" style="height: 65px"></el-row>
@@ -42,14 +42,14 @@
                     @click="goToTokenUrl()"
                   style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">
                   {{ $t('m.t6') }}
-                  <!--                    <el-image :src="require('../assets/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>-->
+                  <!--                    <el-image :src="require('https://kbtoken.oss-cn-beijing.aliyuncs.com/token/fire_icon.png')" style="width: 16px; height: 16px;"></el-image>-->
                 </a>
                 </div>
               </el-col>
             </el-row>
           </el-col>
           <el-col :xs="{span: 3, push: 6} " :sm="{span: 3, push: 4} " :md="{span: 3, push: 4} " :lg="{span: 3, push: 8}" :xl="{span: 3, push: 8}" style="margin-top: -4px">
-<!--            <el-image :src="require('../assets/global.png')" style="width: 16px; height: 16px;"></el-image>-->
+<!--            <el-image :src="require('https://kbtoken.oss-cn-beijing.aliyuncs.com/token/global.png')" style="width: 16px; height: 16px;"></el-image>-->
             <!--                    <span style="color: white; position: absolute; bottom: 3px; margin-left: 5px; white-space: nowrap">中文</span>-->
             <select id="select_languages" v-model="languages" @change='getValue'
                     style="color: white; position: absolute; white-space: nowrap;background: transparent;appearance:none;border: 0;outline:none;font-size: 16px;font-weight: 500;">
@@ -88,7 +88,7 @@
                 :xl="{span: 8, push: 2}">
           <!--          <img-->
           <!--            class="headPerson"-->
-          <!--            src="../assets/head_person.png"-->
+          <!--            src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/head_person.png"-->
           <!--          />-->
             <video-player class="video-player vjs-custom-skin"
                           ref="videoPlayer"
@@ -215,7 +215,7 @@
         <el-row style="">
           <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
                   :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 60px">
-            <img src="../assets/new1.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+            <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/new1.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
            <div style="color: #FFFFFF">
 <!--             KB24定义是 NFT 元宇宙，您可以在其中收集和玩独特的数字项目。-->
              {{ $t('m.q1') }}
@@ -223,7 +223,7 @@
           </el-col>
           <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
                   :lg="{span: 8, push: 6}" :xl="{span: 7, push: 7}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 30px">
-            <img src="../assets/new2.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+            <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/new2.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
             <div style="color: #FFFFFF">
 <!--              KB24作为通往现实经济和NFT世界的枢纽，将联动Kobe Bryant社区用户，真正实现价值和价格的跨越。-->
               {{ $t('m.q2') }}
@@ -236,7 +236,7 @@
         <el-row style="">
           <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
                   :lg="{span: 8, push: 4}" :xl="{span: 7, push: 4}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 60px">
-            <img src="../assets/new3.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+            <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/new3.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
             <div style="color: #FFFFFF">
 <!--              KB24用户可以一键创建NFT,并将他们启动到流动市场中，无需编码。-->
               {{ $t('m.q3') }}
@@ -244,7 +244,7 @@
           </el-col>
           <el-col :xs="{span: 20, push: 2}" :sm="{span: 17, push: 3}" :md="{span: 17, push: 4}"
                   :lg="{span: 8, push: 6}" :xl="{span: 7, push: 7}" style="background: linear-gradient(270deg, #000000 0%, #131415 100%);height: 200px;border-radius: 16px;padding-top: 30px;padding-left: 100px;padding-right: 30px;margin-bottom: 30px">
-            <img src="../assets/new4.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
+            <img src="https://kbtoken.oss-cn-beijing.aliyuncs.com/token/new4.png" style="height: 92px;width: 88px;margin: 78px 0px -150px -100px">
             <div style="color: #FFFFFF">
 <!--              创作者在二级销售中的80%版税奖励持有KB的用户。-->
               {{ $t('m.q4') }}
@@ -1169,7 +1169,7 @@ export default {
     goToTokenUrl () {
       // http://192.168.2.12:3000/
       // window.open("imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F")
-      self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F?' + this.languages
+      self.location.href = 'imtokenv2://navigate/DappView?url=https%3A%2F%2Fapi.kbtoken.co%2F?' + this.languages
       // self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F?' + this.languages
       // self.location.href = 'imtokenv2://navigate/DappView?url=http%3A%2F%2F192.168.2.12%3A3000%2F?' + this.languages
       setTimeout(function () {
@@ -1179,7 +1179,7 @@ export default {
         // alert(value)
         // self.location.href = 'http://156.240.109.163:3200/?' + value
         // self.location.href = 'http://192.168.2.12:3000/?' + value
-        self.location.href = 'http://156.240.109.163:3200/?' + value
+        self.location.href = 'https://api.kbtoken.co/?' + value
       }, 500)
 
       // self.location.href = 'http://156.240.109.163:3200/'

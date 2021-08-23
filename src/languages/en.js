@@ -130,7 +130,7 @@ const en = {
     'k2': 'Appreciation of KB24\'s innovation, as well as the belief and worship of the Mamba Mentality',
     'k3': 'NBA star-Odom：',
     'k4': 'Love for KB24. As one of Kobe’s believers, encourage fans to persevere for better',
-    'k5': 'NBA star-Derek Fisher：',
+    'k5': 'NBA star-Stephon Marbury：',
     'k6': 'Support the innovative model of KB24 and the expectation of NFT metaverse',
     'new1': 'IDO round 2：5,000,000',
     'qiu1': 'Investment：15%',
