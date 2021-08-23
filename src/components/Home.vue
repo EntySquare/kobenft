@@ -529,14 +529,14 @@
                   {{ $t('m.m52') }}
                 </p>
                 <p style="padding-bottom: 25px;white-space:nowrap;font-size: 36px;">
-                  1 ETH = 10000 KB
+                  1 BNB = 10000 KB
                 </p>
                 <p style="font-size: 18px;white-space:nowrap;">
                   {{ $t('m.m50') }}
                 </p>
                 <p style="padding-bottom: 15px;white-space:nowrap;font-size: 36px;">
                   <!--                  上线日期：2021年第二季度-->
-                  1 ETH = 8000 KB
+                  1 BNB = 8000 KB
                 </p>
               </el-col>
             </el-row>
