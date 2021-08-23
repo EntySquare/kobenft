@@ -78,7 +78,7 @@ const en = {
     'm68': 'How to buy KB Token?',
     'm69': 'Enter the imToken / tokenpocket App wallet, switch to Binance Smart Chain and browse to kbtoken.co. Do IDO/ buy KB Token',
     'm70': 'What is the KB Token contract address?',
-    'm71': 'Token contract address：',
+    'm71': 'BSC mainnet address：',
     'm72': '0x41Bd027798aF533D12a7B514F32a24d574387836',
     'm73': 'What is the Kobe Bryant community?',
     'm74': 'Build an autonomous blockchain community based on global users. By selling your NFT assets in a free and open market, you can build your dream home, develop virtual businesses, and earn KB Tokens.',

@@ -502,6 +502,7 @@
 <!--            KB代币-->
             {{ $t('m.m47') }}
           </div>
+
           <div style="height: 1.94vw;"></div>
           <div style="font-size: 16px;font-weight: 500;color: #FFFFFF;">
 <!--            KB Token赋予实体物品+NFT概念运用落地，通过NFT非同质化通证，体现KB Token的价值-->
@@ -628,7 +629,9 @@ height: 36px;">IDO</el-button>
             <div style="height: 100px"></div>
           </div>
           <div style="height: 100px"></div>
-         <div style="font-weight: 500;font-size: 18px;">
+          <img src="@/assets/binanceSmartChain.png" style="height: 60px;width: auto" >
+          <div style="height: 20px"></div>
+          <div style="font-weight: 500;font-size: 18px;">
            <!-- 一段 -->
            <div style="padding-bottom: 20px">
            <span style="color: #E92F75">+&nbsp; </span><span style="color: #FFFFFF;">
