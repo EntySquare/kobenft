@@ -51,12 +51,12 @@
                   style="font-size: 16px;font-weight: 500;color: #FFFFFF;float: right"
                 >
                   <!--                  <a href="imtokenv2://navigate/DappView?url=http%3A%2F%2F156.240.109.163%3A3200%2F"  @click="goToTokenUrl()" style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;">-->
-                  <a
-                    @click="goToTokenUrl()"
-                    style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;"
-                  >
-                    IDO
-                  </a>
+<!--                  <a-->
+<!--                    @click="goToTokenUrl()"-->
+<!--                    style="color: #FFFFFF; text-decoration:none; cursor: pointer; font-size: 16px;float: right;font-weight: 500;"-->
+<!--                  >-->
+<!--                    IDO-->
+<!--                  </a>-->
                 </div>
               </el-col>
               <el-col span="8">
@@ -619,12 +619,10 @@
             {{ $t('m.m42') }}
           </div>
           <div style="">
-            <a href="https://t.me/kbtoken">
-              <img
-                src="@/assets/home_pinkArrow.png"
-                style="height: 50px;width: 50px;margin: -13px 0px 0px 11px"
-              />
-            </a>
+            <img
+              src="@/assets/home_pinkArrow.png"
+              style="height: 50px;width: 50px;margin: -13px 0px 0px 11px"
+            />
           </div>
           <div style="height: 50px"></div>
         </el-col>
@@ -753,25 +751,25 @@
                   style="padding-bottom: 25px;white-space:nowrap;font-size: 44px;"
                 >
                   <!--                  发行数：24,000,000-->
-                  16,000,000 MB
+                  16,000,000 MAMBA
                 </p>
-                <p style="font-size: 18px;white-space:nowrap;">
-                  {{ $t('m.m52') }}
-                </p>
-                <p
-                  style="padding-bottom: 25px;white-space:nowrap;font-size: 36px;"
-                >
-                  1 BNB = 10000 MB
-                </p>
-                <p style="font-size: 18px;white-space:nowrap;">
-                  {{ $t('m.m50') }}
-                </p>
-                <p
-                  style="padding-bottom: 15px;white-space:nowrap;font-size: 36px;"
-                >
-                  <!--                  上线日期：2021年第二季度-->
-                  1 BNB = 8000 MB
-                </p>
+<!--                <p style="font-size: 18px;white-space:nowrap;">-->
+<!--                  {{ $t('m.m52') }}-->
+<!--                </p>-->
+<!--                <p-->
+<!--                  style="padding-bottom: 25px;white-space:nowrap;font-size: 36px;"-->
+<!--                >-->
+<!--                  1 BNB = 10000 MB-->
+<!--                </p>-->
+<!--                <p style="font-size: 18px;white-space:nowrap;">-->
+<!--                  {{ $t('m.m50') }}-->
+<!--                </p>-->
+<!--                <p-->
+<!--                  style="padding-bottom: 15px;white-space:nowrap;font-size: 36px;"-->
+<!--                >-->
+<!--                  &lt;!&ndash;                  上线日期：2021年第二季度&ndash;&gt;-->
+<!--                  1 BNB = 8000 MB-->
+<!--                </p>-->
               </el-col>
             </el-row>
           </div>
@@ -798,80 +796,80 @@
           </div>
         </el-col> -->
 
-        <el-col
-          :xs="{ span: 22, push: 1 }"
-          :sm="{ span: 16, push: 4 }"
-          :md="{ span: 22, push: 1 }"
-          :lg="{ span: 17, push: 4 }"
-          :xl="{ span: 17, push: 4 }"
-          style="background: #1E1E1E;border-radius: 18px;margin-bottom: 100px"
-        >
-          <el-col :xs="24" :sm="6" :md="6" :lg="6" :xl="6">
-            <div
-              style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px"
-            >
-              <!--              空投剩余时间：-->
-              {{ $t('m.m59') }}
-            </div>
-            <div
-              style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px"
-            >
-              {{ day }}:Day {{ hour }}:{{ min }}:{{ second }}
-            </div>
-          </el-col>
-          <el-col :xs="24" :sm="6" :md="6" :lg="6" :xl="6">
-            <div
-              style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px"
-            >
-              <!--              IDO公募剩余时间：-->
-              {{ $t('m.m60') }}
-            </div>
-            <div
-              style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px"
-            >
-              {{ day2 }}:Day {{ hour2 }}:{{ min2 }}:{{ second2 }}
-            </div>
-          </el-col>
-          <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">
-            <div
-              style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px"
-            >
-              <!--              交易所上线时间：-->
-              {{ $t('m.m61') }}
-            </div>
-            <div
-              style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px"
-            >
-              2021 Q3
-            </div>
-          </el-col>
-          <el-col
-            :xs="24"
-            :sm="24"
-            :md="6"
-            :lg="6"
-            :xl="6"
-            style="padding: 30px 30px 30px 30px"
-          >
-            <a @click="goToTokenUrl()">
-              <el-button
-                style="background: #353535;font-size: 16px;font-weight: 500;color: #E92F75;border: 0;width: 100%;
-height: 36px;"
-                >IDO</el-button
-              >
-            </a>
-            <div style="height: 10px"></div>
-            <a @click="goToTokenUrl()">
-              <el-button
-                style="background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);font-size: 16px;font-weight: 500;color: #FFFFFF;border: 0;width: 100%;
-              height: 36px;"
-              >
-                <!--              空投-->
-                {{ $t('m.m62') }}
-              </el-button>
-            </a>
-          </el-col>
-        </el-col>
+<!--        <el-col-->
+<!--          :xs="{ span: 22, push: 1 }"-->
+<!--          :sm="{ span: 16, push: 4 }"-->
+<!--          :md="{ span: 22, push: 1 }"-->
+<!--          :lg="{ span: 17, push: 4 }"-->
+<!--          :xl="{ span: 17, push: 4 }"-->
+<!--          style="background: #1E1E1E;border-radius: 18px;margin-bottom: 100px"-->
+<!--        >-->
+<!--          <el-col :xs="24" :sm="6" :md="6" :lg="6" :xl="6">-->
+<!--            <div-->
+<!--              style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px"-->
+<!--            >-->
+<!--              &lt;!&ndash;              空投剩余时间：&ndash;&gt;-->
+<!--              {{ $t('m.m59') }}-->
+<!--            </div>-->
+<!--            <div-->
+<!--              style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px"-->
+<!--            >-->
+<!--              {{ day }}:Day {{ hour }}:{{ min }}:{{ second }}-->
+<!--            </div>-->
+<!--          </el-col>-->
+<!--          <el-col :xs="24" :sm="6" :md="6" :lg="6" :xl="6">-->
+<!--            <div-->
+<!--              style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px"-->
+<!--            >-->
+<!--              &lt;!&ndash;              IDO公募剩余时间：&ndash;&gt;-->
+<!--              {{ $t('m.m60') }}-->
+<!--            </div>-->
+<!--            <div-->
+<!--              style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px"-->
+<!--            >-->
+<!--              {{ day2 }}:Day {{ hour2 }}:{{ min2 }}:{{ second2 }}-->
+<!--            </div>-->
+<!--          </el-col>-->
+<!--          <el-col :xs="24" :sm="24" :md="6" :lg="6" :xl="6">-->
+<!--            <div-->
+<!--              style="font-size: 16px;font-weight: 600;color: #FFFFFF;padding: 30px 0px 0px 30px"-->
+<!--            >-->
+<!--              &lt;!&ndash;              交易所上线时间：&ndash;&gt;-->
+<!--              {{ $t('m.m61') }}-->
+<!--            </div>-->
+<!--            <div-->
+<!--              style="font-size: 24px;font-weight: 500;color: #00FFE1;padding: 30px 0px 30px 30px"-->
+<!--            >-->
+<!--              2021 Q3-->
+<!--            </div>-->
+<!--          </el-col>-->
+<!--          <el-col-->
+<!--            :xs="24"-->
+<!--            :sm="24"-->
+<!--            :md="6"-->
+<!--            :lg="6"-->
+<!--            :xl="6"-->
+<!--            style="padding: 30px 30px 30px 30px"-->
+<!--          >-->
+<!--            <a @click="goToTokenUrl()">-->
+<!--              <el-button-->
+<!--                style="background: #353535;font-size: 16px;font-weight: 500;color: #E92F75;border: 0;width: 100%;-->
+<!--height: 36px;"-->
+<!--                >IDO</el-button-->
+<!--              >-->
+<!--            </a>-->
+<!--            <div style="height: 10px"></div>-->
+<!--            <a @click="goToTokenUrl()">-->
+<!--              <el-button-->
+<!--                style="background: linear-gradient(297deg, #FF5045 0%, #EF3868 21%, #E32780 100%);font-size: 16px;font-weight: 500;color: #FFFFFF;border: 0;width: 100%;-->
+<!--              height: 36px;"-->
+<!--              >-->
+<!--                &lt;!&ndash;              空投&ndash;&gt;-->
+<!--                {{ $t('m.m62') }}-->
+<!--              </el-button>-->
+<!--            </a>-->
+<!--          </el-col>-->
+<!--        </el-col>-->
       </el-row>
     </div>
     <!--    <div class="right"-->
@@ -1126,7 +1124,7 @@ height: 36px;"
           >
             {{ $t('m.q79') }}
             <p></p>
-            {{ $t('m.q80') }}
+<!--            {{ $t('m.q80') }}-->
             <p></p>
             {{ $t('m.q81') }}
             <p></p>
@@ -1252,14 +1250,14 @@ height: 36px;"
           :xl="{ span: '7', push: '5' }"
           style="font-size: 14px;font-weight: 600;color: #FFFFFF;padding-top: -20px"
         >
-          <a href="https://t.me/kbtoken">
-            <img
-              src="@/assets/home_feixin_logo.png"
-              style="height: 36px;width: 36px;white-space:nowrap"
-            />
-          </a>
+<!--          <a href="https://t.me/kbtoken">-->
+<!--            <img-->
+<!--              src="@/assets/home_feixin_logo.png"-->
+<!--              style="height: 36px;width: 36px;white-space:nowrap"-->
+<!--            />-->
+<!--          </a>-->
           &nbsp;&nbsp;&nbsp;
-          <a href="https://mobile.twitter.com/kobetoken24">
+          <a href="https://mobile.twitter.com/k_bmamba">
             <img
               src="@/assets/home_twitter_logo.png"
               style="height: 36px;width: 36px;white-space:nowrap"
